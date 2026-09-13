@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T09:19:26+00:00**.
+Exported at **2026-09-13T09:20:31+00:00**.
 
-History through `36844d83f727607dae178d9a6771e8c437b05bba`.
+History through `4361487161cdfe2dd0118ba68c07e324b7675589`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -131,3 +131,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`36844d83f727607dae178d9a6771e8c437b05bba`](https://github.com/arcacomputer/openclaw-concentrate/commit/36844d83f727607dae178d9a6771e8c437b05bba)
 - Author timestamp: `2026-09-13T09:17:19+00:00`
 - Committer timestamp: `2026-09-13T09:17:19+00:00`
+
+## Add validated ClawHub build provenance and packaging regression test
+
+- Commit: [`4361487161cdfe2dd0118ba68c07e324b7675589`](https://github.com/arcacomputer/openclaw-concentrate/commit/4361487161cdfe2dd0118ba68c07e324b7675589)
+- Author timestamp: `2026-09-13T09:19:26+00:00`
+- Committer timestamp: `2026-09-13T09:19:26+00:00`

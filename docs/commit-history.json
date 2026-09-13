@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T09:19:26+00:00",
-  "historyThrough": "36844d83f727607dae178d9a6771e8c437b05bba",
+  "generatedAt": "2026-09-13T09:20:31+00:00",
+  "historyThrough": "4361487161cdfe2dd0118ba68c07e324b7675589",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "4361487161cdfe2dd0118ba68c07e324b7675589",
+      "authorTime": "2026-09-13T09:19:26+00:00",
+      "committerTime": "2026-09-13T09:19:26+00:00",
+      "subject": "Add validated ClawHub build provenance and packaging regression test"
+    },
     {
       "sha": "36844d83f727607dae178d9a6771e8c437b05bba",
       "authorTime": "2026-09-13T09:17:19+00:00",

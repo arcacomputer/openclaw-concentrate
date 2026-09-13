@@ -1,0 +1,26 @@
+{
+  "publicationTime": "2026-09-13T09:20:31+00:00",
+  "cliVersion": "0.23.3",
+  "sourceCommit": "4361487161cdfe2dd0118ba68c07e324b7675589",
+  "packageTests": {
+    "passed": 32,
+    "failed": 0
+  },
+  "staticValidation": {
+    "exitCode": 0,
+    "issues": []
+  },
+  "dryRun": {
+    "source": "github:arcacomputer/openclaw-concentrate@4361487161cdfe2dd0118ba68c07e324b7675589",
+    "name": "openclaw-concentrate-local",
+    "displayName": "Concentrate AI",
+    "family": "code-plugin",
+    "version": "0.1.0-preview.2",
+    "commit": "4361487161cdfe2dd0118ba68c07e324b7675589",
+    "files": 8,
+    "totalBytes": 8075
+  },
+  "dryRunCompletedAt": "2026-09-13T09:20:02.222714+00:00",
+  "uploaded": false,
+  "cleanupVerified": true
+}

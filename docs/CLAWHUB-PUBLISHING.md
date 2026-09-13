@@ -48,3 +48,5 @@ Documentation reviewed and publication requirements recorded. This document is n
 ## Executed preflight
 
 ClawHub CLI 0.23.3 static validation passed with no issues after adding build metadata. The first dry run stopped because code plugins require explicit `--source-repo` and `--source-commit`; the example above includes those flags. This result is not an uploaded release.
+
+The corrected exact-commit dry run **passed**, along with 32 package tests and zero-issue static validation. See [machine-readable preflight evidence](CLAWHUB-PREFLIGHT.json). This proves a publish plan for the preview package, not registry upload, full compatibility, or final publisher identity.
