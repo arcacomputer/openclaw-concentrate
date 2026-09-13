@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T06:55:23+00:00",
-  "historyThrough": "bc6d8707736daa8bf5cbf2044354fe093f78259b",
+  "generatedAt": "2026-09-13T07:05:45+00:00",
+  "historyThrough": "0123f2343852193ab666e15efec1f695d52886ba",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "0123f2343852193ab666e15efec1f695d52886ba",
+      "authorTime": "2026-09-13T06:55:23+00:00",
+      "committerTime": "2026-09-13T06:55:23+00:00",
+      "subject": "Publish bounded reasoning proof and unresolved vision accuracy failure"
+    },
     {
       "sha": "bc6d8707736daa8bf5cbf2044354fe093f78259b",
       "authorTime": "2026-09-13T06:44:42+00:00",

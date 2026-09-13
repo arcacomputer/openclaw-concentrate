@@ -71,3 +71,13 @@ Publication author/committer timestamp: `2026-09-13T06:55:23+00:00`. Evidence ve
 - `gpt-4.1-mini` vision case completed at `2026-09-13T06:49:30.842Z` with two forwards, but **failed visual accuracy**: expected red, answered blue. Transport completion is not vision compatibility. Fixture, on-wire image and host projection require diagnosis before assigning a root cause or retrying.
 - Three paid forwards, no paid retries. Basic smoke totals unchanged; full certification incomplete.
 - Archive SHA-256: `d986020dbce134df29fb0d0654eaf857493160c432d19228cb9866a99452e72f`. Download recorded at `2026-09-13T06:49:45.081273+00:00`; cleanup readback at `2026-09-13T06:50:59.483959+00:00`. Parent independently confirmed the worker absent.
+
+## Batch 06: vision diagnosis and strict-schema configuration blocker
+
+Publication author/committer timestamp: `2026-09-13T07:05:45+00:00`. Evidence verified at `2026-09-13T07:03:05.288637+00:00`.
+
+Deterministic decoding confirms the retained vision fixture has 256 red RGB(255,0,0) pixels, valid PNG CRCs and no color-profile ambiguity. Synthetic and live requests contain identical image bytes. This proves correct client-to-Concentrate ingress, **not** provider-internal forwarding to the underlying model. The blue answer remains a failed visual-accuracy case; internal image handling versus model interpretation is unresolved. No vision retry occurred.
+
+Four negative schema-validator checks passed, but the actual synthetic OpenClaw request omitted `body.text.format`. The harness incorrectly used `extra_body`, which applies to Chat Completions rather than Responses in this runtime. This is a harness configuration error, not a provider rejection. Strict schema remains unproved; the supported host configuration path must produce actual wire evidence before live testing.
+
+Zero new paid forwards or reservations. Ten raw checkpoint files and archive were verified before scoped deletion. No compatibility status is upgraded by this batch. Archive SHA-256: `155d280de41ccaa2ce98aea13ae16b29b6d5602a78c3ee4030d7b9b962216b2a`.
