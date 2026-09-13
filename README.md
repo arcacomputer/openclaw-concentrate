@@ -2,7 +2,7 @@
 
 An MIT-licensed provider plugin maintained by [Arca Computer](https://arca.computer). Connect OpenClaw to Concentrate's Responses API with streaming, tools, reasoning, structured output and image input, where the selected upstream model supports them.
 
-**Version 1.0.0.** See the [release report](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/RELEASE-1.0.0.md) for verified distribution status, installation evidence and limitations. No npm release is claimed; `private: true` prevents accidental npm publication.
+**Version 1.0.1.** See the [release report](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/RELEASE-1.0.0.md) for verified distribution status, installation evidence and limitations. No npm release is claimed; `private: true` prevents accidental npm publication.
 
 AI-assisted development, human stewardship by Luis Felipe Abarca. This is an independent integration, not an endorsement by Concentrate or the OpenClaw Foundation.
 
@@ -11,12 +11,11 @@ AI-assisted development, human stewardship by Luis Felipe Abarca. This is an ind
 The verified target is **OpenClaw 2026.9.4, Node 24.16.0, Linux**. Other host versions and operating systems have not been verified. Start in disposable state before changing an existing agent.
 
 ```sh
-git clone https://github.com/arcacomputer/openclaw-concentrate.git
-openclaw plugins install --force --accept-capabilities ./openclaw-concentrate
+openclaw plugins install clawhub:openclaw-concentrate --accept-capabilities
 openclaw plugins list --json
 ```
 
-Review the code first: `--force` acknowledges local unreviewed source and `--accept-capabilities` grants the plugin's declared capabilities. Installation alone does not configure credentials or start inference. Do not use a guessed ClawHub install name while publication is pending.
+Review the code first: `--accept-capabilities` grants the plugin's declared capabilities. The registry command above does not require `--force`. Installation alone does not configure credentials or start inference. A clean registry scan and matching artifact hashes are not a signed build-provenance attestation; see the release report for the host's trust diagnostics.
 
 ## Configure
 
@@ -56,7 +55,7 @@ Only configured models become runnable. The bundled snapshot supports `gpt-4.1-m
 - **Errors and cancellation:** the plugin preserves catalog cancellation. Runtime inference errors, cancellation and retries belong to OpenClaw's transport. Focused synthetic checks are not live upstream cancellation/billing proof. Disabling model fallbacks alone does not disable retries or incomplete-response continuation.
 - **Routing and billing:** Concentrate chooses upstream routes. Host token-cost estimates do not incorporate all provider receipt extensions, route fallback, cache TTLs, context tiers, hosted tool charges or BYOK behavior. No hard spending guarantee is implemented by this plugin.
 
-The public catalog contains **185 model IDs** in the retained snapshot. [Every original smoke outcome](docs/compatibility.json) remains available, including errors, inconclusive attempts, skipped and pending rows. The wider feature matrix is ongoing research, not a claim that all models and features passed. In particular, historical Grok output-cap violations remain quarantined in the test campaign.
+The public catalog contains **185 model IDs** in the retained snapshot. [Every original smoke outcome](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/compatibility.json) remains available, including errors, inconclusive attempts, skipped and pending rows. The wider feature matrix is ongoing research, not a claim that all models and features passed. In particular, historical Grok output-cap violations remain quarantined in the test campaign.
 
 ## Pricing evidence
 
@@ -80,13 +79,13 @@ node scripts/verify.mjs /tmp/concentrate-evidence
 clawhub package validate . --openclaw-version 2026.9.4 --json
 ```
 
-Read [AGENTS.md](AGENTS.md) before changing the provider. It documents the isolated Blaxel lane, credentials, inference budgets, retained failures, privacy and publication gates. No delegation is required to use Blaxel.
+Read [AGENTS.md](https://github.com/arcacomputer/openclaw-concentrate/blob/main/AGENTS.md) before changing the provider. It documents the isolated Blaxel lane, credentials, inference budgets, retained failures, privacy and publication gates. No delegation is required to use Blaxel.
 
-- [Release evidence and remaining distribution gate](docs/RELEASE-1.0.0.md)
-- [Original per-model smoke report](docs/COMPATIBILITY.md)
-- [Feature campaign and historical failures](docs/FEATURE-TESTING.md)
-- [ClawHub publication procedure](docs/CLAWHUB-PUBLISHING.md)
-- [Exact Git author/committer timestamps](docs/COMMIT-HISTORY.md)
-- [Provenance and evidence dates](docs/PROVENANCE.md)
+- [Release and installation evidence](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/RELEASE-1.0.0.md)
+- [Original per-model smoke report](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/COMPATIBILITY.md)
+- [Feature campaign and historical failures](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/FEATURE-TESTING.md)
+- [ClawHub publication procedure](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/CLAWHUB-PUBLISHING.md)
+- [Exact Git author/committer timestamps](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/COMMIT-HISTORY.md)
+- [Provenance and evidence dates](https://github.com/arcacomputer/openclaw-concentrate/blob/main/docs/PROVENANCE.md)
 
 Arca maintains this as an independent ClawHub plugin. Built-in OpenClaw inclusion is not a prerequisite or promised outcome. Community guidance motivating that choice is preserved, with its qualifications, in AGENTS.md.

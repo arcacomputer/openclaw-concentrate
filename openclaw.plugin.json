@@ -1,7 +1,7 @@
 {
   "id": "concentrate",
   "name": "Concentrate AI",
-  "description": "Unpublished Responses-provider preview; credentialed compatibility not verified",
+  "description": "Concentrate.ai provider for OpenClaw: Responses, tools, reasoning, structured output and image input.",
   "providers": ["concentrate"],
   "setup": {"providers": [{"id": "concentrate", "envVars": ["CONCENTRATE_API_KEY"]}]},
   "providerAuthChoices": [{

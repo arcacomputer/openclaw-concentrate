@@ -1,6 +1,6 @@
 {
   "name": "openclaw-concentrate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "Concentrate.ai provider for OpenClaw: Responses, tools, reasoning, structured output and image input.",

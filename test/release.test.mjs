@@ -45,3 +45,15 @@ test('manifest and runtime share the 256-model configuration boundary', () => {
   const manifest = JSON.parse(readFileSync(new URL('../openclaw.plugin.json', import.meta.url)));
   assert.equal(manifest.configSchema.properties.costOverrides.maxProperties, 256);
 });
+
+test('published metadata and README remain registry-ready', () => {
+  const manifest = JSON.parse(readFileSync(new URL('../openclaw.plugin.json', import.meta.url)));
+  const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url)));
+  const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
+  assert.equal(manifest.description, pkg.description);
+  assert.ok(readme.includes(`**Version ${pkg.version}.**`));
+  assert.match(readme, /openclaw plugins install clawhub:openclaw-concentrate --accept-capabilities/);
+  for (const [, href] of readme.matchAll(/\]\(([^)]+)\)/g)) {
+    assert.match(href, /^(https:\/\/|#)/, `Registry README has a relative link: ${href}`);
+  }
+});
