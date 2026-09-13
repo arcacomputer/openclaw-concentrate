@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T08:59:21+00:00",
-  "historyThrough": "ae1e428ac277fa5a9eb5ae173f79434c9e3feb67",
+  "generatedAt": "2026-09-13T09:11:44+00:00",
+  "historyThrough": "f6414cdeea4384b4a4d28a6bb9f5500692ad66f6",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "f6414cdeea4384b4a4d28a6bb9f5500692ad66f6",
+      "authorTime": "2026-09-13T08:59:21+00:00",
+      "committerTime": "2026-09-13T08:59:21+00:00",
+      "subject": "Make full compatibility release acceptance explicit"
+    },
     {
       "sha": "ae1e428ac277fa5a9eb5ae173f79434c9e3feb67",
       "authorTime": "2026-09-13T08:50:53+00:00",
