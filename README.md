@@ -4,6 +4,10 @@ An experimental, MIT-licensed provider plugin maintained by [Arca Computer](http
 
 **Real OpenClaw inference has been exercised. This is not a production-certified release.** See [the compatibility snapshot](docs/COMPATIBILITY.md) and [all model rows](docs/compatibility.json). Source is public; no npm release or upstream PR has been published. The npm `private` flag prevents accidental registry publication, not source access.
 
+## Commit and evidence timestamps
+
+See [provenance](docs/PROVENANCE.md), [exact commit history](docs/COMMIT-HISTORY.md), and [machine-readable metadata](docs/provenance.json). Publication time and testing time are tracked separately.
+
 ## Configure explicit estimates
 
 Install only in disposable state for now. Set `CONCENTRATE_API_KEY` through OpenClaw's supported secret/auth configuration when separately authorized. Never put credentials in this plugin config.

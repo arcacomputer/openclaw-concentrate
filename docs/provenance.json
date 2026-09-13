@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "recordType": "publication-provenance",
+  "publicationCommitAuthorTime": "2026-09-13T00:37:31+00:00",
+  "publicationCommitCommitterTime": "2026-09-13T00:37:31+00:00",
+  "parentCommit": "01f30e6350defa4035e91d987be03d5d142c4939",
+  "historyFile": "docs/commit-history.json",
+  "snapshot": {
+    "path": "docs/compatibility.json",
+    "sha256": "42db644b84f8612dc2cf1e5ea16e895a72e93dd9fa871b70ca715b4b554f4bcb",
+    "label": "2026-09-13 resume-04",
+    "exactTestCompletionTime": null
+  },
+  "notes": [
+    "Publication timestamps are explicitly used for the Git commit storing this record.",
+    "The storing commit SHA is resolved from Git, not embedded into itself.",
+    "Snapshot label is not an exact test timestamp. No exact completion timestamp is asserted where this snapshot lacks one.",
+    "This commit publishes provenance, not a fresh model test run."
+  ]
+}
