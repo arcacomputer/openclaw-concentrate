@@ -1,15 +1,15 @@
 {
-  "snapshot": "2026-09-13 resume-05",
+  "snapshot": "2026-09-13 resume-06",
   "host": "OpenClaw 2026.9.4",
   "node": "24.16.0",
   "platform": "Linux / Blaxel",
   "scope": "Basic response smoke tests only, not all capabilities",
   "counts": {
-    "passed": 138,
+    "passed": 141,
     "error": 5,
     "inconclusive": 34,
     "skipped": 3,
-    "pending": 5
+    "pending": 2
   },
   "models": [
     {
@@ -782,25 +782,25 @@
     },
     {
       "model": "qwen3.5-flash",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.5-397b-a17b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.5-35b-a3b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
@@ -1493,5 +1493,5 @@
       "returnedModel": null
     }
   ],
-  "publishedAt": "2026-09-13T00:38:48+00:00"
+  "publishedAt": "2026-09-13T00:44:35+00:00"
 }
