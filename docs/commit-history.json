@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T08:17:51+00:00",
-  "historyThrough": "f558546667dee029d8899bae5a5a34e079ebf057",
+  "generatedAt": "2026-09-13T08:50:53+00:00",
+  "historyThrough": "e0f895ab19e5cfc041fc8c2ccef09a6d362e5e8a",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "e0f895ab19e5cfc041fc8c2ccef09a6d362e5e8a",
+      "authorTime": "2026-09-13T08:17:51+00:00",
+      "committerTime": "2026-09-13T08:17:51+00:00",
+      "subject": "Document standalone evidence integrity gate qualification"
+    },
     {
       "sha": "f558546667dee029d8899bae5a5a34e079ebf057",
       "authorTime": "2026-09-13T08:11:45+00:00",

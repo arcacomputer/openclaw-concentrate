@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T08:17:51+00:00**.
+Exported at **2026-09-13T08:50:53+00:00**.
 
-History through `f558546667dee029d8899bae5a5a34e079ebf057`.
+History through `e0f895ab19e5cfc041fc8c2ccef09a6d362e5e8a`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -95,3 +95,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`f558546667dee029d8899bae5a5a34e079ebf057`](https://github.com/arcacomputer/openclaw-concentrate/commit/f558546667dee029d8899bae5a5a34e079ebf057)
 - Author timestamp: `2026-09-13T08:11:45+00:00`
 - Committer timestamp: `2026-09-13T08:11:45+00:00`
+
+## Document standalone evidence integrity gate qualification
+
+- Commit: [`e0f895ab19e5cfc041fc8c2ccef09a6d362e5e8a`](https://github.com/arcacomputer/openclaw-concentrate/commit/e0f895ab19e5cfc041fc8c2ccef09a6d362e5e8a)
+- Author timestamp: `2026-09-13T08:17:51+00:00`
+- Committer timestamp: `2026-09-13T08:17:51+00:00`

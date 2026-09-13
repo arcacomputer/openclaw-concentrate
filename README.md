@@ -8,6 +8,20 @@ An experimental, MIT-licensed provider plugin maintained by [Arca Computer](http
 
 See [provenance](docs/PROVENANCE.md), [exact commit history](docs/COMMIT-HISTORY.md), and [machine-readable metadata](docs/provenance.json). Publication time and testing time are tracked separately.
 
+## Install the source preview
+
+Requires OpenClaw **2026.9.4** and the Node versions in `package.json`. Review the source and use disposable OpenClaw state while evaluating.
+
+```sh
+git clone https://github.com/arcacomputer/openclaw-concentrate.git
+openclaw plugins install --force --accept-capabilities ./openclaw-concentrate
+openclaw plugins list --json
+```
+
+`--force` acknowledges the unreviewed local source; `--accept-capabilities` grants the plugin's declared capabilities. Use these only after reviewing the source. Installation does not configure a key, enable inference, or certify every model. Configure the estimates below before choosing a runtime model.
+
+[Clean installation verification](docs/PACKAGE-VERIFICATION.md).
+
 ## Configure explicit estimates
 
 Install only in disposable state for now. Set `CONCENTRATE_API_KEY` through OpenClaw's supported secret/auth configuration when separately authorized. Never put credentials in this plugin config.
