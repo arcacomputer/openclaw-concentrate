@@ -38,3 +38,26 @@ The existing basic-response results are unchanged. No full-feature certification
 - **routing-pricing**: all eligible route rates/cache/tier pricing; backend receipt identification; fallback/degradation cannot silently count as feature pass
 - **catalog-auth**: discovery versus configured estimates, missing key, HTTPS fixed origin, abort, dynamic failure/static fallback
 - **packaging-platform**: fresh exact public-tree install on Linux; macOS/Windows separately; no broad-suite claim from original runtime hashes
+
+## Batch 04: verified lifecycle repair and live tool roundtrip
+
+Publication author/committer timestamp: `2026-09-13T06:44:42+00:00`. Live case recorded at `2026-09-13T06:40:08.787Z`; evidence verified at `2026-09-13T06:41:50.543254+00:00`. These timestamps are separate from batch 01 above.
+
+The harness incorrectly treated downstream close after terminal consumption as cancellation. The tested repair validates and persists the semantic terminal before forwarding it, then drains upstream under bounds/timeouts before authorizing the next forward. Later contradictory terminal records still fail closed.
+
+**Eight zero-paid regressions passed:** valid fragmented-SSE/delayed-EOF and seven fail-closed cases (missing usage, invalid usage, overcap, timeout, cancellation, oversized frame, contradictory terminal). This is harness safety evidence, not eight model feature passes.
+
+**Live `gpt-4.1-mini` tool roundtrip passed:** two reserved forwards, two receipts, host exit 0, matching tool-call/result ID and final `FEATURE_OK`. No paid retries. Other models and broader features remain uncertified; the 141-model basic smoke count is unchanged.
+
+Credential-isolation caveat: standalone regressions were credential-free; the live process repeated synthetic preflight with the real key still held in its parent closure, although synthetic children received only a dummy key. A later isolation draft was untested in this batch. Do not describe that hardening as verified.
+
+### Exact regression record times
+
+- `valid`: `2026-09-13T06:39:07.356Z`
+- `missing`: `2026-09-13T06:39:14.745Z`
+- `invalid`: `2026-09-13T06:39:20.943Z`
+- `overcap`: `2026-09-13T06:39:27.216Z`
+- `timeout`: `2026-09-13T06:39:33.901Z`
+- `cancel`: `2026-09-13T06:39:41.935Z`
+- `bounds`: `2026-09-13T06:39:48.241Z`
+- `contradiction`: `2026-09-13T06:39:55.087Z`

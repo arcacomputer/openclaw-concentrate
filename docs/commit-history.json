@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T06:26:15+00:00",
-  "historyThrough": "1db61816540ab1150ca56f914f4acd16cf18dd55",
+  "generatedAt": "2026-09-13T06:44:42+00:00",
+  "historyThrough": "a83d8de72feae8ddddc602a2ff82a07c4156cb70",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "a83d8de72feae8ddddc602a2ff82a07c4156cb70",
+      "authorTime": "2026-09-13T06:26:15+00:00",
+      "committerTime": "2026-09-13T06:26:15+00:00",
+      "subject": "Document live feature probe, sequencing blocker and exact stage times"
+    },
     {
       "sha": "1db61816540ab1150ca56f914f4acd16cf18dd55",
       "authorTime": "2026-09-13T00:44:35+00:00",
