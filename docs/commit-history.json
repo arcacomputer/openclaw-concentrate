@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T07:27:33+00:00",
-  "historyThrough": "91ac7de2a237d5d37a78d0022631c6dcee1d722d",
+  "generatedAt": "2026-09-13T07:37:13+00:00",
+  "historyThrough": "c39f1122693dbe261d8da40145ff151cbfad3333",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "c39f1122693dbe261d8da40145ff151cbfad3333",
+      "authorTime": "2026-09-13T07:27:33+00:00",
+      "committerTime": "2026-09-13T07:27:33+00:00",
+      "subject": "Document fixture path qualification and unresolved host replay"
+    },
     {
       "sha": "91ac7de2a237d5d37a78d0022631c6dcee1d722d",
       "authorTime": "2026-09-13T07:21:40+00:00",

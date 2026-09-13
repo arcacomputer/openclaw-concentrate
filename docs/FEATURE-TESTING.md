@@ -115,3 +115,13 @@ Four safe absolute/relative path cases and twelve rejection cases passed. Actual
 Actual-host reordered replay remains unproved: the harness guessed a JSONL location but the host reported a logical session identifier. New-user-turn, malformed-ID and validator-only gate-negative tests were not reached. Automatic teardown on the first assertion failure also prevented intended same-worker debugging. Both are test workflow limitations, not provider failures.
 
 Zero paid forwards, retries or model-key reads; ledger unchanged. Next qualification remains credential-free and must discover the installed persistence interface rather than guess filenames. 22 checkpoint files verified against archive `9e746f6f8a0ef42d43bc1002f1342341893dc53e599cd280076911a10bdfd7b3`, downloaded at `2026-09-13T07:24:10.498129+00:00` before scoped cleanup. No full preflight pass was produced.
+
+## Batch 10: host process deadline; SQLite persistence source discovery
+
+Publication author/committer timestamp: `2026-09-13T07:37:13+00:00`. Evidence verified at `2026-09-13T07:35:57.649249+00:00`.
+
+Actual host read both fixtures with distinct IDs, but after emitting final JSON the process exceeded its 65-second deadline and was terminated (143/SIGTERM). **Final output is not a clean execution pass.** Reordered replay, new-user context, malformed-ID and gate-negative tests were not reached.
+
+Installed source establishes scoped SQLite transcript interfaces, including watermark reads and generation/byte-fenced rewrites. This is an internal interface, not a stable public replay command, and remains runtime-unqualified. The next zero-paid stage diagnoses process exit before attempting replay. Candidate launcher classifier repairs remain unexecuted, not verified fixes.
+
+No paid model calls or key reads. Ledger and feature matrix unchanged. 22 checkpoint files and 220 installed source files verified; archive `2a3e05675eced6560385f3f183ba14aa41bc0ea34e0d34b004c99a54a066fbd2` downloaded at `2026-09-13T07:31:15.953164+00:00` before cleanup. No live preflight pass or authorization resulted.
