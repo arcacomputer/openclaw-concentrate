@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T09:15:34+00:00",
-  "historyThrough": "01fd997de4a252b7542862ca6eb224b4e64f4072",
+  "generatedAt": "2026-09-13T09:17:19+00:00",
+  "historyThrough": "7b5698f22dd7bd132c95dd1e2cad424bd9c4ac9f",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "7b5698f22dd7bd132c95dd1e2cad424bd9c4ac9f",
+      "authorTime": "2026-09-13T09:15:34+00:00",
+      "committerTime": "2026-09-13T09:15:34+00:00",
+      "subject": "Establish independently maintained ClawHub plugin as release target"
+    },
     {
       "sha": "01fd997de4a252b7542862ca6eb224b4e64f4072",
       "authorTime": "2026-09-13T09:11:44+00:00",

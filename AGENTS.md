@@ -18,6 +18,8 @@ This is a community comment supplied by the project owner, not a verified formal
 
 Target a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. ClawHub publication is still pending; source installation and package tests do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
 
+Official ClawHub reference: <https://docs.openclaw.ai/clawhub>. Follow [the repository publishing checklist](docs/CLAWHUB-PUBLISHING.md), including actual package validation, publish dry run, publisher authentication and registry-install verification.
+
 ## Start here
 
 Read these before changing code or making compatibility claims:

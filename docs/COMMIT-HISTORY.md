@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T09:15:34+00:00**.
+Exported at **2026-09-13T09:17:19+00:00**.
 
-History through `01fd997de4a252b7542862ca6eb224b4e64f4072`.
+History through `7b5698f22dd7bd132c95dd1e2cad424bd9c4ac9f`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -119,3 +119,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`01fd997de4a252b7542862ca6eb224b4e64f4072`](https://github.com/arcacomputer/openclaw-concentrate/commit/01fd997de4a252b7542862ca6eb224b4e64f4072)
 - Author timestamp: `2026-09-13T09:11:44+00:00`
 - Committer timestamp: `2026-09-13T09:11:44+00:00`
+
+## Establish independently maintained ClawHub plugin as release target
+
+- Commit: [`7b5698f22dd7bd132c95dd1e2cad424bd9c4ac9f`](https://github.com/arcacomputer/openclaw-concentrate/commit/7b5698f22dd7bd132c95dd1e2cad424bd9c4ac9f)
+- Author timestamp: `2026-09-13T09:15:34+00:00`
+- Committer timestamp: `2026-09-13T09:15:34+00:00`
