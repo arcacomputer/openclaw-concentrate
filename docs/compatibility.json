@@ -1,15 +1,15 @@
 {
-  "snapshot": "2026-09-13 resume-04",
+  "snapshot": "2026-09-13 resume-05",
   "host": "OpenClaw 2026.9.4",
   "node": "24.16.0",
   "platform": "Linux / Blaxel",
   "scope": "Basic response smoke tests only, not all capabilities",
   "counts": {
-    "passed": 119,
+    "passed": 138,
     "error": 5,
-    "inconclusive": 33,
+    "inconclusive": 34,
     "skipped": 3,
-    "pending": 25
+    "pending": 5
   },
   "models": [
     {
@@ -598,33 +598,33 @@
     },
     {
       "model": "deepseek-v4-flash-vision-exp",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "deepseek-v4-1-flash",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "deepseek-v4-pro",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "deepseek-v4-pro-0813",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
@@ -638,9 +638,9 @@
     },
     {
       "model": "qwen3-max-thinking",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
@@ -662,121 +662,121 @@
     },
     {
       "model": "qwen3.5-27b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.5-9b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.6-27b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3-14b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3-30b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.8-max",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.8-27b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.7-max",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.7-plus",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.7-flash",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.6-plus",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.6-flash",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.6-35b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.5-122b-a10b",
-      "status": "pending",
+      "status": "passed",
       "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
       "httpStatus": null,
       "returnedModel": null
     },
     {
       "model": "qwen3.5-plus",
-      "status": "pending",
-      "category": null,
-      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "status": "inconclusive",
+      "category": "upstream-timeout-unknown-billing",
+      "note": "STOP: one upstream forward timed out without receipt; execution/usage/cost unknown; full reservation retained; no retry",
       "httpStatus": null,
       "returnedModel": null
     },
@@ -1492,5 +1492,6 @@
       "httpStatus": null,
       "returnedModel": null
     }
-  ]
+  ],
+  "publishedAt": "2026-09-13T00:38:48+00:00"
 }

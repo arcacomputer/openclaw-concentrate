@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "recordType": "publication-provenance",
-  "publicationCommitAuthorTime": "2026-09-13T00:37:31+00:00",
-  "publicationCommitCommitterTime": "2026-09-13T00:37:31+00:00",
-  "parentCommit": "01f30e6350defa4035e91d987be03d5d142c4939",
+  "publicationCommitAuthorTime": "2026-09-13T00:38:48+00:00",
+  "publicationCommitCommitterTime": "2026-09-13T00:38:48+00:00",
+  "parentCommit": "a8eeacaebb0be4d026b3006bd46bc7b8b94b6606",
   "historyFile": "docs/commit-history.json",
   "snapshot": {
     "path": "docs/compatibility.json",
-    "sha256": "42db644b84f8612dc2cf1e5ea16e895a72e93dd9fa871b70ca715b4b554f4bcb",
-    "label": "2026-09-13 resume-04",
+    "sha256": "6c4270a57cb34aa3f6e8c1fedfea773ceea7b7645cb0b7ead7792c2ed854bc6e",
+    "label": "2026-09-13 resume-05",
     "exactTestCompletionTime": null
   },
   "notes": [

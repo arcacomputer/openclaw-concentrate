@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T00:37:00+00:00",
-  "historyThrough": "01f30e6350defa4035e91d987be03d5d142c4939",
+  "generatedAt": "2026-09-13T00:38:49+00:00",
+  "historyThrough": "a8eeacaebb0be4d026b3006bd46bc7b8b94b6606",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "a8eeacaebb0be4d026b3006bd46bc7b8b94b6606",
+      "authorTime": "2026-09-13T00:37:31+00:00",
+      "committerTime": "2026-09-13T00:37:31+00:00",
+      "subject": "Record exact publication timestamps and verifiable commit history"
+    },
     {
       "sha": "01f30e6350defa4035e91d987be03d5d142c4939",
       "authorTime": "2026-09-13T00:34:52+00:00",

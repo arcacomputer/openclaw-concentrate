@@ -2,9 +2,9 @@
 
 ## This publication
 
-- Author timestamp: **`2026-09-13T00:37:31+00:00`**
-- Committer timestamp: **`2026-09-13T00:37:31+00:00`**
-- Parent commit: `01f30e6350defa4035e91d987be03d5d142c4939`
+- Author timestamp: **`2026-09-13T00:38:48+00:00`**
+- Committer timestamp: **`2026-09-13T00:38:48+00:00`**
+- Parent commit: `a8eeacaebb0be4d026b3006bd46bc7b8b94b6606`
 - Full machine-readable record: [provenance.json](provenance.json).
 
 These timestamps are explicitly applied to the commit adding this record, not inferred from file modification times. Resolve that commit's full SHA with:
@@ -19,7 +19,7 @@ git log -1 --format='%H%nAuthor: %aI%nCommitter: %cI' -- docs/provenance.json
 
 ## Testing versus publication
 
-The compatibility snapshot is **2026-09-13 resume-04**, published separately from the underlying test runs. Its SHA-256 is `42db644b84f8612dc2cf1e5ea16e895a72e93dd9fa871b70ca715b4b554f4bcb`. Publishing a report does not imply the tests ran at the commit time. This snapshot does not carry an exact test-completion timestamp; none is invented here. Live tests, synthetic tests and model-discovery metadata remain distinct in [COMPATIBILITY.md](COMPATIBILITY.md).
+The compatibility snapshot is **2026-09-13 resume-05**, published separately from the underlying test runs. Its SHA-256 is `6c4270a57cb34aa3f6e8c1fedfea773ceea7b7645cb0b7ead7792c2ed854bc6e`. Publishing a report does not imply the tests ran at the commit time. This snapshot does not carry an exact test-completion timestamp; none is invented here. Live tests, synthetic tests and model-discovery metadata remain distinct in [COMPATIBILITY.md](COMPATIBILITY.md).
 
 ## Updating the record
 
