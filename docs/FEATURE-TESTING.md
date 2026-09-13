@@ -175,3 +175,9 @@ OPENCLAW_PACKAGE_JSON=/absolute/path/to/openclaw/package.json npm run test:trans
 ```
 
 Historical vision, live parallel-tool/new-user and quarantined routes remain unresolved. This run does not claim all prior failures were retested.
+
+## Direct live vision differential
+
+Publication timestamp: `2026-09-13T09:37:28+00:00`. Under the newly authorized USD50 combined budget, two bounded requests were run directly on Blaxel against Concentrate, using the identical retained red PNG. Direct user image input returned **Red**; image within `function_call_output` returned **Blue**. Both returned `azure/gpt-4.1-mini`, HTTP200 completed, with two output tokens. No retries. [Exact sanitized results](VISION-DIAGNOSTIC.json).
+
+This isolates a reproducible input-placement distinction, not a proven internal root cause. It is an API diagnostic, not an OpenClaw compatibility pass. The historical tool-result vision failure remains open. Per-request reservations retained; account billing not reconciled. Worker cleanup verified.

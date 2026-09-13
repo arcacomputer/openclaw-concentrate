@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T09:34:38+00:00**.
+Exported at **2026-09-13T09:37:28+00:00**.
 
-History through `6964fad293826e4d2d16e323514ceb8fa77618c2`.
+History through `7b724d8a5d6fe5385a84ab896969410d25143341`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -143,3 +143,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`6964fad293826e4d2d16e323514ceb8fa77618c2`](https://github.com/arcacomputer/openclaw-concentrate/commit/6964fad293826e4d2d16e323514ceb8fa77618c2)
 - Author timestamp: `2026-09-13T09:20:31+00:00`
 - Committer timestamp: `2026-09-13T09:20:31+00:00`
+
+## Repair broken transport fixture and verify error retry regressions
+
+- Commit: [`7b724d8a5d6fe5385a84ab896969410d25143341`](https://github.com/arcacomputer/openclaw-concentrate/commit/7b724d8a5d6fe5385a84ab896969410d25143341)
+- Author timestamp: `2026-09-13T09:34:38+00:00`
+- Committer timestamp: `2026-09-13T09:34:38+00:00`

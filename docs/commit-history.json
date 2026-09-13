@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T09:34:38+00:00",
-  "historyThrough": "6964fad293826e4d2d16e323514ceb8fa77618c2",
+  "generatedAt": "2026-09-13T09:37:28+00:00",
+  "historyThrough": "7b724d8a5d6fe5385a84ab896969410d25143341",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "7b724d8a5d6fe5385a84ab896969410d25143341",
+      "authorTime": "2026-09-13T09:34:38+00:00",
+      "committerTime": "2026-09-13T09:34:38+00:00",
+      "subject": "Repair broken transport fixture and verify error retry regressions"
+    },
     {
       "sha": "6964fad293826e4d2d16e323514ceb8fa77618c2",
       "authorTime": "2026-09-13T09:20:31+00:00",
