@@ -16,7 +16,7 @@ Community feedback shared by the maintainer motivates this direction:
 
 This is a community comment supplied by the project owner, not a verified formal foundation policy or approval. No author, permalink or foundation confirmation has been supplied here. Preserve that qualification when describing it.
 
-Maintain a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. The registry identity is `openclaw-concentrate`, published by `felirami`; read the release report for the verified version and scan/install evidence. Source installation and package tests alone do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
+Maintain a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. New releases use registry identity and plugin ID `concentrate-provider`, published by `felirami`, with source at `arcacomputer/openclaw-concentrateai`. The provider/model prefix remains `concentrate/`. Historical `openclaw-concentrate` releases keep plugin ID `concentrate`; never enable both plugins. Read `docs/MIGRATING.md` and the latest release report for verified publication, migration and install evidence. Source installation and package tests alone do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
 
 Official ClawHub reference: <https://docs.openclaw.ai/clawhub>. Follow [the repository publishing checklist](docs/CLAWHUB-PUBLISHING.md), including actual package validation, publish dry run, publisher authentication and registry-install verification.
 
@@ -31,7 +31,7 @@ Read these before changing code or making compatibility claims:
 - `test/` and `scripts/`: existing tests and verification tools; reuse them before inventing a new framework.
 - `docs/COMPATIBILITY.md` and `docs/compatibility.json`: dated basic-response results for all catalog rows.
 - `docs/FEATURE-TESTING.md`: actual feature results, failures and qualifications.
-- `docs/RELEASE-GATES.md`: current release/distribution gates; `docs/RELEASE-1.0.0.md` summarizes the 1.0.x release, `docs/CLAWHUB-RELEASE.json` records registry evidence, and `docs/release-1.0.0.json` retains the original live qualification.
+- `docs/RELEASE-GATES.md`: release/distribution gates; `docs/RELEASE-1.1.0.md` tracks the new package and `docs/MIGRATING.md` covers existing installations. `docs/RELEASE-1.0.0.md`, `docs/CLAWHUB-RELEASE.json` and `docs/release-1.0.0.json` retain historical 1.0.x evidence.
 - `docs/PACKAGE-VERIFICATION.md`: clean source installation proof.
 - `docs/PROVENANCE.md`, `docs/COMMIT-HISTORY.md`: source/evidence chronology.
 
@@ -112,7 +112,7 @@ openclaw plugins install --force --accept-capabilities /absolute/path/to/candida
 openclaw plugins list --json
 ```
 
-The flags explicitly consent to unreviewed local source and declared capabilities; they are not generic instructions to bypass unfamiliar security warnings. Require `concentrate` enabled/loaded and inspect diagnostics. Configure approved credentials and acknowledged cost estimates separately before any live use. Never install test candidates into a production gateway to obtain convenient proof.
+The flags explicitly consent to unreviewed local source and declared capabilities; they are not generic instructions to bypass unfamiliar security warnings. Require plugin `concentrate-provider` enabled/loaded with registered provider ID `concentrate`, and inspect diagnostics. Configure approved credentials and acknowledged cost estimates separately before any live use. Never install test candidates into a production gateway to obtain convenient proof.
 
 ## Publication and completion
 

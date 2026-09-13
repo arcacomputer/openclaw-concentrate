@@ -1,6 +1,6 @@
 {
-  "name": "openclaw-concentrate",
-  "version": "1.0.1",
+  "name": "concentrate-provider",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "description": "Concentrate.ai provider for OpenClaw: Responses, tools, reasoning, structured output and image input.",
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arcacomputer/openclaw-concentrate.git"
+    "url": "https://github.com/arcacomputer/openclaw-concentrateai.git"
   }
 }

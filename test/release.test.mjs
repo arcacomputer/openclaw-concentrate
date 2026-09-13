@@ -52,7 +52,7 @@ test('published metadata and README remain registry-ready', () => {
   const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
   assert.equal(manifest.description, pkg.description);
   assert.ok(readme.includes(`**Version ${pkg.version}.**`));
-  assert.match(readme, /openclaw plugins install clawhub:openclaw-concentrate --accept-capabilities/);
+  assert.match(readme, /openclaw plugins install clawhub:concentrate-provider --accept-capabilities/);
   for (const [, href] of readme.matchAll(/\]\(([^)]+)\)/g)) {
     assert.match(href, /^(https:\/\/|#)/, `Registry README has a relative link: ${href}`);
   }

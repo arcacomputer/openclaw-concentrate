@@ -4,7 +4,7 @@ import { getCachedLiveProviderModelRows } from 'openclaw/plugin-sdk/provider-cat
 import { createConcentrateProvider, createConcentrateModelCatalog } from './src/provider.mjs';
 
 export default definePluginEntry({
-  id: 'concentrate', name: 'Concentrate AI',
+  id: 'concentrate-provider', name: 'Concentrate AI Provider',
   description: 'Concentrate AI Responses provider with explicit user cost estimates',
   register(api) {
     api.registerProvider(createConcentrateProvider(

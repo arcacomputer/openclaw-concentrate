@@ -11,7 +11,7 @@ assert.deepEqual(runtime.provider.models[0].cost,costs);
 writeFileSync('/tmp/proof/runtime.json',JSON.stringify({realSdk:true,...runtime,inference:false},null,2));
 const path=process.env.OPENCLAW_CONFIG_PATH;
 const config=JSON.parse(readFileSync(path,'utf8'));
-config.plugins.entries.concentrate.config=pluginConfig;
+config.plugins.entries["concentrate-provider"].config=pluginConfig;
 config.agents ??= {}; config.agents.defaults ??= {};
 config.agents.defaults.model={primary:'concentrate/gpt-4.1-mini'};
 writeFileSync(path,JSON.stringify(config,null,2));

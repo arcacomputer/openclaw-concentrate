@@ -10,6 +10,6 @@ data={'schemaVersion':1,'generatedAt':datetime.datetime.now(datetime.timezone.ut
 (root/'docs/commit-history.json').write_text(json.dumps(data,indent=2)+'\n')
 lines=['# Commit history','',f"Exported at **{data['generatedAt']}**.",'',f'History through `{head}`.','', 'Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.','']
 for c in reversed(commits):
- lines += [f"## {c['subject']}",'',f"- Commit: [`{c['sha']}`](https://github.com/arcacomputer/openclaw-concentrate/commit/{c['sha']})",f"- Author timestamp: `{c['authorTime']}`",f"- Committer timestamp: `{c['committerTime']}`",'']
+ lines += [f"## {c['subject']}",'',f"- Commit: [`{c['sha']}`](https://github.com/arcacomputer/openclaw-concentrateai/commit/{c['sha']})",f"- Author timestamp: `{c['authorTime']}`",f"- Committer timestamp: `{c['committerTime']}`",'']
 (root/'docs/COMMIT-HISTORY.md').write_text('\n'.join(lines))
 print(json.dumps({'historyThrough':head,'commits':len(commits),'generatedAt':data['generatedAt']}))

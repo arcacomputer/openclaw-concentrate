@@ -8,7 +8,7 @@ test('manifest and package agree on provider, onboarding and local-only packagin
   const pkg = await readJson('../package.json');
   const manifest = await readJson('../openclaw.plugin.json');
   assert.equal(pkg.private, true);
-  assert.deepEqual(pkg.openclaw.providers, [manifest.id]);
+  assert.deepEqual(pkg.openclaw.providers, manifest.providers);
   assert.deepEqual(manifest.providers, ['concentrate']);
   assert.deepEqual(manifest.setup.providers[0].envVars, ['CONCENTRATE_API_KEY']);
   assert.equal(manifest.providerAuthChoices[0].cliFlag, '--concentrate-api-key');

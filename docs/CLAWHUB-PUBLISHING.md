@@ -5,6 +5,8 @@ Authoritative references:
 - https://docs.openclaw.ai/clawhub/cli
 - https://docs.openclaw.ai/clawhub/plugin-validation-fixes
 
+Current identity: `concentrate-provider`, source `arcacomputer/openclaw-concentrateai`. Read [the latest release report](RELEASE-1.1.0.md) and [migration guide](MIGRATING.md); the 1.0.1 evidence below is historical and belongs to `openclaw-concentrate`.
+
 This repository is a **code plugin**, not a skill. Use `clawhub package` commands, not `clawhub skill publish`. The MIT-0 skill publishing terms are not a reason to silently change this plugin's MIT license.
 
 ## Required preparation
@@ -16,7 +18,7 @@ This repository is a **code plugin**, not a skill. Use `clawhub package` command
 
 ```sh
 clawhub package validate /absolute/path/to/candidate --json
-clawhub package publish /absolute/path/to/candidate --source-repo arcacomputer/openclaw-concentrate --source-commit <exact-source-commit> --dry-run --json
+clawhub package publish /absolute/path/to/candidate --source-repo arcacomputer/openclaw-concentrateai --source-commit <exact-source-commit> --dry-run --json
 ```
 
 Static validation does not prove runtime behavior. Warnings can still exit zero; inspect the report, not just the exit code. Runtime validation imports code and belongs in the isolated sandbox.
