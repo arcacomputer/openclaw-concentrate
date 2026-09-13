@@ -11,7 +11,7 @@ This repository is a **code plugin**, not a skill. Use `clawhub package` command
 
 1. Finish the release gates and bind the exact reviewed source commit and package artifact. Do not label incomplete compatibility as stable certification.
 2. Check current required package metadata. Official docs require `openclaw.compat.pluginApi` and `openclaw.build.openclawVersion`. The package now records build compatibility with OpenClaw 2026.9.4; retain truthful provenance and validate the resulting candidate before upload. Do not invent a build timestamp or claim prior tests ran against changed source.
-3. Confirm the intended package name and publisher with the authorized account. The current `openclaw-concentrate-local` name is preview metadata, not a verified ClawHub registry identity. Do not assume the GitHub organization automatically grants ClawHub publisher access.
+3. Confirm the intended package name and publisher with the authorized account. The candidate package is `openclaw-concentrate@1.0.0`; this name passed a dry run but is not yet a verified ClawHub registry identity. Do not assume the GitHub organization automatically grants ClawHub publisher access.
 4. Install/use the ClawHub CLI in the bounded execution environment, record its version, and run:
 
 ```sh
@@ -43,7 +43,7 @@ Trusted GitHub Actions publishing is optional follow-up, not automatic: initial 
 
 ## Status
 
-Documentation reviewed and publication requirements recorded. This document is not evidence that validation, dry-run publication, authentication or an upload has occurred. ClawHub release is still pending.
+The 1.0.0 candidate passed zero-issue validation and an exact-source publish dry run. Publisher authentication is unavailable; upload, security scan and registry installation have not occurred. See [current release evidence](RELEASE-1.0.0.md).
 
 ## Executed preflight
 

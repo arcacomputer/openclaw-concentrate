@@ -1,0 +1,58 @@
+[
+  {
+    "id": "vision-gpt-4.1-mini-control-a-direct",
+    "fixture": "control-a",
+    "expected": "red,blue",
+    "model": "gpt-4.1-mini",
+    "placement": "direct"
+  },
+  {
+    "id": "vision-gpt-4.1-mini-control-a-tool",
+    "fixture": "control-a",
+    "expected": "red,blue",
+    "model": "gpt-4.1-mini",
+    "placement": "tool"
+  },
+  {
+    "id": "vision-gpt-4.1-mini-control-b-direct",
+    "fixture": "control-b",
+    "expected": "green,yellow",
+    "model": "gpt-4.1-mini",
+    "placement": "direct"
+  },
+  {
+    "id": "vision-gpt-4.1-mini-control-b-tool",
+    "fixture": "control-b",
+    "expected": "green,yellow",
+    "model": "gpt-4.1-mini",
+    "placement": "tool"
+  },
+  {
+    "id": "vision-gpt-4o-control-a-direct",
+    "fixture": "control-a",
+    "expected": "red,blue",
+    "model": "gpt-4o",
+    "placement": "direct"
+  },
+  {
+    "id": "vision-gpt-4o-control-a-tool",
+    "fixture": "control-a",
+    "expected": "red,blue",
+    "model": "gpt-4o",
+    "placement": "tool"
+  },
+  {
+    "id": "vision-gpt-4o-control-b-direct",
+    "fixture": "control-b",
+    "expected": "green,yellow",
+    "model": "gpt-4o",
+    "placement": "direct"
+  },
+  {
+    "id": "vision-gpt-4o-control-b-tool",
+    "fixture": "control-b",
+    "expected": "green,yellow",
+    "model": "gpt-4o",
+    "placement": "tool"
+  }
+]

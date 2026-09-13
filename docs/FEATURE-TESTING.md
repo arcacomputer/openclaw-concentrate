@@ -1,5 +1,7 @@
 # Full-feature campaign: batch 01
 
+**Latest supplement:** [1.0.0 installed-package live verification](RELEASE-1.0.0.md), including real parallel tools/new-user context, larger image controls, schema and reasoning. Historical rows below remain unchanged and are not retroactively upgraded.
+
 Publication author/committer timestamp: `2026-09-13T06:26:15+00:00`. Exact commit SHA is available from `git log -1 --format='%H %aI %cI' -- docs/FEATURE-TESTING.md`.
 
 ## Recorded execution times (UTC)

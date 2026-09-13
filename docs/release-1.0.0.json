@@ -1,0 +1,331 @@
+{
+  "sourceCommit": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
+  "artifact": {
+    "sourceCommit": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
+    "archiveSha256": "8e4ae463d032e6e1a1070c445846e6cff623f23e12400f2b3ce702052d05769f",
+    "files": [
+      {
+        "path": "LICENSE",
+        "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4"
+      },
+      {
+        "path": "openclaw.plugin.json",
+        "sha256": "7ce87d5158d4c7ccea09abf21d2c8e046777ec796d0dce006eaca116dd3f62c9"
+      },
+      {
+        "path": "package.json",
+        "sha256": "59625ad3066cb22c18e485f5da6038c85dc169ffdbc4976bae757ec4b1dd2599"
+      },
+      {
+        "path": "src/seed.json",
+        "sha256": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c"
+      },
+      {
+        "path": "README.md",
+        "sha256": "b6b1415039c87fb622ebfa026b7cd5a6246b45c4213aeae3cd9a57a4b8265979"
+      },
+      {
+        "path": "src/catalog.mjs",
+        "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2"
+      },
+      {
+        "path": "index.mjs",
+        "sha256": "53bdf57cb20ee2a7844259ba49daf5caecbe327449c618e3798f76508149b93f"
+      },
+      {
+        "path": "src/provider.mjs",
+        "sha256": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f"
+      }
+    ]
+  },
+  "runtime": {
+    "openclaw": "2026.9.4",
+    "node": "24.16.0",
+    "os": "Linux"
+  },
+  "unitTests": {
+    "passed": 38,
+    "failed": 0
+  },
+  "syntheticTransportTests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "redRegression": {
+    "passed": 2,
+    "failed": 4,
+    "paidForwards": 0
+  },
+  "liveCases": [
+    {
+      "caseId": "203",
+      "feature": "parallel tools and durable new-user context",
+      "hostExit": 0,
+      "forwardCount": 3,
+      "returnedModels": [
+        "azure/gpt-4.1-mini"
+      ],
+      "responseText": "A-72dae87b-c76f-4eb7-9b5b-9ef827d45592\nB-a9e31003-721f-4459-b5a7-dae2cc2a6e1c\nA-72dae87b-c76f-4eb7-9b5b-9ef827d45592\nB-a9e31003-721f-4459-b5a7-dae2cc2a6e1c",
+      "costUsd": "0.0015376",
+      "outputTokens": [
+        79,
+        108,
+        54
+      ],
+      "reasoningTokens": [
+        0,
+        0,
+        0
+      ],
+      "requestSha256": "49705c6058627170f6e08128e4c1ae99f4990b8107ae0b9b100de71f283fe513",
+      "evidenceAtUtc": "2026-09-13T10:40:48.386Z",
+      "recallHostExit": 0,
+      "recallResponseText": "A-72dae87b-c76f-4eb7-9b5b-9ef827d45592\nB-a9e31003-721f-4459-b5a7-dae2cc2a6e1c",
+      "parallelCallsInFirstResponse": 2,
+      "newUserRequestIncludesPairedResults": true
+    },
+    {
+      "caseId": "211",
+      "feature": "image read tool",
+      "hostExit": 0,
+      "forwardCount": 2,
+      "returnedModels": [
+        "azure/gpt-4.1-mini"
+      ],
+      "responseText": "LEFT color: Red, RIGHT color: Blue",
+      "costUsd": "0.0014448",
+      "outputTokens": [
+        31,
+        11
+      ],
+      "reasoningTokens": [
+        0,
+        0
+      ],
+      "requestSha256": "6ae452d6c34468f419310ccda49cfca598fada626663a46e472ebf6f3613743f",
+      "evidenceAtUtc": "2026-09-13T10:41:37.455Z"
+    },
+    {
+      "caseId": "213",
+      "feature": "strict JSON schema",
+      "hostExit": 0,
+      "forwardCount": 1,
+      "returnedModels": [
+        "azure/gpt-4.1-mini"
+      ],
+      "responseText": "{\"ok\":true}",
+      "costUsd": "0.0006048",
+      "outputTokens": [
+        6
+      ],
+      "reasoningTokens": [
+        0
+      ],
+      "requestSha256": "c8be50381ce0fac6319359ee8e26dffb1af1ffbb437cfafd2a0b5736eab3e971",
+      "evidenceAtUtc": "2026-09-13T10:42:16.010Z",
+      "strictSchemaOnWire": true
+    },
+    {
+      "caseId": "215",
+      "feature": "reasoning",
+      "hostExit": 0,
+      "forwardCount": 1,
+      "returnedModels": [
+        "azure/gpt-5-mini"
+      ],
+      "responseText": "{\"ok\":true}",
+      "costUsd": "0.0006371",
+      "outputTokens": [
+        201
+      ],
+      "reasoningTokens": [
+        128
+      ],
+      "requestSha256": "a361ab6bcc9e7ea324754ca7165fd853f170ff1a1bdfc248e4d028bd46a57284",
+      "evidenceAtUtc": "2026-09-13T10:42:50.884Z"
+    }
+  ],
+  "stage1": {
+    "cases": [
+      {
+        "id": "vision-gpt-4.1-mini-control-a-direct",
+        "model": "azure/gpt-4.1-mini",
+        "text": "Red,Blue",
+        "strictMatch": true,
+        "costUsd": "0.000069199",
+        "evidenceSha256": "15a0501e16a2ca44abb794d97ff3e014c53284c30545a89053dc2350880b5d32"
+      },
+      {
+        "id": "vision-gpt-4.1-mini-control-a-tool",
+        "model": "azure/gpt-4.1-mini",
+        "text": "Red,Blue",
+        "strictMatch": true,
+        "costUsd": "0.0000792",
+        "evidenceSha256": "560a061aca71330681ad4d92143136d079cab102a14dc1d7f16b44d806b2d6a2"
+      },
+      {
+        "id": "vision-gpt-4.1-mini-control-b-direct",
+        "model": "azure/gpt-4.1-mini",
+        "text": "Green,Yellow",
+        "strictMatch": true,
+        "costUsd": "0.000069199",
+        "evidenceSha256": "8ab423d8cc03b7d1d53258b767962508e3bcc7ba11b9bdae25a4f5a9dc315ff2"
+      },
+      {
+        "id": "vision-gpt-4.1-mini-control-b-tool",
+        "model": "azure/gpt-4.1-mini",
+        "text": "Lime,Yellow",
+        "strictMatch": false,
+        "costUsd": "0.0000808",
+        "evidenceSha256": "4ba7cf5438c81ee8c50be3379d3443fcf791f139d1c356e6d732c03069f2091b"
+      },
+      {
+        "id": "vision-gpt-4o-control-a-direct",
+        "model": "azure/gpt-4o",
+        "text": "LEFT,RIGHT",
+        "strictMatch": false,
+        "costUsd": "0.00081",
+        "evidenceSha256": "f606c427c41661b3bf1e7102e971b79c6935568367f30d200b6a946d9df407eb"
+      },
+      {
+        "id": "vision-gpt-4o-control-a-tool",
+        "model": "azure/gpt-4o",
+        "text": "RED,BLUE",
+        "strictMatch": true,
+        "costUsd": "0.0008725",
+        "evidenceSha256": "254ac9c041e02d3c2e614df37c841dd2c05cd2f3e1eae308972bfca11ec24471"
+      },
+      {
+        "id": "vision-gpt-4o-control-b-direct",
+        "model": "azure/gpt-4o",
+        "text": "LEFT,RIGHT",
+        "strictMatch": false,
+        "costUsd": "0.00081",
+        "evidenceSha256": "22fc147a27dfa5eb9b07650a11fd52d74cf2d066af05e1e0c32976b1917c5d04"
+      },
+      {
+        "id": "vision-gpt-4o-control-b-tool",
+        "model": "azure/gpt-4o",
+        "text": "LEFT,RIGHT",
+        "strictMatch": false,
+        "costUsd": "0.0008725",
+        "evidenceSha256": "6dd0078309f6fadd69fbf20cd5f95ea9b3f1be6c71ad0416352ad46812fda709"
+      },
+      {
+        "id": "host-101",
+        "model": "azure/gpt-4.1-mini",
+        "hostExit": 0,
+        "payloads": [
+          {
+            "text": "Left color: Red, Right color: Blue",
+            "mediaUrl": null
+          }
+        ],
+        "forwards": 2,
+        "costUsd": "0.0015632",
+        "evidenceSha256": "9132227ff31a00704ddb3739ca51b5caadc6f3519855330c3b54e5fa3fa35729"
+      },
+      {
+        "id": "host-103",
+        "model": "azure/gpt-4.1-mini",
+        "hostExit": 0,
+        "payloads": [
+          {
+            "text": "FEATURE_OK",
+            "mediaUrl": null
+          }
+        ],
+        "forwards": 2,
+        "costUsd": "0.0009848",
+        "evidenceSha256": "1189e6abdb2eb5e55bbbec27edcb0f89b2aaf94d5419210e819da50ce404bc5f"
+      },
+      {
+        "id": "host-105",
+        "model": "azure/gpt-4.1-mini",
+        "hostExit": 0,
+        "payloads": [
+          {
+            "text": "{\"ok\":true}",
+            "mediaUrl": null
+          }
+        ],
+        "forwards": 1,
+        "costUsd": "0.0006656",
+        "evidenceSha256": "26fb4ee814aad2a6d16366ea77c3ec90e161eb59ab92c6a310273dcc4cb39289"
+      },
+      {
+        "id": "host-107",
+        "model": "azure/gpt-5-mini",
+        "hostExit": 0,
+        "payloads": [
+          {
+            "text": "{\"ok\":true}",
+            "mediaUrl": null
+          }
+        ],
+        "forwards": 1,
+        "costUsd": "0.00094175",
+        "evidenceSha256": "57e353095d8a79a1e2da3ab84abc2fac57ca217dbb20cc7b84ea05e2129c570d"
+      }
+    ],
+    "costUsd": "0.007818748",
+    "cleanup": {
+      "ownedSandboxRemoved": true,
+      "unrelatedInventoryUnchanged": true,
+      "verifiedAtUtc": "2026-09-13T10:28:01.215829+00:00"
+    }
+  },
+  "nativeConfiguredCatalog": {
+    "count": 1,
+    "models": [
+      {
+        "key": "concentrate/gpt-4.1-mini",
+        "name": "GPT 4.1 Mini [user cost estimate]",
+        "input": "text+image",
+        "contextWindow": 1047576,
+        "local": false,
+        "available": true,
+        "tags": [
+          "default",
+          "configured"
+        ]
+      }
+    ]
+  },
+  "clawhubValidation": {
+    "status": "pass",
+    "breakageCount": 0,
+    "warningCount": 0,
+    "issueCount": 0
+  },
+  "clawhubDryRun": {
+    "source": "github:arcacomputer/openclaw-concentrate@d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
+    "name": "openclaw-concentrate",
+    "displayName": "Concentrate AI",
+    "family": "code-plugin",
+    "version": "1.0.0",
+    "commit": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
+    "files": 8,
+    "totalBytes": 7858
+  },
+  "clawhubPublished": false,
+  "clawhubBlocker": "No authenticated publisher. Browser signed out; normal CLI requires clawhub login; no local credential config found.",
+  "stage2CostUsd": "0.0042243",
+  "newTestReceiptCostUsd": "0.012043048",
+  "billingReconciled": false,
+  "cleanup": {
+    "ownedSandboxRemoved": true,
+    "unrelatedInventoryUnchanged": true,
+    "verifiedAtUtc": "2026-09-13T10:46:15.336624+00:00"
+  },
+  "scope": "Verified release candidate, not universal model certification; ClawHub publication blocked on publisher authentication.",
+  "limitations": [
+    "ClawHub upload, security scan and registry installation have not occurred.",
+    "Historical 16x16 vision failures remain; newer 256x256 controls do not prove their root cause.",
+    "The parallel second upstream response contained two identical text message items; both were faithfully delivered. No output deduplication is applied. New-user recall returned one correct pair.",
+    "GPT-4o controls sometimes returned the literal LEFT,RIGHT instead of colors; GPT-4.1 Mini called green lime in one exact-match case. Strict matches are not silently reclassified.",
+    "Schema correctness was checked by the harness; OpenClaw does not enforce it for consumers.",
+    "Other model/feature combinations, operating systems and host versions remain unverified. Historical output-cap violations and unknown bills are preserved."
+  ],
+  "newPaidForwards": 21
+}

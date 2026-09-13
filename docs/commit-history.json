@@ -1,9 +1,21 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T09:37:28+00:00",
-  "historyThrough": "7b724d8a5d6fe5385a84ab896969410d25143341",
+  "generatedAt": "2026-09-13T11:06:58+00:00",
+  "historyThrough": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
+      "authorTime": "2026-09-13T10:45:20+00:00",
+      "committerTime": "2026-09-13T10:45:20+00:00",
+      "subject": "Prepare 1.0.0 provider with resilient metadata and full-catalog configuration"
+    },
+    {
+      "sha": "9f1329d30f1f4f181fe768669e29ea2dcc9d133d",
+      "authorTime": "2026-09-13T09:37:28+00:00",
+      "committerTime": "2026-09-13T09:37:28+00:00",
+      "subject": "Record live direct-versus-tool image failure differential"
+    },
     {
       "sha": "7b724d8a5d6fe5385a84ab896969410d25143341",
       "authorTime": "2026-09-13T09:34:38+00:00",

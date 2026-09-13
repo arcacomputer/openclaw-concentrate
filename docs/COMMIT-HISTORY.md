@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T09:37:28+00:00**.
+Exported at **2026-09-13T11:06:58+00:00**.
 
-History through `7b724d8a5d6fe5385a84ab896969410d25143341`.
+History through `d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -149,3 +149,15 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`7b724d8a5d6fe5385a84ab896969410d25143341`](https://github.com/arcacomputer/openclaw-concentrate/commit/7b724d8a5d6fe5385a84ab896969410d25143341)
 - Author timestamp: `2026-09-13T09:34:38+00:00`
 - Committer timestamp: `2026-09-13T09:34:38+00:00`
+
+## Record live direct-versus-tool image failure differential
+
+- Commit: [`9f1329d30f1f4f181fe768669e29ea2dcc9d133d`](https://github.com/arcacomputer/openclaw-concentrate/commit/9f1329d30f1f4f181fe768669e29ea2dcc9d133d)
+- Author timestamp: `2026-09-13T09:37:28+00:00`
+- Committer timestamp: `2026-09-13T09:37:28+00:00`
+
+## Prepare 1.0.0 provider with resilient metadata and full-catalog configuration
+
+- Commit: [`d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e`](https://github.com/arcacomputer/openclaw-concentrate/commit/d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e)
+- Author timestamp: `2026-09-13T10:45:20+00:00`
+- Committer timestamp: `2026-09-13T10:45:20+00:00`

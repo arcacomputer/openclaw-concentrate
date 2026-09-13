@@ -1,25 +1,24 @@
-# Full compatibility release gates
+# Release gates
 
-Publication author/committer timestamp: `2026-09-13T08:59:21+00:00`.
+Current evidence: [1.0.0 release report](RELEASE-1.0.0.md) and [machine-readable results](release-1.0.0.json).
 
-Requested deliverable is a finished full-compatibility release, not an installable preview. Release remains BLOCKED. Package installation and harness tests do not satisfy feature gates.
+## Verified candidate
 
-## Distribution target
+- **Code: passed.** Metadata fallback and the 256-model estimate boundary have RED/GREEN regressions; 38 package tests pass.
+- **Synthetic transport: passed.** Eight focused client checks pass, with their host/provider limitations stated.
+- **Package: passed.** Exact eight-file MIT tarball, byte comparison to source, real SDK import, fresh installation and enabled/loaded provider readback.
+- **Native catalog: passed.** Config and model selection accepted; explicit refresh returned the configured model as available.
+- **Representative live integration: passed within stated boundaries.** Parallel reads, paired results and durable new-user recall; 256×256 tool-image control; strict-schema wire/output checks; bounded reasoning. These are actual host/provider calls, not simulated dispatcher callbacks.
+- **Evidence and resource containment: passed.** Exact source/artifact hashes, UTC times and receipts preserved. Both owned sandboxes were removed and independently checked. Earlier uncertain reservations remain held.
 
-Release as an independently maintained **ClawHub plugin**. Built-in OpenClaw inclusion is not an acceptance criterion. Community guidance motivating this choice is quoted and qualified in [AGENTS.md](../AGENTS.md). Registry validation, packaging, installation/update documentation and an authorized ClawHub submission are release work; acceptance must be verified, not assumed.
+## Distribution gate: blocked
 
-## Required acceptance
+ClawHub validation and the exact-source publish dry run passed with zero issues. There is no authenticated publisher available. Actual upload, scan acceptance, public readback and a clean registry installation remain required before saying **ClawHub release complete**. GitHub/source installation is not a substitute.
 
-- Every catalog model has an explicit outcome for each applicable documented feature, tied to exact runtime/source and actual execution evidence. Unsupported must be justified by provider documentation, not inferred from an unexecuted test.
-- Resolve failed vision accuracy. Retained Concentrate OpenAPI explicitly allows array content in FunctionToolCallOutputItemInput.output; correct image bytes at ingress alone do not prove the backend received or interpreted them. Do not patch away this failure on speculation.
-- Complete real parallel-tool roundtrip and fresh-user context through the actual fixed-origin transport with durable per-forward accounting. Simulated dispatcher callbacks are not sufficient.
-- Resolve or explicitly scope historical inconclusive/error/quarantined routes. Do not label the entire catalog certified while these remain.
-- Test applicable streaming, schema requests/output validation, reasoning, image input, replay, cancellation/error behavior and other documented feature rows. Keep host behavior, provider behavior and harness validation separate.
-- Test the final packaged source, installation/onboarding and representative live flows against its exact identity. Publish MIT source, reproducible sanitized tests, machine-readable results, limitations and exact commit timestamps.
-- Account for unreconciled requests without releasing reservations or expanding account caps implicitly. No auto-top-up or upstream acceptance assumed.
+## Broader campaign, not a universal claim
 
-## Current scope
+The original all-model/all-feature campaign remains incomplete. Its 185-model smoke histories and 2,590 feature rows are retained; untested, inconclusive and quarantined rows are not promoted to passes by these representative checks. See [historical criteria](HISTORICAL-RELEASE-GATES.md) and [feature history](FEATURE-TESTING.md).
 
-185 catalog models and 14 feature dimensions produce 2,590 campaign rows. Representative passes are not all-model coverage. Current source installation checks passed, but broad compatibility remains unfinished. See [feature evidence](FEATURE-TESTING.md) for exact per-stage qualifications.
+The bounded plugin release exposes the host's native Responses path and documents upstream limitations. It does not certify every catalog route, guarantee image accuracy, add host-side JSON validation, claim exact billing, or promise compatibility with untested operating systems/runtime versions.
 
-The no-delegation instruction applies to all continuation. Blaxel is a remote execution environment controlled directly by Cad, not a reason to spawn another agent.
+Arca maintains an independent ClawHub plugin. Built-in OpenClaw inclusion is not a prerequisite. Continue directly without delegation unless the user changes that instruction.

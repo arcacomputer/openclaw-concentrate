@@ -1,0 +1,2 @@
+import {writeFileSync} from 'node:fs';import assert from 'node:assert/strict';
+assert.equal(process.env.CONCENTRATE_API_KEY,'synthetic-local-proxy');assert.equal(process.env.OPENAI_API_KEY,undefined);assert.equal(process.env.BL_API_KEY,undefined);writeFileSync(process.env.AUDIT_PROOF,JSON.stringify({at:new Date().toISOString(),paidCredentialPresent:false,onlyDummyProxyCredential:true,pid:process.pid,environmentKeys:Object.keys(process.env).sort()}));
