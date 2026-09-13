@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T07:21:40+00:00",
-  "historyThrough": "a87e6bef00d81c725eb801f0b19adba810163b48",
+  "generatedAt": "2026-09-13T07:27:33+00:00",
+  "historyThrough": "91ac7de2a237d5d37a78d0022631c6dcee1d722d",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "91ac7de2a237d5d37a78d0022631c6dcee1d722d",
+      "authorTime": "2026-09-13T07:21:40+00:00",
+      "committerTime": "2026-09-13T07:21:40+00:00",
+      "subject": "Record partial tool replay proof and live prerequisite gap"
+    },
     {
       "sha": "a87e6bef00d81c725eb801f0b19adba810163b48",
       "authorTime": "2026-09-13T07:12:28+00:00",

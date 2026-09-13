@@ -105,3 +105,13 @@ The live attempt stopped after one forward because the harness's absolute-only p
 The next stage is zero-paid only: canonical fixture-path safety tests, actual-host reordered replay, and a gate that rejects validator-only evidence. Basic smoke and previous strict-schema results remain unchanged.
 
 48 checkpoint files verified against archive `0a266f910a9f819501b3b76f5be6eb78cee0f5ebf0f72d30ae715d58eb62cbce`, downloaded at `2026-09-13T07:17:30.422281+00:00` before scoped cleanup.
+
+## Batch 09: fixture paths qualified; replay discovery blocked
+
+Publication author/committer timestamp: `2026-09-13T07:27:33+00:00`. Evidence verified at `2026-09-13T07:26:06.379663+00:00`.
+
+Four safe absolute/relative path cases and twelve rejection cases passed. Actual OpenClaw read relative `a.txt` and absolute `b.txt`, preserving distinct call IDs and both values. These qualify fixture handling, not live parallel-tool compatibility.
+
+Actual-host reordered replay remains unproved: the harness guessed a JSONL location but the host reported a logical session identifier. New-user-turn, malformed-ID and validator-only gate-negative tests were not reached. Automatic teardown on the first assertion failure also prevented intended same-worker debugging. Both are test workflow limitations, not provider failures.
+
+Zero paid forwards, retries or model-key reads; ledger unchanged. Next qualification remains credential-free and must discover the installed persistence interface rather than guess filenames. 22 checkpoint files verified against archive `9e746f6f8a0ef42d43bc1002f1342341893dc53e599cd280076911a10bdfd7b3`, downloaded at `2026-09-13T07:24:10.498129+00:00` before scoped cleanup. No full preflight pass was produced.
