@@ -81,3 +81,15 @@ Deterministic decoding confirms the retained vision fixture has 256 red RGB(255,
 Four negative schema-validator checks passed, but the actual synthetic OpenClaw request omitted `body.text.format`. The harness incorrectly used `extra_body`, which applies to Chat Completions rather than Responses in this runtime. This is a harness configuration error, not a provider rejection. Strict schema remains unproved; the supported host configuration path must produce actual wire evidence before live testing.
 
 Zero new paid forwards or reservations. Ten raw checkpoint files and archive were verified before scoped deletion. No compatibility status is upgraded by this batch. Archive SHA-256: `155d280de41ccaa2ce98aea13ae16b29b6d5602a78c3ee4030d7b9b962216b2a`.
+
+## Batch 07: strict-schema request and bounded live output passed
+
+Publication author/committer timestamp: `2026-09-13T07:12:28+00:00`. Evidence verified at `2026-09-13T07:11:27.065774+00:00`.
+
+The actual OpenClaw host configuration is `agents.defaults.models["concentrate/gpt-4.1-mini"].params.response_format`, using nested `json_schema`. Installed runtime source and captured requests show conversion to Responses `body.text.format`; the proxy did not inject it.
+
+Six credential-free real-host synthetic cases passed the test criteria: five adversarial outputs were rejected by the **harness validator**, and valid JSON was accepted. **OpenClaw returned the invalid fixtures successfully.** This demonstrates schema request support and independent validation, not host-side schema enforcement. Consumers must validate outputs rather than assume the host rejects malformed responses.
+
+One paid forward through `azure/gpt-4.1-mini` returned `{"ok":true}`, HTTP 200 completed, 1,631 input and 6 output tokens under a 512-token cap. No paid retries or vision retests. This is a bounded representative strict-schema pass, not a guarantee across the catalog or every schema.
+
+53 checkpoint files verified against the archive. Archive SHA-256: `2e5acd2d761caf82a47bafc2d8cebf689fc652c43468528c875405d6af28a2a5`; downloaded at `2026-09-13T07:09:10.412402+00:00` before cleanup. Parallel tools were not attempted in this batch. Vision remains unresolved; full certification incomplete.

@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T07:05:45+00:00",
-  "historyThrough": "0123f2343852193ab666e15efec1f695d52886ba",
+  "generatedAt": "2026-09-13T07:12:28+00:00",
+  "historyThrough": "78155f4289dcc86df12c746a7cf069e9e78af805",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "78155f4289dcc86df12c746a7cf069e9e78af805",
+      "authorTime": "2026-09-13T07:05:45+00:00",
+      "committerTime": "2026-09-13T07:05:45+00:00",
+      "subject": "Record vision ingress evidence and strict schema configuration blocker"
+    },
     {
       "sha": "0123f2343852193ab666e15efec1f695d52886ba",
       "authorTime": "2026-09-13T06:55:23+00:00",
