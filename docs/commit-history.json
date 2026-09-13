@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T06:44:42+00:00",
-  "historyThrough": "a83d8de72feae8ddddc602a2ff82a07c4156cb70",
+  "generatedAt": "2026-09-13T06:55:23+00:00",
+  "historyThrough": "bc6d8707736daa8bf5cbf2044354fe093f78259b",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "bc6d8707736daa8bf5cbf2044354fe093f78259b",
+      "authorTime": "2026-09-13T06:44:42+00:00",
+      "committerTime": "2026-09-13T06:44:42+00:00",
+      "subject": "Record verified streaming lifecycle regressions and live tool roundtrip"
+    },
     {
       "sha": "a83d8de72feae8ddddc602a2ff82a07c4156cb70",
       "authorTime": "2026-09-13T06:26:15+00:00",

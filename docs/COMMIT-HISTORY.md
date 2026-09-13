@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T06:44:42+00:00**.
+Exported at **2026-09-13T06:55:23+00:00**.
 
-History through `a83d8de72feae8ddddc602a2ff82a07c4156cb70`.
+History through `bc6d8707736daa8bf5cbf2044354fe093f78259b`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -41,3 +41,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`a83d8de72feae8ddddc602a2ff82a07c4156cb70`](https://github.com/arcacomputer/openclaw-concentrate/commit/a83d8de72feae8ddddc602a2ff82a07c4156cb70)
 - Author timestamp: `2026-09-13T06:26:15+00:00`
 - Committer timestamp: `2026-09-13T06:26:15+00:00`
+
+## Record verified streaming lifecycle regressions and live tool roundtrip
+
+- Commit: [`bc6d8707736daa8bf5cbf2044354fe093f78259b`](https://github.com/arcacomputer/openclaw-concentrate/commit/bc6d8707736daa8bf5cbf2044354fe093f78259b)
+- Author timestamp: `2026-09-13T06:44:42+00:00`
+- Committer timestamp: `2026-09-13T06:44:42+00:00`

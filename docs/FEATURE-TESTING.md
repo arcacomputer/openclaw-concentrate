@@ -61,3 +61,13 @@ Credential-isolation caveat: standalone regressions were credential-free; the li
 - `cancel`: `2026-09-13T06:39:41.935Z`
 - `bounds`: `2026-09-13T06:39:48.241Z`
 - `contradiction`: `2026-09-13T06:39:55.087Z`
+
+## Batch 05: reasoning pass, vision accuracy failure
+
+Publication author/committer timestamp: `2026-09-13T06:55:23+00:00`. Evidence verification: `2026-09-13T06:52:57.212495+00:00`. The coordinator timed out after results and cleanup were saved; the timeout itself is not a model result.
+
+- Eight zero-paid lifecycle regressions passed again. Synthetic parent and child processes were verified credential-free before live dispatch.
+- `gpt-5-mini` bounded reasoning passed at `2026-09-13T06:49:41.780Z`: one forward, 128 reported reasoning tokens, within the configured bound. Strict JSON, encrypted replay and reasoning summaries were **not proved**.
+- `gpt-4.1-mini` vision case completed at `2026-09-13T06:49:30.842Z` with two forwards, but **failed visual accuracy**: expected red, answered blue. Transport completion is not vision compatibility. Fixture, on-wire image and host projection require diagnosis before assigning a root cause or retrying.
+- Three paid forwards, no paid retries. Basic smoke totals unchanged; full certification incomplete.
+- Archive SHA-256: `d986020dbce134df29fb0d0654eaf857493160c432d19228cb9866a99452e72f`. Download recorded at `2026-09-13T06:49:45.081273+00:00`; cleanup readback at `2026-09-13T06:50:59.483959+00:00`. Parent independently confirmed the worker absent.
