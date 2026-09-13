@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T07:37:13+00:00",
-  "historyThrough": "c39f1122693dbe261d8da40145ff151cbfad3333",
+  "generatedAt": "2026-09-13T07:53:13+00:00",
+  "historyThrough": "bb5d6ad54b9ec07b93ef0ea4518e8a3a0ee42616",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "bb5d6ad54b9ec07b93ef0ea4518e8a3a0ee42616",
+      "authorTime": "2026-09-13T07:37:13+00:00",
+      "committerTime": "2026-09-13T07:37:13+00:00",
+      "subject": "Record synthetic host deadline and scoped persistence discovery"
+    },
     {
       "sha": "c39f1122693dbe261d8da40145ff151cbfad3333",
       "authorTime": "2026-09-13T07:27:33+00:00",

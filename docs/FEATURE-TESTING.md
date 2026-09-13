@@ -125,3 +125,13 @@ Actual host read both fixtures with distinct IDs, but after emitting final JSON 
 Installed source establishes scoped SQLite transcript interfaces, including watermark reads and generation/byte-fenced rewrites. This is an internal interface, not a stable public replay command, and remains runtime-unqualified. The next zero-paid stage diagnoses process exit before attempting replay. Candidate launcher classifier repairs remain unexecuted, not verified fixes.
 
 No paid model calls or key reads. Ledger and feature matrix unchanged. 22 checkpoint files and 220 installed source files verified; archive `2a3e05675eced6560385f3f183ba14aa41bc0ea34e0d34b004c99a54a066fbd2` downloaded at `2026-09-13T07:31:15.953164+00:00` before cleanup. No live preflight pass or authorization resulted.
+
+## Batch 11: recovered clean exit; internal ID mismatch blocks replay
+
+Publication author/committer timestamp: `2026-09-13T07:53:13+00:00`. Recovery verified the existing checkpoint and archive, not a new test run.
+
+34 raw files matched their checkpoint hashes and archive bytes; six recorded code hashes matched. The synthetic host exited 0 with no signals/error and was quiescent after 9219 ms and two synthetic forwards. **One clean exit neither diagnoses nor fixes the earlier deadline.**
+
+The persistence probe reached transcript reads but expected bare tool IDs where the runtime stored composite identifiers `call_a|fc_a` and `call_b|fc_b`. No rewrite, generation-fence test, reordered replay or new-user turn executed. This is a harness expectation mismatch, not proof of provider failure. Next credential-free qualification must follow runtime ID conversion semantics without blindly rewriting identifiers.
+
+Archive SHA-256: `7e0c1828998fa8c7672060fdf3fa33a23ab3580dd1b7d09d7abbc8565509f0e9`. Exact worker absence verified. No paid activity or key reads; ledger and feature matrix unchanged. Live testing remains blocked.
