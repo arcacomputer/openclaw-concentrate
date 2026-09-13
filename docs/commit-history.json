@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T11:06:58+00:00",
-  "historyThrough": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
+  "generatedAt": "2026-09-13T15:12:05+00:00",
+  "historyThrough": "8af341ee00fdedee28bf4ca438e74604ea750d20",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "8af341ee00fdedee28bf4ca438e74604ea750d20",
+      "authorTime": "2026-09-13T11:08:22+00:00",
+      "committerTime": "2026-09-13T11:08:22+00:00",
+      "subject": "Publish installed-package live release evidence and reproducible proof sources"
+    },
     {
       "sha": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
       "authorTime": "2026-09-13T10:45:20+00:00",
