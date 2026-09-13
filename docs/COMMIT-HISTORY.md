@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T17:19:45+00:00**.
+Exported at **2026-09-13T17:35:59+00:00**.
 
-History through `28286bb91f0e3cd1f628d6dba972b06964f0dfa3`.
+History through `f8a1923eb428a62d42b4d445f94861a31cbe6b4a`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -191,3 +191,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`28286bb91f0e3cd1f628d6dba972b06964f0dfa3`](https://github.com/arcacomputer/openclaw-concentrateai/commit/28286bb91f0e3cd1f628d6dba972b06964f0dfa3)
 - Author timestamp: `2026-09-13T16:45:00+00:00`
 - Committer timestamp: `2026-09-13T16:45:00+00:00`
+
+## Introduce concentrate-provider and preserve the Concentrate model namespace
+
+- Commit: [`f8a1923eb428a62d42b4d445f94861a31cbe6b4a`](https://github.com/arcacomputer/openclaw-concentrateai/commit/f8a1923eb428a62d42b4d445f94861a31cbe6b4a)
+- Author timestamp: `2026-09-13T17:19:45+00:00`
+- Committer timestamp: `2026-09-13T17:19:45+00:00`

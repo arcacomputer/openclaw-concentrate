@@ -1,22 +1,21 @@
 # Release gates
 
-Current release: **1.0.1**, published on [ClawHub](https://clawhub.ai/plugins/openclaw-concentrate). See the [release report](RELEASE-1.0.0.md), [registry evidence](CLAWHUB-RELEASE.json) and [original live qualification](release-1.0.0.json).
+Current package: **concentrate-provider 1.1.0**, published on [ClawHub](https://clawhub.ai/plugins/concentrate-provider). See the [release report](RELEASE-1.1.0.md), [exact evidence](CLAWHUB-RELEASE-1.1.0.json) and [migration/rollback guide](MIGRATING.md). The [1.0.1 gates](RELEASE-GATES-1.0.1.md) and original live/model histories remain archived.
 
 ## Verified release
 
-- **Code: passed.** Runtime fallback and the 256-model estimate boundary have RED/GREEN regressions. Final package tests: 39 passed, zero failed. Registry-ready metadata/README regression passed after reproducing the stale description.
-- **Synthetic transport: passed.** Eight focused checks, zero failed. Host/provider limitations remain explicit.
-- **Package: passed.** Exact eight-file MIT tarball, byte comparison to source, real SDK import and zero-issue/zero-warning static validation.
-- **Registry installation: passed.** Fresh unauthenticated `openclaw plugins install clawhub:openclaw-concentrate --accept-capabilities` installed 1.0.1. Provider enabled/loaded, all eight files matched, no `--force` or signature bypass.
-- **Native catalog: passed.** Configuration and model selection accepted; explicit refresh returned the configured GPT-4.1 Mini as available. This is not an account-entitlement test.
-- **Representative live integration: passed within stated boundaries.** Parallel reads, paired results and durable new-user recall; 256×256 tool-image control; strict-schema wire/output checks; bounded reasoning. These are actual earlier host/provider calls. The 1.0.1 provider code is byte-identical; no new paid inference was used for the metadata patch.
-- **Distribution: passed.** Authorized publisher `felirami`; exact returned attempt/release readback, public latest version 1.0.1, clean ClawScan and TruffleHog, matching artifact digest and independent registry installation.
-- **Containment: passed.** All owned publication/proof workers are absent. Final evidence was downloaded automatically before verified cleanup. One earlier worker lost supplemental logs at TTL; retained evidence and the complete fresh rerun are distinguished in the release report. Unknown earlier billing reservations remain held.
+- **Identity: passed.** GitHub renamed in place. ClawHub's owner name-repair dry run returned admin-only, so the authorized new-package fallback uses plugin ID `concentrate-provider`. The provider/model prefix remains `concentrate/`.
+- **Code: passed.** New identity regressions reproduced RED against the previous source. All 41 package checks passed; provider implementation/model data remain unchanged.
+- **Synthetic transport: passed.** Eight checks, zero failures. These are not live upstream cancellation/billing tests.
+- **Package: passed.** Exact eight-file MIT tarball, real SDK import, zero-issue/zero-warning ClawHub validation and successful dry run.
+- **Distribution: passed.** Authorized publisher `felirami`, terminal published attempt, clean ClawScan and TruffleHog, and public artifact matching the tested digest.
+- **Registry installation: passed.** Fresh unauthenticated installation without `--force`; new plugin enabled/loaded with provider `concentrate`; all eight installed files matched.
+- **Native catalog: passed.** Configuration, model selection and refresh returned the configured GPT-4.1 Mini as available. Synthetic credential only; no paid inference.
+- **Migration/rollback: passed.** Disabled old plugin, installed new package, copied and read back the exact cost configuration, preserved model IDs and synthetic memory sentinel, and restored the original plugin on rollback. No production state changed.
+- **Containment: passed.** Both sequential bounded Blaxel workers independently verified absent after evidence download. Previous unknown charge reservations retained.
 
 ## Trust and coverage limits
 
-This is a community/source-linked, artifact-scanned release, **not signed build provenance**. ClawHub reports `hasProvenance: false`; native OpenClaw readback reports `trust.reason: provenance-invalid`. The cause of that native classification is not established. Successful installation and matching bytes do not erase it.
+The community/source-linked package is **not signed build provenance**. ClawHub reports `hasProvenance: false`; the native `provenance-invalid` diagnostic remains in the exact proof. Its cause is not established.
 
-The original 185-model smoke histories and 2,590 feature rows remain research, not universal certification. Untested, inconclusive and quarantined rows are not promoted by representative checks. See [historical criteria](HISTORICAL-RELEASE-GATES.md) and [feature history](FEATURE-TESTING.md).
-
-No guarantee covers every upstream route, image accuracy, host-side schema enforcement, exact billing, hard spend limits or untested operating systems/runtime versions. Arca maintains an independent plugin; built-in OpenClaw inclusion is not required.
+The earlier representative live feature results are inherited evidence for unchanged provider code, not a fresh paid inference campaign. The original model and feature matrices retain all failures, inconclusives, untested rows and quarantines. No claim covers every model, upstream route, operating system, image interpretation, schema enforcement or exact billing.

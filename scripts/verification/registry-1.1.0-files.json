@@ -1,0 +1,34 @@
+[
+  {
+    "path": "LICENSE",
+    "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4"
+  },
+  {
+    "path": "README.md",
+    "sha256": "74e3c3a79d184bb4295e500ed4ca0f4640b980b86494a4c1165bcf00f7a8d898"
+  },
+  {
+    "path": "index.mjs",
+    "sha256": "cb7cb9d5ee8ef9dd9d42d5dd1506adf6aa51c7cbab96e9fef05d9965c0d652b0"
+  },
+  {
+    "path": "openclaw.plugin.json",
+    "sha256": "ed6c22183f2594813178e08c2f7af2a3745c087aba7b24bee624d6ce0fc9cbd2"
+  },
+  {
+    "path": "package.json",
+    "sha256": "6c98e4aa67b0ada40bddd02d6a55bcbda3aa8dbcc9b2c0811dccec46add11859"
+  },
+  {
+    "path": "src/catalog.mjs",
+    "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2"
+  },
+  {
+    "path": "src/provider.mjs",
+    "sha256": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f"
+  },
+  {
+    "path": "src/seed.json",
+    "sha256": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c"
+  }
+]

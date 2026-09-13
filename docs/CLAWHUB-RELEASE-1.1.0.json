@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "status": "verified",
+  "atUtc": "2026-09-13T17:33:00.464885+00:00",
+  "repository": "https://github.com/arcacomputer/openclaw-concentrateai",
+  "sourceCommit": "f8a1923eb428a62d42b4d445f94861a31cbe6b4a",
+  "version": "1.1.0",
+  "package": "concentrate-provider",
+  "pluginId": "concentrate-provider",
+  "providerId": "concentrate",
+  "displayName": "Concentrate AI Provider",
+  "artifact": {
+    "sha256": "3f1039704f440b4edf15da4098c2d02bc98be53e6bb21ffb577d3f3cce18690f",
+    "size": 8031,
+    "files": [
+      {
+        "path": "LICENSE",
+        "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4"
+      },
+      {
+        "path": "README.md",
+        "sha256": "74e3c3a79d184bb4295e500ed4ca0f4640b980b86494a4c1165bcf00f7a8d898"
+      },
+      {
+        "path": "index.mjs",
+        "sha256": "cb7cb9d5ee8ef9dd9d42d5dd1506adf6aa51c7cbab96e9fef05d9965c0d652b0"
+      },
+      {
+        "path": "openclaw.plugin.json",
+        "sha256": "ed6c22183f2594813178e08c2f7af2a3745c087aba7b24bee624d6ce0fc9cbd2"
+      },
+      {
+        "path": "package.json",
+        "sha256": "6c98e4aa67b0ada40bddd02d6a55bcbda3aa8dbcc9b2c0811dccec46add11859"
+      },
+      {
+        "path": "src/catalog.mjs",
+        "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2"
+      },
+      {
+        "path": "src/provider.mjs",
+        "sha256": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f"
+      },
+      {
+        "path": "src/seed.json",
+        "sha256": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c"
+      }
+    ]
+  },
+  "githubRename": {
+    "before": {
+      "id": 1367576867,
+      "name": "openclaw-concentrate",
+      "html_url": "https://github.com/arcacomputer/openclaw-concentrate"
+    },
+    "after": {
+      "id": 1367576867,
+      "name": "openclaw-concentrateai",
+      "html_url": "https://github.com/arcacomputer/openclaw-concentrateai"
+    },
+    "oldApiRedirectVerified": true
+  },
+  "renameAttempt": {
+    "atUtc": "2026-09-13T17:13:44.957864+00:00",
+    "endpoint": "/api/v1/packages/openclaw-concentrate/repair-name",
+    "dryRun": true,
+    "status": 403,
+    "body": "Admin role required."
+  },
+  "publication": {
+    "attemptId": "zx76j4eptv7yg5hnk40yzpg6c58eax0d",
+    "packageId": "rn767ez4yxmt27aq6f5s962y618eaxtt",
+    "releaseId": "rd7ff5wa10y357rxd47wx1p8bh8eb01e",
+    "artifactSha256": "3f1039704f440b4edf15da4098c2d02bc98be53e6bb21ffb577d3f3cce18690f",
+    "name": "concentrate-provider",
+    "version": "1.1.0",
+    "status": "finalized",
+    "publicationStatus": "published",
+    "terminal": true,
+    "checks": {
+      "clawscan": {
+        "status": "clean",
+        "summary": "This plugin is a disclosed Concentrate.ai model provider; its external API use matches that purpose and I did not find hidden or unrelated behavior."
+      },
+      "trufflehog": {
+        "status": "clean",
+        "summary": "TruffleHog found no verified secrets in the staged publish artifact."
+      }
+    }
+  },
+  "verification": {
+    "hasProvenance": false,
+    "scanStatus": "clean",
+    "scope": "artifact-only",
+    "sourceCommit": "f8a1923eb428a62d42b4d445f94861a31cbe6b4a",
+    "sourceRepo": "arcacomputer/openclaw-concentrateai",
+    "sourceTag": "f8a1923eb428a62d42b4d445f94861a31cbe6b4a",
+    "summary": "Validated package structure and linked the release to source metadata.",
+    "tier": "source-linked"
+  },
+  "checks": {
+    "red": {
+      "tests": 2,
+      "pass": 0,
+      "fail": 2
+    },
+    "suites": {
+      "package-tests.tap": {
+        "tests": 41,
+        "pass": 41,
+        "fail": 0
+      },
+      "transport-tests.tap": {
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      }
+    },
+    "validation": {
+      "breakageCount": 0,
+      "warningCount": 0,
+      "deprecationWarningCount": 0,
+      "issueCount": 0
+    }
+  },
+  "unchangedProviderFiles": {
+    "src/provider.mjs": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f",
+    "src/catalog.mjs": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+    "src/seed.json": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c"
+  },
+  "installedHostProof": {
+    "passed": true,
+    "atUtc": "2026-09-13T17:27:59.777Z",
+    "node": "v24.16.0",
+    "openclaw": "2026.9.4",
+    "version": "1.1.0",
+    "registryTarget": "clawhub:concentrate-provider",
+    "fresh": {
+      "plugin": {
+        "id": "concentrate-provider",
+        "version": "1.1.0",
+        "enabled": true,
+        "status": "loaded",
+        "providerIds": [
+          "concentrate"
+        ],
+        "trust": {
+          "reason": "provenance-invalid",
+          "registryPath": "/tmp/rename-fresh/state/state/openclaw.sqlite",
+          "origin": "global",
+          "installSource": "clawhub",
+          "installSpec": "clawhub:concentrate-provider"
+        }
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4",
+          "matched": true
+        },
+        {
+          "path": "README.md",
+          "sha256": "74e3c3a79d184bb4295e500ed4ca0f4640b980b86494a4c1165bcf00f7a8d898",
+          "matched": true
+        },
+        {
+          "path": "index.mjs",
+          "sha256": "cb7cb9d5ee8ef9dd9d42d5dd1506adf6aa51c7cbab96e9fef05d9965c0d652b0",
+          "matched": true
+        },
+        {
+          "path": "openclaw.plugin.json",
+          "sha256": "ed6c22183f2594813178e08c2f7af2a3745c087aba7b24bee624d6ce0fc9cbd2",
+          "matched": true
+        },
+        {
+          "path": "package.json",
+          "sha256": "6c98e4aa67b0ada40bddd02d6a55bcbda3aa8dbcc9b2c0811dccec46add11859",
+          "matched": true
+        },
+        {
+          "path": "src/catalog.mjs",
+          "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+          "matched": true
+        },
+        {
+          "path": "src/provider.mjs",
+          "sha256": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f",
+          "matched": true
+        },
+        {
+          "path": "src/seed.json",
+          "sha256": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c",
+          "matched": true
+        }
+      ],
+      "model": {
+        "key": "concentrate/gpt-4.1-mini",
+        "name": "GPT 4.1 Mini [user cost estimate]",
+        "input": "text+image",
+        "contextWindow": 1047576,
+        "local": false,
+        "available": true,
+        "tags": [
+          "default",
+          "configured"
+        ]
+      }
+    },
+    "migration": {
+      "passed": true,
+      "plugin": {
+        "id": "concentrate-provider",
+        "version": "1.1.0",
+        "enabled": true,
+        "status": "loaded",
+        "providerIds": [
+          "concentrate"
+        ],
+        "trust": {
+          "reason": "provenance-invalid",
+          "registryPath": "/tmp/rename-migration/state/state/openclaw.sqlite",
+          "origin": "global",
+          "installSource": "clawhub",
+          "installSpec": "clawhub:concentrate-provider"
+        }
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4",
+          "matched": true
+        },
+        {
+          "path": "README.md",
+          "sha256": "74e3c3a79d184bb4295e500ed4ca0f4640b980b86494a4c1165bcf00f7a8d898",
+          "matched": true
+        },
+        {
+          "path": "index.mjs",
+          "sha256": "cb7cb9d5ee8ef9dd9d42d5dd1506adf6aa51c7cbab96e9fef05d9965c0d652b0",
+          "matched": true
+        },
+        {
+          "path": "openclaw.plugin.json",
+          "sha256": "ed6c22183f2594813178e08c2f7af2a3745c087aba7b24bee624d6ce0fc9cbd2",
+          "matched": true
+        },
+        {
+          "path": "package.json",
+          "sha256": "6c98e4aa67b0ada40bddd02d6a55bcbda3aa8dbcc9b2c0811dccec46add11859",
+          "matched": true
+        },
+        {
+          "path": "src/catalog.mjs",
+          "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+          "matched": true
+        },
+        {
+          "path": "src/provider.mjs",
+          "sha256": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f",
+          "matched": true
+        },
+        {
+          "path": "src/seed.json",
+          "sha256": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c",
+          "matched": true
+        }
+      ],
+      "model": {
+        "key": "concentrate/gpt-4.1-mini",
+        "name": "GPT 4.1 Mini [user cost estimate]",
+        "input": "text+image",
+        "contextWindow": 1047576,
+        "local": false,
+        "available": true,
+        "tags": [
+          "default",
+          "configured"
+        ]
+      },
+      "costsPreserved": true,
+      "oldDisabled": true,
+      "memorySentinelPreserved": true
+    },
+    "rollback": {
+      "passed": true,
+      "oldVersion": "1.0.1",
+      "model": {
+        "key": "concentrate/gpt-4.1-mini",
+        "name": "GPT 4.1 Mini [user cost estimate]",
+        "input": "text+image",
+        "contextWindow": 1047576,
+        "local": false,
+        "available": true,
+        "tags": [
+          "default",
+          "configured"
+        ]
+      },
+      "costsPreserved": true,
+      "memorySentinelPreserved": true
+    },
+    "commands": [
+      {
+        "label": "fresh-install",
+        "args": [
+          "plugins",
+          "install",
+          "clawhub:concentrate-provider",
+          "--accept-capabilities"
+        ],
+        "startedAt": "2026-09-13T17:27:01.559Z",
+        "finishedAt": "2026-09-13T17:27:08.685Z",
+        "exitCode": 0
+      },
+      {
+        "label": "fresh-plugins",
+        "args": [
+          "plugins",
+          "list",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T17:27:08.686Z",
+        "finishedAt": "2026-09-13T17:27:09.460Z",
+        "exitCode": 0
+      },
+      {
+        "label": "fresh-config",
+        "args": [
+          "config",
+          "set",
+          "plugins.entries.concentrate-provider.config",
+          "{\"acknowledgeEstimatedCosts\":true,\"costOverrides\":{\"gpt-4.1-mini\":{\"input\":1.23,\"output\":4.56,\"cacheRead\":0.78,\"cacheWrite\":1.11}}}"
+        ],
+        "startedAt": "2026-09-13T17:27:09.463Z",
+        "finishedAt": "2026-09-13T17:27:10.855Z",
+        "exitCode": 0
+      },
+      {
+        "label": "fresh-validate",
+        "args": [
+          "config",
+          "validate"
+        ],
+        "startedAt": "2026-09-13T17:27:10.855Z",
+        "finishedAt": "2026-09-13T17:27:11.696Z",
+        "exitCode": 0
+      },
+      {
+        "label": "fresh-select",
+        "args": [
+          "models",
+          "set",
+          "concentrate/gpt-4.1-mini"
+        ],
+        "startedAt": "2026-09-13T17:27:11.696Z",
+        "finishedAt": "2026-09-13T17:27:14.242Z",
+        "exitCode": 0
+      },
+      {
+        "label": "fresh-models",
+        "args": [
+          "models",
+          "list",
+          "--all",
+          "--provider",
+          "concentrate",
+          "--refresh",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T17:27:14.242Z",
+        "finishedAt": "2026-09-13T17:27:18.212Z",
+        "exitCode": 0
+      },
+      {
+        "label": "old-install",
+        "args": [
+          "plugins",
+          "install",
+          "clawhub:openclaw-concentrate",
+          "--accept-capabilities"
+        ],
+        "startedAt": "2026-09-13T17:27:18.213Z",
+        "finishedAt": "2026-09-13T17:27:25.368Z",
+        "exitCode": 0
+      },
+      {
+        "label": "old-plugins",
+        "args": [
+          "plugins",
+          "list",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T17:27:25.368Z",
+        "finishedAt": "2026-09-13T17:27:26.151Z",
+        "exitCode": 0
+      },
+      {
+        "label": "old-config",
+        "args": [
+          "config",
+          "set",
+          "plugins.entries.concentrate.config",
+          "{\"acknowledgeEstimatedCosts\":true,\"costOverrides\":{\"gpt-4.1-mini\":{\"input\":1.23,\"output\":4.56,\"cacheRead\":0.78,\"cacheWrite\":1.11}}}"
+        ],
+        "startedAt": "2026-09-13T17:27:26.152Z",
+        "finishedAt": "2026-09-13T17:27:27.577Z",
+        "exitCode": 0
+      },
+      {
+        "label": "old-select",
+        "args": [
+          "models",
+          "set",
+          "concentrate/gpt-4.1-mini"
+        ],
+        "startedAt": "2026-09-13T17:27:27.577Z",
+        "finishedAt": "2026-09-13T17:27:29.996Z",
+        "exitCode": 0
+      },
+      {
+        "label": "old-config-backup",
+        "args": [
+          "config",
+          "get",
+          "plugins.entries.concentrate.config"
+        ],
+        "startedAt": "2026-09-13T17:27:29.996Z",
+        "finishedAt": "2026-09-13T17:27:31.172Z",
+        "exitCode": 0
+      },
+      {
+        "label": "old-disable",
+        "args": [
+          "plugins",
+          "disable",
+          "concentrate"
+        ],
+        "startedAt": "2026-09-13T17:27:31.173Z",
+        "finishedAt": "2026-09-13T17:27:33.591Z",
+        "exitCode": 0
+      },
+      {
+        "label": "new-install",
+        "args": [
+          "plugins",
+          "install",
+          "clawhub:concentrate-provider",
+          "--accept-capabilities"
+        ],
+        "startedAt": "2026-09-13T17:27:33.591Z",
+        "finishedAt": "2026-09-13T17:27:40.936Z",
+        "exitCode": 0
+      },
+      {
+        "label": "new-config",
+        "args": [
+          "config",
+          "set",
+          "plugins.entries.concentrate-provider.config",
+          "{\"acknowledgeEstimatedCosts\":true,\"costOverrides\":{\"gpt-4.1-mini\":{\"input\":1.23,\"output\":4.56,\"cacheRead\":0.78,\"cacheWrite\":1.11}}}"
+        ],
+        "startedAt": "2026-09-13T17:27:40.936Z",
+        "finishedAt": "2026-09-13T17:27:42.348Z",
+        "exitCode": 0
+      },
+      {
+        "label": "migration-validate",
+        "args": [
+          "config",
+          "validate"
+        ],
+        "startedAt": "2026-09-13T17:27:42.348Z",
+        "finishedAt": "2026-09-13T17:27:43.200Z",
+        "exitCode": 0
+      },
+      {
+        "label": "migrated-plugins",
+        "args": [
+          "plugins",
+          "list",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T17:27:43.201Z",
+        "finishedAt": "2026-09-13T17:27:43.942Z",
+        "exitCode": 0
+      },
+      {
+        "label": "new-config-readback",
+        "args": [
+          "config",
+          "get",
+          "plugins.entries.concentrate-provider.config"
+        ],
+        "startedAt": "2026-09-13T17:27:43.943Z",
+        "finishedAt": "2026-09-13T17:27:45.121Z",
+        "exitCode": 0
+      },
+      {
+        "label": "migrated-models",
+        "args": [
+          "models",
+          "list",
+          "--all",
+          "--provider",
+          "concentrate",
+          "--refresh",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T17:27:45.121Z",
+        "finishedAt": "2026-09-13T17:27:48.566Z",
+        "exitCode": 0
+      },
+      {
+        "label": "rollback-disable-new",
+        "args": [
+          "plugins",
+          "disable",
+          "concentrate-provider"
+        ],
+        "startedAt": "2026-09-13T17:27:48.566Z",
+        "finishedAt": "2026-09-13T17:27:50.996Z",
+        "exitCode": 0
+      },
+      {
+        "label": "rollback-enable-old",
+        "args": [
+          "plugins",
+          "enable",
+          "concentrate"
+        ],
+        "startedAt": "2026-09-13T17:27:50.996Z",
+        "finishedAt": "2026-09-13T17:27:53.545Z",
+        "exitCode": 0
+      },
+      {
+        "label": "rollback-validate",
+        "args": [
+          "config",
+          "validate"
+        ],
+        "startedAt": "2026-09-13T17:27:53.545Z",
+        "finishedAt": "2026-09-13T17:27:54.383Z",
+        "exitCode": 0
+      },
+      {
+        "label": "rollback-plugins",
+        "args": [
+          "plugins",
+          "list",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T17:27:54.383Z",
+        "finishedAt": "2026-09-13T17:27:55.125Z",
+        "exitCode": 0
+      },
+      {
+        "label": "rollback-costs",
+        "args": [
+          "config",
+          "get",
+          "plugins.entries.concentrate.config"
+        ],
+        "startedAt": "2026-09-13T17:27:55.126Z",
+        "finishedAt": "2026-09-13T17:27:56.272Z",
+        "exitCode": 0
+      },
+      {
+        "label": "rollback-models",
+        "args": [
+          "models",
+          "list",
+          "--all",
+          "--provider",
+          "concentrate",
+          "--refresh",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T17:27:56.272Z",
+        "finishedAt": "2026-09-13T17:27:59.777Z",
+        "exitCode": 0
+      }
+    ],
+    "realModelCredentialsPresent": false,
+    "publisherCredentialsPresent": false,
+    "paidInferenceRequests": 0
+  },
+  "execution": {
+    "buildStartedAt": "2026-09-13T17:21:12.732919+00:00",
+    "buildFinishedAt": "2026-09-13T17:22:42.501042+00:00",
+    "registryProofStartedAt": "2026-09-13T17:26:26.498105+00:00",
+    "registryProofFinishedAt": "2026-09-13T17:28:14.103367+00:00",
+    "provider": "Blaxel",
+    "requestedMemoryMiB": 8192,
+    "maxConcurrency": 1,
+    "ttlSecondsPerWorker": 600,
+    "paidInferenceRequests": 0,
+    "ownedWorkersAbsent": true,
+    "allEvidenceDownloadedBeforeCleanup": true,
+    "buildProofSha256": "fc02e4482da879b50a0cf0f12979b9153f584d15d187e25f6cde83d84933c8a7",
+    "registryProofSha256": "f47933c1e2781d7d1cb763df7217237b16659119d2a3be9155de87b07ee04a68",
+    "registryProofScriptSha256": "fb00a3b8ad7e9da2699e266061766fcff64dc3300e300216c2d8ddf4a935fa2f"
+  },
+  "legacyPackage": {
+    "name": "openclaw-concentrate",
+    "version": "1.0.1",
+    "pluginId": "concentrate",
+    "artifactSha256": "de2e46f7254f27526a04c8acf855699d2bfbfb302610b2fc9c7ad9be2867781c",
+    "unchanged": true,
+    "automaticRedirect": false
+  },
+  "limits": [
+    "Community/source-linked release; not signed build provenance. Native provenance-invalid diagnostic retained.",
+    "No new paid inference or production gateway changes. Prior live feature/model evidence remains dated.",
+    "Synthetic memory sentinel and cost preservation are not an exhaustive real-user data migration audit.",
+    "Earlier unknown billing reservations remain retained outside this public repository."
+  ]
+}

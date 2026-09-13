@@ -39,7 +39,9 @@ Check Git status and HEAD first. Preserve other agents' uncommitted changes. Use
 
 ## Current product boundary
 
-The 1.0.x release has verified ClawHub publication, clean registry scans, fresh registry installation, native model registration and representative live tools/context, vision, reasoning and schema evidence. Version 1.0.1 is a documentation/metadata patch with unchanged provider code. This is not universal model or all-platform certification, nor a cryptographically attested release. Consult the latest release report and dated histories; preserve all historical error/inconclusive/quarantine states.
+The current `concentrate-provider` 1.1.0 distribution has verified publication, clean registry scans, fresh installation, configuration migration and rollback. Its distinct plugin ID does not change the `concentrate/` model namespace. See `docs/RELEASE-1.1.0.md` and its machine-readable proof; do not enable the historical and new plugins together.
+
+The historical 1.0.x release has verified ClawHub publication, clean registry scans, fresh registry installation, native model registration and representative live tools/context, vision, reasoning and schema evidence. Version 1.0.1 is a documentation/metadata patch with unchanged provider code. This is not universal model or all-platform certification, nor a cryptographically attested release. Consult the latest release report and dated histories; preserve all historical error/inconclusive/quarantine states.
 
 Known remaining boundaries include inconsistent upstream image/output behavior, broad per-model feature coverage and reconciliation of ambiguous earlier charges. Real parallel tools and fresh-user context now have installed-package evidence; standalone or simulated gate tests still cannot substitute for live proof. The package remains private to npm to prevent accidental publication. No npm or ClawHub release is implied by public MIT source.
 

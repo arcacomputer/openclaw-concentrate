@@ -13,7 +13,7 @@ This repository is a **code plugin**, not a skill. Use `clawhub package` command
 
 1. Finish the release gates and bind the exact reviewed source commit and package artifact. Do not label incomplete compatibility as stable certification.
 2. Check current required package metadata. Official docs require `openclaw.compat.pluginApi` and `openclaw.build.openclawVersion`. The package now records build compatibility with OpenClaw 2026.9.4; retain truthful provenance and validate the resulting candidate before upload. Do not invent a build timestamp or claim prior tests ran against changed source.
-3. Confirm the intended package name and publisher with the authorized account. The verified registry identity is `openclaw-concentrate`, currently published as 1.0.1 by `felirami`; bind any subsequent publication to its own reviewed version and source. Do not assume the GitHub organization automatically grants ClawHub publisher access.
+3. Confirm the intended package name and publisher with the authorized account. The current registry identity is `concentrate-provider`, published as 1.1.0 by `felirami`; bind any subsequent publication to its own reviewed version and source. The original `openclaw-concentrate` 1.0.1 release remains historical and must not be overwritten to simulate a rename. Do not assume the GitHub organization automatically grants ClawHub publisher access.
 4. Install/use the ClawHub CLI in the bounded execution environment, record its version, and run:
 
 ```sh
@@ -43,7 +43,11 @@ The placeholder must be replaced by the actual registry identity, not a guessed 
 
 Trusted GitHub Actions publishing is optional follow-up, not automatic: initial package creation requires normal authentication, and trusted-publisher configuration must be explicitly established and read back. Never add automatic publish-on-push as a convenience without authorization.
 
-## Status
+## Current status
+
+**concentrate-provider 1.1.0 is published and verified**, including fresh installation, explicit migration and rollback. See [the current report](RELEASE-1.1.0.md) and [exact evidence](CLAWHUB-RELEASE-1.1.0.json).
+
+## Historical 1.0.1 status
 
 **Version 1.0.1 is published and install-verified.** ClawScan and TruffleHog are clean. Fresh unauthenticated native installation passed without `--force`, and all eight files matched the tested artifact. See [current release evidence](RELEASE-1.0.0.md) and [machine-readable publication/installation records](CLAWHUB-RELEASE.json). This is a community/source-linked release, not cryptographically attested provenance; the native trust diagnostic is preserved in those records.
 

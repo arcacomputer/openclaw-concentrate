@@ -1,5 +1,12 @@
 # Reproduce release proof
 
+## Current 1.1.0 registry identity proof
+
+`clawhub-registry-1.1.0.mjs` is the exact executed, credential-free host proof for the new `concentrate-provider` package. It verifies fresh registry installation, each installed file hash, native registration, configuration/model selection, migration with the old plugin disabled, saved-cost and synthetic memory preservation, and rollback. All commands and results are in `docs/CLAWHUB-RELEASE-1.1.0.json`.
+
+Run only on a **fresh, bounded disposable Linux worker**, never a production agent. Install OpenClaw 2026.9.4 under `/tmp/host/node_modules` and use Node 24.16.0. No real provider/publisher/infrastructure credentials belong in the proof environment. Stage `registry-1.1.0-files.json` as `/tmp/expected-files.json`, then run the exact script; it writes proof under `/tmp/rename-proof`. The synthetic key is intentionally nonfunctional; public model metadata reads are not paid inference. The historical proof sources below remain unchanged and apply to their original identities.
+
+
 These are the exact executed harness sources, not an implementation sketch. They are excluded from the installable package. Run only in an authorized, disposable Linux sandbox; never against a production gateway or an unbounded billing account.
 
 ## Fixed runtime layout
