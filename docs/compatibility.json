@@ -1,0 +1,1496 @@
+{
+  "snapshot": "2026-09-13 resume-04",
+  "host": "OpenClaw 2026.9.4",
+  "node": "24.16.0",
+  "platform": "Linux / Blaxel",
+  "scope": "Basic response smoke tests only, not all capabilities",
+  "counts": {
+    "passed": 119,
+    "error": 5,
+    "inconclusive": 33,
+    "skipped": 3,
+    "pending": 25
+  },
+  "models": [
+    {
+      "model": "claude-fable-5-1",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-fable-5-1"
+    },
+    {
+      "model": "claude-fable-5",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-fable-5"
+    },
+    {
+      "model": "claude-opus-5",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-opus-5"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-opus-4-8"
+    },
+    {
+      "model": "claude-opus-4-7",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-opus-4-7"
+    },
+    {
+      "model": "claude-opus-4-6",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-opus-4-6"
+    },
+    {
+      "model": "claude-opus-4-5",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-opus-4-5"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-sonnet-5"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-sonnet-4-6"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-sonnet-4-5"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "anthropic/claude-haiku-4-5"
+    },
+    {
+      "model": "claude-opus-4-1",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "bedrock/claude-opus-4-1"
+    },
+    {
+      "model": "claude-sonnet-4",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "bedrock/claude-sonnet-4"
+    },
+    {
+      "model": "gpt-6-astra",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-6-astra"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.6-sol"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.6-terra"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.6-luna"
+    },
+    {
+      "model": "gpt-5.5",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.5"
+    },
+    {
+      "model": "gpt-5.4-pro",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.4-pro"
+    },
+    {
+      "model": "gpt-5.4",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.4"
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.4-mini"
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.4-nano"
+    },
+    {
+      "model": "gpt-5.3-codex",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.3-codex"
+    },
+    {
+      "model": "gpt-5.2",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.2"
+    },
+    {
+      "model": "gpt-5.1",
+      "status": "passed",
+      "category": null,
+      "note": "HTTP200 completed, actual CLI exit0; measured no skills/tools; one forward; provider cost returned",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5.1"
+    },
+    {
+      "model": "gpt-5",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified HTTP200 completed; actual OpenClaw CLI exit0; one forward; generated cap respected",
+      "httpStatus": 200,
+      "returnedModel": "openai/gpt-5"
+    },
+    {
+      "model": "gpt-5-mini",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified HTTP200 completed; actual OpenClaw CLI exit0; one forward; generated cap respected",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5-mini"
+    },
+    {
+      "model": "gpt-5-nano",
+      "status": "error",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; CLI exit1 after automatic continuation was blocked locally by measured body bound; exactly one real forward; no paid retry",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-5-nano"
+    },
+    {
+      "model": "o1",
+      "status": "error",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; CLI exit1 after automatic continuation was blocked locally by measured body bound; exactly one real forward; no paid retry",
+      "httpStatus": 200,
+      "returnedModel": "openai/o1"
+    },
+    {
+      "model": "o3",
+      "status": "error",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; CLI exit1 after automatic continuation was blocked locally by measured body bound; exactly one real forward; no paid retry",
+      "httpStatus": 200,
+      "returnedModel": "openai/o3"
+    },
+    {
+      "model": "o3-mini",
+      "status": "error",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; CLI exit1 after automatic continuation was blocked locally by measured body bound; exactly one real forward; no paid retry",
+      "httpStatus": 200,
+      "returnedModel": "openai/o3-mini"
+    },
+    {
+      "model": "o4-mini",
+      "status": "error",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; CLI exit1 after automatic continuation was blocked locally by measured body bound; exactly one real forward; no paid retry",
+      "httpStatus": 200,
+      "returnedModel": "openai/o4-mini"
+    },
+    {
+      "model": "gpt-4.1",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-4.1"
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-4.1-mini"
+    },
+    {
+      "model": "gpt-4o",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-4o"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "azure/gpt-4o-mini"
+    },
+    {
+      "model": "gpt-oss-120b",
+      "status": "skipped",
+      "category": "bounds-unresolved",
+      "note": "Not dispatched: bluelobster advertises zero input/output pricing; rejected by strict positive-per-route bound policy",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "gpt-oss-20b",
+      "status": "skipped",
+      "category": "bounds-unresolved",
+      "note": "Not dispatched: bluelobster advertises zero input/output pricing; rejected by strict positive-per-route bound policy",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "gpt-oss-safeguard-120b",
+      "status": "inconclusive",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; compatibility inconclusive; raw proof unavailable",
+      "httpStatus": 200,
+      "returnedModel": "bedrock/gpt-oss-safeguard-120b"
+    },
+    {
+      "model": "gpt-oss-safeguard-20b",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "bedrock/gpt-oss-safeguard-20b"
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-3.8-flash"
+    },
+    {
+      "model": "gemini-3.7-flash",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-3.7-flash"
+    },
+    {
+      "model": "gemini-3.6-flash",
+      "status": "inconclusive",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; compatibility inconclusive; raw proof unavailable",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-3.6-flash"
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "status": "inconclusive",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; compatibility inconclusive; raw proof unavailable",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-3.5-flash"
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-3.5-flash-lite"
+    },
+    {
+      "model": "gemini-3.1-pro-preview",
+      "status": "inconclusive",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; compatibility inconclusive; raw proof unavailable",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-3.1-pro-preview"
+    },
+    {
+      "model": "gemini-3.1-flash-lite-preview",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "ai-studio/gemini-3.1-flash-lite-preview"
+    },
+    {
+      "model": "gemini-3-flash-preview",
+      "status": "inconclusive",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; compatibility inconclusive; raw proof unavailable",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-3-flash-preview"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-2.5-pro"
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "status": "inconclusive",
+      "category": "output-budget-limited",
+      "note": "HTTP200 incomplete/max_output_tokens; compatibility inconclusive; raw proof unavailable",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-2.5-flash"
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "vertex/gemini-2.5-flash-lite"
+    },
+    {
+      "model": "gemma-3-12b",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "deepinfra/gemma-3-12b"
+    },
+    {
+      "model": "gemma-3-4b",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "deepinfra/gemma-3-4b"
+    },
+    {
+      "model": "gemma-3-27b",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "novita/gemma-3-27b"
+    },
+    {
+      "model": "gemma-4-26b",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "novita/gemma-4-26b"
+    },
+    {
+      "model": "gemma-4-e4b",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "deepinfra/gemma-4-e4b"
+    },
+    {
+      "model": "gemma-4-31b",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "novita/gemma-4-31b"
+    },
+    {
+      "model": "grok-build-0.1",
+      "status": "inconclusive",
+      "category": "reported-output-cap-exceeded",
+      "note": "Receipt output_tokens exceeds requested32; total includes reasoning. Requested cap is not a proven total-generation ceiling; no clean bounded acceptance",
+      "httpStatus": 200,
+      "returnedModel": "xai/grok-build-0.1"
+    },
+    {
+      "model": "grok-4.6",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "azure/grok-4.6"
+    },
+    {
+      "model": "grok-4.5",
+      "status": "inconclusive",
+      "category": "raw-evidence-unavailable",
+      "note": "Remote host completed and API receipt checkpointed, but raw proof unavailable for independent controls verification",
+      "httpStatus": 200,
+      "returnedModel": "xai/grok-4.5"
+    },
+    {
+      "model": "grok-4.3",
+      "status": "inconclusive",
+      "category": "reported-output-cap-exceeded",
+      "note": "Receipt output_tokens exceeds requested32; total includes reasoning. Requested cap is not a proven total-generation ceiling; no clean bounded acceptance",
+      "httpStatus": 200,
+      "returnedModel": "azure/grok-4.3"
+    },
+    {
+      "model": "grok-4.20-multi-agent-0309",
+      "status": "inconclusive",
+      "category": "reported-output-cap-exceeded",
+      "note": "Receipt output_tokens exceeds requested32; total includes reasoning. Requested cap is not a proven total-generation ceiling; no clean bounded acceptance",
+      "httpStatus": 200,
+      "returnedModel": "xai/grok-4.20-multi-agent-0309"
+    },
+    {
+      "model": "grok-4.20-0309-reasoning",
+      "status": "inconclusive",
+      "category": "reported-output-cap-exceeded",
+      "note": "Receipt output_tokens exceeds requested32; total includes reasoning. Requested cap is not a proven total-generation ceiling; no clean bounded acceptance",
+      "httpStatus": 200,
+      "returnedModel": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "model": "grok-4.20-non-reasoning",
+      "status": "pending",
+      "category": null,
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "grok-3-mini",
+      "status": "pending",
+      "category": null,
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-r1",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-r1-0528",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-r1-distill-32b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v3-0324",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified HTTP200 completed; actual OpenClaw CLI exit0; one forward; generated cap respected",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v3-1",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v3-2",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v4-flash-0423",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v4-flash-0731",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v4-flash-vision-exp",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v4-1-flash",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "deepseek-v4-pro-0813",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-235b-a22b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified HTTP200 completed; actual OpenClaw CLI exit0; one forward; generated cap respected",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-max-thinking",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-coder-480b-a35b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified HTTP200 completed; actual OpenClaw CLI exit0; one forward; generated cap respected",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-vl-30b-a3b",
+      "status": "inconclusive",
+      "category": "rate-limited-unknown-cost",
+      "note": "Historical terminal HTTP429; cost UNKNOWN; reservation retained; not retried; user authorized unrelated continuation",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.5-27b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.5-9b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.6-27b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-14b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-30b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.8-max",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.8-27b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.7-max",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.7-plus",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.7-flash",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.6-plus",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.6-flash",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.6-35b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.5-122b-a10b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.5-plus",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.5-flash",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.5-397b-a17b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3.5-35b-a3b",
+      "status": "pending",
+      "category": null,
+      "note": "Pending reasoning lane; this stage prioritizes two authorized historical retests then ordinary models",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-max",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-32b",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-coder-plus",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-coder-flash",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-coder-next",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-coder-30b-a3b",
+      "status": "inconclusive",
+      "category": "host-continuation-blocked",
+      "note": "Upstream HTTP200 completed with five output tokens; host detected reasoning-only turn and attempted local continuation, blocked by measured body ceiling; one paid forward only",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-next-80b-a3b",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-vl-plus",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-vl-flash",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen3-vl-235b-a22b",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen-plus",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwen-flash",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "qwq-32b",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "kimi-k3",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "kimi-k2-7-code",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "kimi-k2-6",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "kimi-k2-5",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "kimi-k2-thinking",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m3",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m2-7-highspeed",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m2-7",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m2-5-highspeed",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m2-5",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m2-1-highspeed",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m2-1",
+      "status": "passed",
+      "category": null,
+      "note": "Offline verified raw receipt, actual-host exit0, empty skills/tools, and token/input bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "minimax-m2",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mimo-v2.5",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mimo-v2.5-pro",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nemotron-3-nano-30b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nemotron-3-120b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nemotron-3-nano-omni",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nemotron-3-ultra-nvfp4",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nemotron-lightning-3.5-30b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "step-3-7-flash",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-5.3-flash",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-5.3",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-5.2",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-5.1",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-5",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-4.7",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-4.7-flash",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-4.6",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-4.6v",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-4.5",
+      "status": "inconclusive",
+      "category": "host-continuation-blocked",
+      "note": "Upstream receipt retained; host nonzero, only one paid forward; see raw host/proxy evidence",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "glm-4.5v",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "muse-glimmer-30b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "muse-spark-1.3",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "muse-spark-1.3-contributor",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "muse-spark-1.2",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "muse-spark-1.2-contributor",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "muse-spark-1.1",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-4-maverick",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-4-scout",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-3-70b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-3.3-70b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-3.2-1b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-3.1-70b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-3-8b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "llama-3.1-8b-instruct",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mistral-large-3",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mistral-medium-3",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mistral-medium-3.1",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "magistral-small-1.2",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mistral-small-3.1",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mistral-small-3.2",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "devstral-2",
+      "status": "inconclusive",
+      "category": "provider-route-unavailable-unknown-cost",
+      "note": "HTTP400 invalid_prompt: provider says devstral-2512 currently not in use; no usage/cost receipt, reservation retained; sweep stopped",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "codestral",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "mistral-nemo",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "ministral-3-3b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "ministral-3-8b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "ministral-3-14b",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "palmyra-x5",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "palmyra-x4",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "jamba-1-5-large",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "jamba-1-5-mini",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "command-a",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "command-a-vision",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "ibm-granite-micro",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nova-2-lite",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nova-premier",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nova-pro",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nova-lite",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "nova-micro",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "redact-v1",
+      "status": "skipped",
+      "category": "non-chat-utility-unattempted",
+      "note": "Redaction utility, not a chat model.",
+      "httpStatus": null,
+      "returnedModel": null
+    },
+    {
+      "model": "hy3",
+      "status": "passed",
+      "category": null,
+      "note": "Raw verified: completed receipt, host exit0, empty skills/tools, input/output bounds",
+      "httpStatus": null,
+      "returnedModel": null
+    }
+  ]
+}

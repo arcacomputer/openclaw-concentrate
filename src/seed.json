@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gpt-4.1-mini",
+    "object": "model",
+    "created": 1744588800,
+    "owned_by": "openai",
+    "type": "model",
+    "display_name": "GPT 4.1 Mini",
+    "created_at": "2025-04-14T00:00:00.000Z",
+    "max_input_tokens": 1047576,
+    "max_tokens": 32768,
+    "capabilities": {
+      "batch": {
+        "supported": false
+      },
+      "citations": {
+        "supported": false
+      },
+      "code_execution": {
+        "supported": false
+      },
+      "context_management": {
+        "supported": true,
+        "clear_thinking_20251015": {
+          "supported": false
+        },
+        "clear_tool_uses_20250919": {
+          "supported": false
+        },
+        "compact_20260112": {
+          "supported": false
+        }
+      },
+      "effort": {
+        "supported": false,
+        "low": {
+          "supported": false
+        },
+        "medium": {
+          "supported": false
+        },
+        "high": {
+          "supported": false
+        },
+        "max": {
+          "supported": false
+        },
+        "xhigh": {
+          "supported": false
+        }
+      },
+      "image_input": {
+        "supported": true
+      },
+      "pdf_input": {
+        "supported": true
+      },
+      "structured_outputs": {
+        "supported": true
+      },
+      "thinking": {
+        "supported": false,
+        "types": {
+          "adaptive": {
+            "supported": false
+          },
+          "enabled": {
+            "supported": false
+          }
+        }
+      }
+    }
+  }
+]

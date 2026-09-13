@@ -1,0 +1,33 @@
+{
+  "id": "concentrate",
+  "name": "Concentrate AI",
+  "description": "Unpublished Responses-provider preview; credentialed compatibility not verified",
+  "providers": ["concentrate"],
+  "setup": {"providers": [{"id": "concentrate", "envVars": ["CONCENTRATE_API_KEY"]}]},
+  "providerAuthChoices": [{
+    "provider": "concentrate", "method": "api-key", "choiceId": "concentrate-api-key",
+    "choiceLabel": "Concentrate AI API key", "groupId": "concentrate", "groupLabel": "Concentrate AI",
+    "cliFlag": "--concentrate-api-key", "cliOption": "--concentrate-api-key <key>", "cliDescription": "Concentrate AI API key"
+  }],
+  "configSchema": {
+    "type": "object", "additionalProperties": false,
+    "properties": {
+      "acknowledgeEstimatedCosts": {"type": "boolean", "description": "I understand costOverrides are my estimates, not vendor prices or spending caps."},
+      "costOverrides": {
+        "type": "object", "maxProperties": 32,
+        "description": "Exact model IDs mapped to user-estimated USD per million tokens. All four rates must be explicit; zero is your estimate, never vendor truth.",
+        "propertyNames": {"pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"},
+        "additionalProperties": {
+          "type": "object", "additionalProperties": false,
+          "required": ["input", "output", "cacheRead", "cacheWrite"],
+          "properties": {
+            "input": {"type": "number", "minimum": 0},
+            "output": {"type": "number", "minimum": 0},
+            "cacheRead": {"type": "number", "minimum": 0},
+            "cacheWrite": {"type": "number", "minimum": 0}
+          }
+        }
+      }
+    }
+  }
+}
