@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T08:11:45+00:00",
-  "historyThrough": "7899f168e0ab47c30b260c08ae45465f04b588cf",
+  "generatedAt": "2026-09-13T08:17:51+00:00",
+  "historyThrough": "f558546667dee029d8899bae5a5a34e079ebf057",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "f558546667dee029d8899bae5a5a34e079ebf057",
+      "authorTime": "2026-09-13T08:11:45+00:00",
+      "committerTime": "2026-09-13T08:11:45+00:00",
+      "subject": "Publish recovered synthetic SQLite replay proof and gate integrity limit"
+    },
     {
       "sha": "7899f168e0ab47c30b260c08ae45465f04b588cf",
       "authorTime": "2026-09-13T07:53:13+00:00",

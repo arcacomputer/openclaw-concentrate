@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T08:11:45+00:00**.
+Exported at **2026-09-13T08:17:51+00:00**.
 
-History through `7899f168e0ab47c30b260c08ae45465f04b588cf`.
+History through `f558546667dee029d8899bae5a5a34e079ebf057`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -89,3 +89,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`7899f168e0ab47c30b260c08ae45465f04b588cf`](https://github.com/arcacomputer/openclaw-concentrate/commit/7899f168e0ab47c30b260c08ae45465f04b588cf)
 - Author timestamp: `2026-09-13T07:53:13+00:00`
 - Committer timestamp: `2026-09-13T07:53:13+00:00`
+
+## Publish recovered synthetic SQLite replay proof and gate integrity limit
+
+- Commit: [`f558546667dee029d8899bae5a5a34e079ebf057`](https://github.com/arcacomputer/openclaw-concentrate/commit/f558546667dee029d8899bae5a5a34e079ebf057)
+- Author timestamp: `2026-09-13T08:11:45+00:00`
+- Committer timestamp: `2026-09-13T08:11:45+00:00`

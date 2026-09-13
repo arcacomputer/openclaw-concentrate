@@ -149,3 +149,13 @@ Recovery verified 70 checkpoint files against raw/archive bytes and 171 local ev
 **Remaining gate limitation:** validator-only evidence was rejected, but the gate checks hash presence rather than content integrity. Recovery independently checked actual hashes; the gate itself still needs tampering and identity-binding tests before paid continuation. Stale metadata and superseded source hashes are not treated as executed-source identities.
 
 No paid calls or model-key reads in qualification. Ledger/matrix/quarantine unchanged; cleanup verified. Next stage is zero-paid integrity qualification only.
+
+## Batch 14: standalone proof-integrity gate qualified
+
+Publication author/committer timestamp: `2026-09-13T08:17:51+00:00`.
+
+The replacement gate verifies exact-byte SHA-256, independently pinned source/runtime/model/case identities and freshness. 33 remote Node checks passed: 31 negatives, pristine retained actual-host proof accepted, and a RED control reproducing the old truthy-hash defect. This was not a new host replay or a model feature pass.
+
+211 local evidence checks verified preservation of 200 prior evidence files including 70 checkpoints. Ledger, matrix and quarantine unchanged. No model calls or model-key extraction. Checkpoints, archive and executed source were verified before cleanup; provider readback at `2026-09-13T08:15:23.887649+00:00` confirmed worker absence.
+
+**Scope limitation:** standalone gate qualification only. Integration into the private dispatcher remains unverified, and no production integration or live model authorization resulted from this batch. Integrated negative tests and fresh source-bound synthetic host proof must precede any new bounded live regression.
