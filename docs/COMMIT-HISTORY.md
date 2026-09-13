@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T07:53:13+00:00**.
+Exported at **2026-09-13T08:11:45+00:00**.
 
-History through `bb5d6ad54b9ec07b93ef0ea4518e8a3a0ee42616`.
+History through `7899f168e0ab47c30b260c08ae45465f04b588cf`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -83,3 +83,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`bb5d6ad54b9ec07b93ef0ea4518e8a3a0ee42616`](https://github.com/arcacomputer/openclaw-concentrate/commit/bb5d6ad54b9ec07b93ef0ea4518e8a3a0ee42616)
 - Author timestamp: `2026-09-13T07:37:13+00:00`
 - Committer timestamp: `2026-09-13T07:37:13+00:00`
+
+## Record recovered clean exit and internal transcript ID mismatch
+
+- Commit: [`7899f168e0ab47c30b260c08ae45465f04b588cf`](https://github.com/arcacomputer/openclaw-concentrate/commit/7899f168e0ab47c30b260c08ae45465f04b588cf)
+- Author timestamp: `2026-09-13T07:53:13+00:00`
+- Committer timestamp: `2026-09-13T07:53:13+00:00`

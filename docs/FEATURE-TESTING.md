@@ -135,3 +135,17 @@ Publication author/committer timestamp: `2026-09-13T07:53:13+00:00`. Recovery ve
 The persistence probe reached transcript reads but expected bare tool IDs where the runtime stored composite identifiers `call_a|fc_a` and `call_b|fc_b`. No rewrite, generation-fence test, reordered replay or new-user turn executed. This is a harness expectation mismatch, not proof of provider failure. Next credential-free qualification must follow runtime ID conversion semantics without blindly rewriting identifiers.
 
 Archive SHA-256: `7e0c1828998fa8c7672060fdf3fa33a23ab3580dd1b7d09d7abbc8565509f0e9`. Exact worker absence verified. No paid activity or key reads; ledger and feature matrix unchanged. Live testing remains blocked.
+
+## Batch 12–13: recovered synthetic persistence/replay pass
+
+Publication author/committer timestamp: `2026-09-13T08:11:45+00:00`. Batch 12 stopped before provisioning because an overly broad no-key-read instruction also blocked infrastructure authentication. No runtime pass came from that stage.
+
+Batch 13's initial launcher failed Python parsing before execution. A corrected invocation subsequently ran; its first synthetic attempt failed an incorrect reversed-wire-order expectation, then a reviewed same-worker attempt passed. The later orchestration timeout was after cleanup, not a model failure.
+
+**Runtime proved:** invalid-generation rejection; stale second-row bytes rejected with first-row rollback; durable SQLite tool-result reorder to B,A; actual-host new-user replay with wire A,B and correct distinct-ID pairing. Initial host, persistence probe and replay exited 0 and were quiescent. This is synthetic host replay qualification, not a paid parallel-tool pass or a fix for historical deadline causality.
+
+Recovery verified 70 checkpoint files against raw/archive bytes and 171 local evidence checks. Executed harness SHA-256: `7ebc298b7e5f6cd028770ea5fab3c126807cec8dde6cbb8b6deed4c0df71c471`. Archive SHA-256: `34783f9617efd3db355fea801bedbe10d11d38a61bc0a975a0846409413159b2`.
+
+**Remaining gate limitation:** validator-only evidence was rejected, but the gate checks hash presence rather than content integrity. Recovery independently checked actual hashes; the gate itself still needs tampering and identity-binding tests before paid continuation. Stale metadata and superseded source hashes are not treated as executed-source identities.
+
+No paid calls or model-key reads in qualification. Ledger/matrix/quarantine unchanged; cleanup verified. Next stage is zero-paid integrity qualification only.
