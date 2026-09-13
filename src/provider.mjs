@@ -7,7 +7,7 @@ export const ESTIMATE_WARNING = 'Concentrate runtime uses explicit user cost est
 const COST_KEYS = ['input', 'output', 'cacheRead', 'cacheWrite'];
 function validateOverrides(config) {
   const overrides = config.costOverrides ?? {};
-  if (!overrides || typeof overrides !== 'object' || Array.isArray(overrides) || Object.keys(overrides).length > 32) throw new Error('Concentrate costOverrides must contain at most 32 models');
+  if (!overrides || typeof overrides !== 'object' || Array.isArray(overrides) || Object.keys(overrides).length > 256) throw new Error('Concentrate costOverrides must contain at most 256 models');
   if (Object.keys(overrides).length && config.acknowledgeEstimatedCosts !== true) throw new Error('Concentrate requires acknowledgeEstimatedCosts=true for user cost estimates');
   for (const [id, cost] of Object.entries(overrides)) {
     if (!/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(id) || !cost || typeof cost !== 'object' || Array.isArray(cost) || Object.keys(cost).length !== 4 || COST_KEYS.some(k => !Object.hasOwn(cost, k) || typeof cost[k] !== 'number' || !Number.isFinite(cost[k]) || cost[k] < 0)) throw new Error('Concentrate cost override requires an exact model ID and four finite nonnegative USD/1M rates');
@@ -62,7 +62,9 @@ export function createConcentrateProvider(sdk, warn = () => {}, config = {}) {
             shouldCacheRows: rows => projectRows(rows).length > 0,
           });
           ctx.signal?.throwIfAborted();
-          return runtime(projectRows(rows));
+          const models = projectRows(rows);
+          if (!models.length) throw new Error('No usable models');
+          return runtime(models);
         } catch {
           ctx.signal?.throwIfAborted();
           warn('Concentrate metadata unavailable; only configured models in the bundled snapshot can run.');

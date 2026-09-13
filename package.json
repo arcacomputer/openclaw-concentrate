@@ -1,9 +1,9 @@
 {
-  "name": "openclaw-concentrate-local",
-  "version": "0.1.0-preview.2",
+  "name": "openclaw-concentrate",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Concentrate.ai provider plugin for OpenClaw. Experimental; compatibility testing in progress.",
+  "description": "Concentrate.ai provider for OpenClaw: Responses, tools, reasoning, structured output and image input.",
   "license": "MIT",
   "files": [
     "index.mjs",

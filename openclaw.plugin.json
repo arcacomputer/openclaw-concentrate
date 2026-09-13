@@ -14,7 +14,7 @@
     "properties": {
       "acknowledgeEstimatedCosts": {"type": "boolean", "description": "I understand costOverrides are my estimates, not vendor prices or spending caps."},
       "costOverrides": {
-        "type": "object", "maxProperties": 32,
+        "type": "object", "maxProperties": 256,
         "description": "Exact model IDs mapped to user-estimated USD per million tokens. All four rates must be explicit; zero is your estimate, never vendor truth.",
         "propertyNames": {"pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"},
         "additionalProperties": {

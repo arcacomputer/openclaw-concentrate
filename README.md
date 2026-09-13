@@ -1,28 +1,14 @@
-# Concentrate.ai provider for OpenClaw
+# Concentrate.ai for OpenClaw
 
-An experimental, MIT-licensed provider plugin maintained by [Arca Computer](https://arca.computer). AI-assisted development with human stewardship by Luis Felipe Abarca. Not an official endorsement by Concentrate or OpenClaw.
+An MIT-licensed provider plugin maintained by [Arca Computer](https://arca.computer). Connect OpenClaw to Concentrate's Responses API with streaming, tools, reasoning, structured output and image input, where the selected upstream model supports them.
 
-**Real OpenClaw inference has been exercised. This is not a production-certified release.** See [the compatibility snapshot](docs/COMPATIBILITY.md) and [all model rows](docs/compatibility.json). Source is public; no npm release or upstream PR has been published. The npm `private` flag prevents accidental registry publication, not source access.
+**Version 1.0.0 release candidate.** Source installation is available. ClawHub publication requires authenticated publisher access and is not yet complete. No npm release is claimed; `private: true` prevents accidental npm publication.
 
-## Plugin-first distribution and maintenance
+AI-assisted development, human stewardship by Luis Felipe Abarca. This is an independent integration, not an endorsement by Concentrate or the OpenClaw Foundation.
 
-The intended release is an independently maintained **ClawHub plugin**, not a built-in OpenClaw provider. Arca Computer maintains this integration, its compatibility evidence, documentation and ongoing fixes. Core inclusion is not a release requirement or promised next step.
+## Install
 
-Community feedback shared by the maintainer motivates this direction:
-
-> Patrick or someone else from the foundation can correct me but I believe that all new providers and channels are requested to maintain their own code and be a ClawHub plugin. [The foundation] can't add support for every provider/channel/etc on the market, it is a lot easier to externalize what we can.
-
-This is a community comment supplied by the project owner, not a verified formal foundation policy or approval. No author, permalink or foundation confirmation has been supplied here. Preserve that qualification when describing it.
-
-Target a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. ClawHub publication is still pending; source installation and package tests do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
-
-## Commit and evidence timestamps
-
-See [provenance](docs/PROVENANCE.md), [exact commit history](docs/COMMIT-HISTORY.md), and [machine-readable metadata](docs/provenance.json). Publication time and testing time are tracked separately.
-
-## Install the source preview
-
-Requires OpenClaw **2026.9.4** and the Node versions in `package.json`. Review the source and use disposable OpenClaw state while evaluating.
+The verified target is **OpenClaw 2026.9.4, Node 24.16.0, Linux**. Other host versions and operating systems have not been verified. Start in disposable state before changing an existing agent.
 
 ```sh
 git clone https://github.com/arcacomputer/openclaw-concentrate.git
@@ -30,58 +16,77 @@ openclaw plugins install --force --accept-capabilities ./openclaw-concentrate
 openclaw plugins list --json
 ```
 
-`--force` acknowledges the unreviewed local source; `--accept-capabilities` grants the plugin's declared capabilities. Use these only after reviewing the source. Installation does not configure a key, enable inference, or certify every model. Configure the estimates below before choosing a runtime model.
+Review the code first: `--force` acknowledges local unreviewed source and `--accept-capabilities` grants the plugin's declared capabilities. Installation alone does not configure credentials or start inference. Do not use a guessed ClawHub install name while publication is pending.
 
-[Clean installation verification](docs/PACKAGE-VERIFICATION.md).
+## Configure
 
-## Configure explicit estimates
+Provide `CONCENTRATE_API_KEY` through OpenClaw's supported environment, secret or provider-auth configuration. Never put a key in this repository or in the plugin's cost configuration. API-key onboarding preserves an existing primary model.
 
-Install only in disposable state for now. Set `CONCENTRATE_API_KEY` through OpenClaw's supported secret/auth configuration when separately authorized. Never put credentials in this plugin config.
-
-In `plugins.entries.concentrate.config`, supply `acknowledgeEstimatedCosts: true` and `costOverrides`, a map of exact Concentrate model IDs to all four numeric rates: `input`, `output`, `cacheRead`, `cacheWrite`, in **USD per million tokens**. At most 32 models are accepted. Rates must be finite and nonnegative. There are no default prices.
-
-Synthetic example for registration tests only — **these numbers are deliberately NOT vendor prices and must not be copied as production billing data**:
+In `plugins.entries.concentrate.config`, acknowledge and provide your own complete cost estimates:
 
 ```json
 {
   "acknowledgeEstimatedCosts": true,
   "costOverrides": {
-    "gpt-4.1-mini": {"input": 11, "output": 22, "cacheRead": 3, "cacheWrite": 4}
+    "gpt-4.1-mini": {
+      "input": 0.4,
+      "output": 1.6,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.4
+    }
   }
 }
 ```
 
-Models carry `[user cost estimate]` in their host display name and registration emits an estimate warning. These are your estimates, not vendor truth, an account balance, a spending cap, or a promise about the bill. Explicit zero is accepted only as your acknowledged estimate; absence is never converted to zero. Without complete acknowledged overrides, no unpriced runtime models are submitted. The existing primary model is preserved during API-key onboarding.
+All rates are **USD per million tokens**. This example uses the published base input/output/cache-read rates observed for GPT-4.1 Mini on 2026-09-13, plus **an explicit user estimate of 0.4 for cache write**, which was not published for that route. Review current pricing and replace these estimates for your workload. This is not a vendor quote or a spending limit. Set account/key limits in Concentrate separately.
 
-The bundled snapshot supports `gpt-4.1-mini` offline. Other exact IDs are resolved from the public aggregate catalog when credentials are configured (credentials are not sent to the public metadata endpoint). Public acquisition uses the host's five-second timeout and sixty-second cache. Only models with explicit overrides can become runnable. Missing live models are not invented; on acquisition failure only configured bundled models remain available. Snapshot capabilities can become stale; catalog membership is not account entitlement.
+After configuring credentials and estimates, select `concentrate/gpt-4.1-mini` with OpenClaw's model picker or `openclaw models set concentrate/gpt-4.1-mini`.
 
-## Authoritative pricing evidence
+Up to **256 exact, unprefixed Concentrate model IDs** can be configured. Every model needs all four finite, nonnegative rates: `input`, `output`, `cacheRead`, `cacheWrite`. Missing prices are never silently turned into zero. Explicit zero is accepted only as your acknowledged estimate. Configured model names display `[user cost estimate]`.
 
-Concentrate publishes route pricing at [model details](https://concentrate.ai/docs/api-reference/endpoint/get-model.md), under `providers[provider].pricing`; aggregate `/v1/models` currently omits it. The source-only read-only helper fetches one exact model with a five-second timeout, one-MiB response limit, no redirects or credentials:
+Only configured models become runnable. The bundled snapshot supports `gpt-4.1-mini` without a live metadata lookup. Other IDs use the public aggregate catalog, with the host's five-second timeout and sixty-second cache. Credentials are not sent to that public metadata endpoint. Empty, malformed or unavailable metadata falls back to configured bundled models; a valid live catalog does not invent missing models. Catalog visibility is not account entitlement.
+
+## Supported behavior and limits
+
+- **Text and streaming:** native OpenClaw `openai-responses` transport, without a second custom inference client.
+- **Tools:** tool calls and results use the host's standard Responses representation. Parallel-tool and conversation-replay evidence is reported separately from single-tool checks.
+- **Reasoning:** use a reasoning-capable model and OpenClaw's thinking settings. GPT-5 Mini has live evidence; that does not certify every reasoning route.
+- **Structured output:** set `agents.defaults.models["concentrate/<model-id>"].params.response_format` to an OpenAI-style strict `json_schema` object. The host maps it to Responses `text.format`. **Validate the returned JSON yourself:** requesting a schema is not host-side enforcement.
+- **Images:** no speculative image-role rewrite is installed. GPT-4.1 Mini correctly identified a 256×256 red/blue image returned by OpenClaw's actual `read` tool. Earlier 16×16 single-color tests failed, and other-model controls were inconsistent. Image content reaching the API does not guarantee correct perception. Do not use this evidence to promise reliable vision across the catalog.
+- **Errors and cancellation:** the plugin preserves catalog cancellation. Runtime inference errors, cancellation and retries belong to OpenClaw's transport. Focused synthetic checks are not live upstream cancellation/billing proof. Disabling model fallbacks alone does not disable retries or incomplete-response continuation.
+- **Routing and billing:** Concentrate chooses upstream routes. Host token-cost estimates do not incorporate all provider receipt extensions, route fallback, cache TTLs, context tiers, hosted tool charges or BYOK behavior. No hard spending guarantee is implemented by this plugin.
+
+The public catalog contains **185 model IDs** in the retained snapshot. [Every original smoke outcome](docs/compatibility.json) remains available, including errors, inconclusive attempts, skipped and pending rows. The wider feature matrix is ongoing research, not a claim that all models and features passed. In particular, historical Grok output-cap violations remain quarantined in the test campaign.
+
+## Pricing evidence
+
+Concentrate's aggregate `/v1/models` does not provide complete pricing. The per-model endpoint exposes route-level `providers[provider].pricing`. From a source checkout:
 
 ```sh
-node scripts/pricing.mjs claude-sonnet-4-5 /tmp/sonnet-pricing.json
+node scripts/pricing.mjs gpt-4.1-mini /tmp/gpt-pricing.json
 ```
 
-It preserves raw USD unit rates, tiers, cache TTLs, tool charges, route support flags, source URL and timestamp; normalized base token prices use `USD * 1000000 / units`. Missing rates stay unknown. It does **not** silently promote route base rates into a universal model price. Review this evidence when choosing your explicit estimates.
+This read-only helper uses a five-second timeout, one-MiB response limit, no redirects and no credentials. It preserves raw unit rates, tiers, cache TTLs, tool charges, support flags, source URL and timestamp. It does not collapse multiple routes into an invented universal price. Missing cache-write rates stay unknown.
 
-The current native Responses contract admits cache-write usage. Some routes lack explicit cache-write controls, but that alone does not prove Concentrate cannot bill cache writes after routing/fallback. Therefore missing `cache.write` is not treated as zero. Anthropic routes can provide multiple write TTL prices and long-context tiers; selecting one silently would also be misleading. A provider-prefixed model pins the first route, not necessarily all fallback attempts.
+## Development and verification
 
-OpenClaw 2026.9.4's runtime model schema uses four numbers and its registry/config fallback can substitute zero for omitted cost objects. The separate unified discovery catalog allows omitted costs, but this is not an unknown-cost inference accounting contract. This plugin works within the numeric host contract using informed estimates instead of imposing a blanket inference prohibition. It does not modify the host or claim vendor `cost`/`byok` extensions are already integrated into host accounting.
-
-## Verification — approved disposable Linux host only
+Run installation and OpenClaw verification in a bounded disposable host, not a production gateway:
 
 ```sh
 npm test
 npm run check
+npm run test:transport
 node scripts/verify.mjs /tmp/concentrate-evidence
 clawhub package validate . --openclaw-version 2026.9.4 --json
 ```
 
-Provider packages use **`clawhub package validate`**, not the tool/feature-only `openclaw plugins validate` lane. Real SDK imports, isolated plugin installation, host config validation, and host model-list read-back are separate integration gates. ClawHub validation is nonpublishing; runtime inspector capture additionally requires its explicit execution flags. Do not fabricate tool metadata to satisfy the wrong lane.
+Read [AGENTS.md](AGENTS.md) before changing the provider. It documents the isolated Blaxel lane, credentials, inference budgets, retained failures, privacy and publication gates. No delegation is required to use Blaxel.
 
-Proof target: OpenClaw 2026.9.4, Node 24.16.0, Linux. Live basic-response smoke results are recorded separately from synthetic and registration checks. Remaining gates include broad live tool/vision/schema/cancellation coverage, credentialed onboarding UX, routing and billing reconciliation, and release readiness. No macOS or Windows claim.
+- [Release evidence and remaining distribution gate](docs/RELEASE-1.0.0.md)
+- [Original per-model smoke report](docs/COMPATIBILITY.md)
+- [Feature campaign and historical failures](docs/FEATURE-TESTING.md)
+- [ClawHub publication procedure](docs/CLAWHUB-PUBLISHING.md)
+- [Exact Git author/committer timestamps](docs/COMMIT-HISTORY.md)
+- [Provenance and evidence dates](docs/PROVENANCE.md)
 
-## Full-feature campaign
-
-[Feature execution results and acceptance definitions](docs/FEATURE-TESTING.md). Basic smoke passes are not full-feature certification.
+Arca maintains this as an independent ClawHub plugin. Built-in OpenClaw inclusion is not a prerequisite or promised outcome. Community guidance motivating that choice is preserved, with its qualifications, in AGENTS.md.
