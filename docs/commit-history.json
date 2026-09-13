@@ -1,9 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T15:12:05+00:00",
-  "historyThrough": "8af341ee00fdedee28bf4ca438e74604ea750d20",
+  "generatedAt": "2026-09-13T16:44:09+00:00",
+  "historyThrough": "fa1c50ab1ce7687702c24f368154b5b468225e88",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "fa1c50ab1ce7687702c24f368154b5b468225e88",
+      "authorTime": "2026-09-13T16:00:38+00:00",
+      "committerTime": "2026-09-13T16:00:38+00:00",
+      "subject": "Release 1.0.1 with registry-ready documentation and metadata"
+    },
+    {
+      "sha": "581af52d800ae3c76d3e8ad0031cb0eda42c768a",
+      "authorTime": "2026-09-13T15:20:02+00:00",
+      "committerTime": "2026-09-13T15:20:02+00:00",
+      "subject": "Use durable release-status link in the distribution README"
+    },
+    {
+      "sha": "f3db57f75b184598629aba5109241faf2ea70bb8",
+      "authorTime": "2026-09-13T15:12:05+00:00",
+      "committerTime": "2026-09-13T15:12:05+00:00",
+      "subject": "Refresh approved agent guide with verified release status"
+    },
     {
       "sha": "8af341ee00fdedee28bf4ca438e74604ea750d20",
       "authorTime": "2026-09-13T11:08:22+00:00",

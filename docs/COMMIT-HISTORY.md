@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T15:12:05+00:00**.
+Exported at **2026-09-13T16:44:09+00:00**.
 
-History through `8af341ee00fdedee28bf4ca438e74604ea750d20`.
+History through `fa1c50ab1ce7687702c24f368154b5b468225e88`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -167,3 +167,21 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`8af341ee00fdedee28bf4ca438e74604ea750d20`](https://github.com/arcacomputer/openclaw-concentrate/commit/8af341ee00fdedee28bf4ca438e74604ea750d20)
 - Author timestamp: `2026-09-13T11:08:22+00:00`
 - Committer timestamp: `2026-09-13T11:08:22+00:00`
+
+## Refresh approved agent guide with verified release status
+
+- Commit: [`f3db57f75b184598629aba5109241faf2ea70bb8`](https://github.com/arcacomputer/openclaw-concentrate/commit/f3db57f75b184598629aba5109241faf2ea70bb8)
+- Author timestamp: `2026-09-13T15:12:05+00:00`
+- Committer timestamp: `2026-09-13T15:12:05+00:00`
+
+## Use durable release-status link in the distribution README
+
+- Commit: [`581af52d800ae3c76d3e8ad0031cb0eda42c768a`](https://github.com/arcacomputer/openclaw-concentrate/commit/581af52d800ae3c76d3e8ad0031cb0eda42c768a)
+- Author timestamp: `2026-09-13T15:20:02+00:00`
+- Committer timestamp: `2026-09-13T15:20:02+00:00`
+
+## Release 1.0.1 with registry-ready documentation and metadata
+
+- Commit: [`fa1c50ab1ce7687702c24f368154b5b468225e88`](https://github.com/arcacomputer/openclaw-concentrate/commit/fa1c50ab1ce7687702c24f368154b5b468225e88)
+- Author timestamp: `2026-09-13T16:00:38+00:00`
+- Committer timestamp: `2026-09-13T16:00:38+00:00`

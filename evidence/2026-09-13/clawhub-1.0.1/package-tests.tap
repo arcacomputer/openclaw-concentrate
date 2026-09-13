@@ -1,0 +1,51 @@
+
+> openclaw-concentrate@1.0.1 test
+> node --test --test-concurrency=1 test/*.test.mjs --test-reporter=tap
+
+✔ projects recorded vendor metadata exactly without invented prices (8.340517ms)
+✔ rejects malformed, non-chat and unsafe IDs; deduplicates without normalization (2.019541ms)
+✔ default matrix checkpoints every row without invoking an adapter (2.309706ms)
+✔ unknown billing prevents any inference (0.87959ms)
+✔ 402 stops serial execution and persists the exact model result (0.867432ms)
+✔ unsupported and unavailable are retained, never promoted to pass (0.884337ms)
+✔ started checkpoint cannot be blindly resumed (1.320091ms)
+✔ post-call unknown billing stops the next test (0.795554ms)
+✔ unknown per-call upper bound blocks dispatch (0.489925ms)
+✔ reservation ceiling preserves two dollars of headroom (0.527712ms)
+✔ manifest and package agree on provider, onboarding and local-only packaging (4.118771ms)
+✔ all entry SDK subpaths exist in the verified published package export map (5.754415ms)
+✔ ClawHub build provenance matches the tested OpenClaw peer (0.685428ms)
+✔ unit-aware pricing retains unknown rates (0.638999ms)
+✔ details acquisition is bounded, public, and preserves raw tiers and missing writes (21.655497ms)
+✔ API-key onboarding preserves primary and does not select an unpriced model (0.835274ms)
+✔ discovery is scoped and auth-gated; metadata request has no inference credentials (1.121453ms)
+✔ offline fallback is network-free, fresh, and logs only a fixed safe warning (1.642695ms)
+✔ empty and malformed metadata fall back to explicitly static rows (0.46628ms)
+✔ pre-aborted catalogs do not resolve credentials or fetch (0.480761ms)
+✔ abort during successful or failed acquisition propagates without fallback warning (0.284477ms)
+✔ runtime pricing gate never fetches and observes auth, scope and cancellation (0.339369ms)
+✔ unknown-cost metadata is not submitted as a runtime model (0.931037ms)
+✔ malformed catalog containers and names cannot break projection (0.678838ms)
+✔ control-plane catalog retains exact metadata with optional costs absent (1.736356ms)
+✔ runtime retains the configured bundled model on empty live metadata (5.191481ms)
+✔ runtime retains the configured bundled model on unusable live metadata (0.241652ms)
+✔ valid metadata does not resurrect an absent model or invent a requested ID (0.515884ms)
+✔ cancellation is not converted into bundled metadata fallback (0.537517ms)
+✔ configuration can cover a full 185-model catalog and up to 256 explicit estimates (1.972029ms)
+✔ manifest and runtime share the 256-model configuration boundary (0.221883ms)
+✔ published metadata and README remain registry-ready (0.462995ms)
+✔ explicit estimates produce runnable Responses models, not catalog-only null (1.871028ms)
+✔ estimates require acknowledgement and all four finite nonnegative fields (0.421853ms)
+✔ explicit user cache zero is allowed, never inferred from omission (3.795065ms)
+✔ out-of-scope, missing credentials, and cancellation preserve runtime boundaries (0.414993ms)
+✔ verification does not mask failed Node commands (25.068609ms)
+✔ verification rejects spawn failures and timeouts (104.238297ms)
+✔ verification preserves separated command streams (28.371426ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 637.777864

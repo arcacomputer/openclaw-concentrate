@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-09-13T16:13:41.757Z",
+  "passed": true,
+  "commands": [
+    {
+      "label": "node-version",
+      "command": [
+        "/tmp/toolchain/node_modules/node/bin/node",
+        "--version"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "passed": true
+    },
+    {
+      "label": "npm-version",
+      "command": [
+        "npm",
+        "--version"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "passed": true
+    },
+    {
+      "label": "tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "passed": true
+    },
+    {
+      "label": "syntax",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "passed": true
+    },
+    {
+      "label": "real-import",
+      "command": [
+        "/tmp/toolchain/node_modules/node/bin/node",
+        "-e",
+        "import('./index.mjs')"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "passed": true
+    },
+    {
+      "label": "pack-dry-run",
+      "command": [
+        "npm",
+        "pack",
+        "--dry-run",
+        "--ignore-scripts",
+        "--json"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "passed": true
+    }
+  ]
+}

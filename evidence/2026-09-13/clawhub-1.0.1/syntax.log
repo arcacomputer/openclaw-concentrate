@@ -1,0 +1,3 @@
+
+> openclaw-concentrate@1.0.1 check
+> node --check index.mjs && node --check src/catalog.mjs && node --check src/provider.mjs && node --check test/transport.synthetic.mjs

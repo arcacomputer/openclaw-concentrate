@@ -1,0 +1,30 @@
+Resolving clawhub:openclaw-concentrate…
+  Package   openclaw-concentrate@1.0.1
+  Type      plugin
+  Requires  pluginApi >=2026.9.4 · minGateway 2026.9.4
+  ClawHub   https://clawhub.ai/plugins/openclaw-concentrate
+╭─ ClawHub Security Audit ─────────────────────────────────────────────────────────────╮
+│ openclaw-concentrate@1.0.1                                                           │
+│                                                                                      │
+│ Outcome: Safe                                                                        │
+│                                                                                      │
+│ Overview:                                                                            │
+│ This is a coherent OpenClaw provider plugin that connects selected models to         │
+│ Concentrate AI with disclosed API-key use and cost-estimate configuration.           │
+│                                                                                      │
+│ Before installing, review that your prompts, tool outputs, and images may be sent to │
+│ Concentrate AI when you choose this provider. Configure the API key through          │
+│ OpenClaw's supported secret or provider-auth flow, set account-side spending limits  │
+│ separately, and treat the plugin's cost overrides as estimates rather than hard      │
+│ billing controls.                                                                    │
+│                                                                                      │
+│ Details:                                                                             │
+│ https://clawhub.ai/plugins/openclaw-concentrate/security-audit?version=1.0.1         │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+Downloading plugin openclaw-concentrate@1.0.1 from ClawHub…
+Extracting /tmp/openclaw/openclaw-clawhub-clawpack-otzph2/openclaw-concentrate-1.0.1.tgz…
+Plugin manifest id "concentrate" differs from npm package name "openclaw-concentrate"; using manifest id as the config key.
+Installing to <DISPOSABLE_STATE>/state/extensions/concentrate…
+Linked peerDependency "openclaw" -> /tmp/host/node_modules/openclaw
+Installed plugin: concentrate
+Plugin source changes take effect on the next Gateway start. Installs performed by the running Gateway request an automatic restart when config reload is enabled; installs from a separate shell, or with config reload off, require a manual Gateway restart. Configuration reload can restart connected channels before that Gateway restart.

@@ -1,0 +1,20 @@
+
+> openclaw-concentrate@1.0.1 test:transport
+> node --test --test-concurrency=1 test/transport.synthetic.mjs --test-reporter=tap
+
+✔ synthetic SSE preserves ordered text deltas and terminal usage (32.346591ms)
+✔ synthetic function call roundtrip preserves call ID and tool output (11.277103ms)
+✔ synthetic 402 is propagated without automatic retry (6.287345ms)
+✔ synthetic cancellation aborts an unfinished SSE stream (4.750429ms)
+✔ synthetic missing usage stays absent, never inferred as free (4.047854ms)
+✔ synthetic HTTP 400 is propagated with one request (4.562507ms)
+✔ synthetic HTTP 429 is propagated with one request (3.242195ms)
+✔ synthetic HTTP 500 is propagated with one request (3.476177ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 193.245998

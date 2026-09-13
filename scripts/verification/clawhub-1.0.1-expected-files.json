@@ -1,0 +1,34 @@
+[
+  {
+    "path": "LICENSE",
+    "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4"
+  },
+  {
+    "path": "openclaw.plugin.json",
+    "sha256": "99fc5320176774c5e30e89b4c88732e34537ad043acea8036e04bab2bc9f5c01"
+  },
+  {
+    "path": "package.json",
+    "sha256": "e1042fbc1123b5301dc4feef26ee4d15d777b6657cc978dca02e423ad29b6c40"
+  },
+  {
+    "path": "src/seed.json",
+    "sha256": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c"
+  },
+  {
+    "path": "README.md",
+    "sha256": "17a02bb17312e53d74a3f3a27932bb6a4f3293f0fb7bc6198300b2af773fb509"
+  },
+  {
+    "path": "src/catalog.mjs",
+    "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2"
+  },
+  {
+    "path": "index.mjs",
+    "sha256": "53bdf57cb20ee2a7844259ba49daf5caecbe327449c618e3798f76508149b93f"
+  },
+  {
+    "path": "src/provider.mjs",
+    "sha256": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f"
+  }
+]

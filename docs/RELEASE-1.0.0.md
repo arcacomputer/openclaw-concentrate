@@ -1,18 +1,33 @@
-# Version 1.0.0 release candidate
+# Version 1.0.x release report
 
-## Status
+## Current distribution: 1.0.1 published and install-verified
 
-**Code, package installation and the representative live integration gates passed. ClawHub publication is blocked on publisher authentication.** This is not a claim of universal compatibility across all Concentrate routes or of production certification.
+**ClawHub publication is complete.** [OpenClaw Concentrate on ClawHub](https://clawhub.ai/plugins/openclaw-concentrate) is a community code plugin published by `felirami` and maintained by Arca Computer. ClawScan and TruffleHog report **clean**. Fresh unauthenticated registry installation passed without `--force`.
 
-- Tested source: [`d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e`](https://github.com/arcacomputer/openclaw-concentrate/commit/d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e).
-- Source author and committer time: **2026-09-13T10:45:20+00:00**.
-- Package: `openclaw-concentrate@1.0.0`, MIT; eight allowlisted files, 7,858 compressed bytes.
-- SHA-256: `8e4ae463d032e6e1a1070c445846e6cff623f23e12400f2b3ce702052d05769f`.
-- Runtime: OpenClaw **2026.9.4**, Node **24.16.0**, Linux on bounded Blaxel sandboxes.
-- [Machine-readable evidence](release-1.0.0.json) contains individual cases, timestamps, receipt costs, hashes and limitations.
-- [Exact executed proof sources and reproduction layout](../scripts/verification/README.md).
+```sh
+openclaw plugins install clawhub:openclaw-concentrate --accept-capabilities
+```
 
-The later commit publishing this report does not change the tested package bytes. Every file in the downloaded npm tarball was compared byte-for-byte to the tested source commit. Git commit times and test execution times are intentionally separate.
+- Current package: `openclaw-concentrate@1.0.1`, MIT; eight allowlisted files, **7,863 compressed bytes**.
+- SHA-256: `de2e46f7254f27526a04c8acf855699d2bfbfb302610b2fc9c7ad9be2867781c`.
+- Distribution source: [`fa1c50ab1ce7687702c24f368154b5b468225e88`](https://github.com/arcacomputer/openclaw-concentrate/commit/fa1c50ab1ce7687702c24f368154b5b468225e88).
+- Source author time: **2026-09-13T16:00:38+00:00**; committer time: **2026-09-13T16:00:38+00:00**.
+- Final clean proof: **2026-09-13T16:13:11.904644+00:00** through **2026-09-13T16:14:17.226312+00:00**.
+- **39 package tests and 8 synthetic transport tests passed** again on the final source. Syntax, native verifier and zero-issue/zero-warning ClawHub validation passed.
+- Registry installation returned version `1.0.1`, enabled/loaded provider `concentrate`. All eight installed files matched the tested artifact. Native configuration, model selection and catalog refresh passed.
+- [Machine-readable registry/publication/install evidence](CLAWHUB-RELEASE.json), [sanitized logs](../evidence/2026-09-13/clawhub-1.0.1/) (disposable paths and trailing whitespace normalized) and [exact registry proof source](../scripts/verification/clawhub-registry-1.0.1.mjs).
+
+Version 1.0.1 corrects registry-rendered evidence links, leads with the verified registry install command, synchronizes the manifest description and adds a registry-readiness regression. **Provider code and model data are byte-identical to the live-qualified 1.0.0 implementation.** Package metadata changes are limited to the version and manifest description; configuration schema and capabilities are unchanged. The historical 1.0.0 registry artifact and its successful installation remain recorded separately.
+
+### Trust boundary
+
+ClawHub classifies this as **community / source-linked**, with artifact-only verification and `hasProvenance: false`. OpenClaw 2026.9.4 reports `trust.reason: "provenance-invalid"` in the installed-plugin record even though loading succeeded and all package bytes matched. The cause of that native trust classification has not been established. A clean scan and hash match are **not a cryptographically attested build or a trusted-publisher claim**. No signature-bypass flag or `--force` was used. Configuring automatic trusted publishing is a separate, optional authority decision.
+
+## Original live qualification: 1.0.0 candidate
+
+The following live cases were executed against source [`d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e`](https://github.com/arcacomputer/openclaw-concentrate/commit/d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e), authored/committed **2026-09-13T10:45:20+00:00**. The retained candidate archive has SHA-256 `8e4ae463d032e6e1a1070c445846e6cff623f23e12400f2b3ce702052d05769f` and 7,858 compressed bytes. It is not the later ClawHub archive.
+
+Runtime: OpenClaw **2026.9.4**, Node **24.16.0**, Linux on bounded Blaxel sandboxes. [Original machine-readable evidence](release-1.0.0.json) retains individual cases, timestamps, receipt costs, hashes and limitations. [Original proof sources and layout](../scripts/verification/README.md) remain available. Git commit, execution and publication-observation times are separate.
 
 ## Product defects fixed
 
@@ -62,25 +77,25 @@ GPT-5 Mini accepted low reasoning effort and returned the requested object throu
 
 Credentialed interactive login was not exercised. The documented environment-key path was used behind the isolated test proxy. No production OpenClaw installation or session state was changed.
 
-## ClawHub
+## Publication procedure and evidence
 
-ClawHub CLI **0.23.3** returned a static validation pass with **zero issues and zero warnings**. Its exact-source dry run selected the code-plugin family, package name `openclaw-concentrate`, version `1.0.0`, the source commit above and the eight-file artifact.
+ClawHub CLI **0.23.3** validated the final source with zero issues and warnings. Publication used explicit owner, name, family, version, source repository, source commit and latest tag. Returned attempt/release IDs were read back until publication was terminal and both scans were clean. Public unauthenticated metadata and the native installer independently resolved version 1.0.1 and its artifact.
 
-**No upload, registry security scan or ClawHub installation has happened.** The browser is signed out, the isolated CLI reports `Not logged in`, and no normal local ClawHub credential config was found. GitHub authentication does not provide ClawHub publisher authority.
+The first 1.0.0 upload was rejected because `openclaw` is a reserved topic; static dry-run validation had not caught that server-side policy. After verifying no package had been created, optional topics were explicitly cleared. No accepted/ambiguous publish was blindly repeated. Device authorization is not interchangeable with GitHub CLI authentication.
 
-After the authorized publisher signs in, publish this reviewed source/artifact, read back the exact package/version and scan status, and verify a fresh `openclaw plugins install clawhub:<returned-package-name>` installation. Do not guess the publisher handle or claim a dry run was an upload.
+The final registry proof received no real model or publisher credentials. Its dummy key verifies configuration/catalog registration, not account entitlement or fresh paid inference. The earlier live-qualified provider code was compared byte-for-byte before reusing its live evidence.
 
 ## Budget, failures and cleanup
 
 The new work made **21 paid forwards** with retained receipts reporting **USD 0.012043048** in inference costs. This is not account reconciliation or total compute billing. Prior unknown charges and reservations remain held; automatic top-up and provider key caps were not changed.
 
-Both owned Blaxel sandboxes were removed and absence was independently verified. Unrelated inventory was preserved. Proof files were downloaded before deletion.
+The two original live-qualification sandboxes were removed and absence was independently verified. All later owned publication/registry-proof workers are also absent; unrelated inventory was preserved. The final proof was automatically downloaded and hashed before verified cleanup. An earlier metadata-patch worker reached its TTL while scans were pending: core TAP/validation/package/RED evidence was retained, but several supplemental logs were not retrieved. The final fresh worker reran the same source and preserved the complete proof. No paid inference was added during publication or the metadata patch.
 
 Two harness-only setup mistakes remain recorded: a CLI version flag was unsupported after the test suites had passed, and a synthetic allowance array initially covered two turns rather than three. The latter failed with zero paid forwards, was corrected to the actual forward count, and passed a fresh credential-free preflight before live dispatch. Neither failure is hidden as a model pass.
 
 ## What remains outside this release's claims
 
-- ClawHub publisher login, actual publication, scan acceptance and registry installation.
+- Cryptographic build attestation/trusted-publisher verification; the native trust diagnostic is preserved above.
 - All-model/all-feature certification; the broader 185-model campaign retains its original outcomes.
 - Historical Grok output-cap violations, ambiguous billing and unresolved upstream vision behavior.
 - macOS, Windows and OpenClaw/Node versions other than the verified target.

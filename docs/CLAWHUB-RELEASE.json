@@ -1,0 +1,250 @@
+{
+  "recordedAtUtc": "2026-09-13T16:29:22.368495+00:00",
+  "package": "openclaw-concentrate",
+  "version": "1.0.1",
+  "license": "MIT",
+  "publisher": "felirami",
+  "family": "code-plugin",
+  "url": "https://clawhub.ai/plugins/openclaw-concentrate",
+  "source": {
+    "repository": "arcacomputer/openclaw-concentrate",
+    "commit": "fa1c50ab1ce7687702c24f368154b5b468225e88",
+    "authorTime": "2026-09-13T16:00:38+00:00",
+    "committerTime": "2026-09-13T16:00:38+00:00"
+  },
+  "artifact": {
+    "format": "tgz",
+    "kind": "npm-pack",
+    "npmFileCount": 8,
+    "npmIntegrity": "sha512-E/gCf/v7dtSSruYI0WVUhwx4guUMAfxCV4Aa0mGcvc4H5AKvKk3FfGg4wYTZJX+gxFcFG0Ajh74h1qD9CLx0PA==",
+    "npmShasum": "a9a0a28e15e5d35be85da38d050aa226f7a20510",
+    "npmTarballName": "openclaw-concentrate-1.0.1.tgz",
+    "npmUnpackedSize": 21724,
+    "sha256": "de2e46f7254f27526a04c8acf855699d2bfbfb302610b2fc9c7ad9be2867781c",
+    "size": 7863
+  },
+  "publication": {
+    "attemptId": "zx76ncvkz6vxp5x2gepq1tkv9d8eb9gm",
+    "packageId": "rn7anh6gk77tvqz4e5x4bqxtzh8ea8ty",
+    "releaseId": "rd75f0yqqxb174et72sfctx9bn8ebptw",
+    "artifactSha256": "de2e46f7254f27526a04c8acf855699d2bfbfb302610b2fc9c7ad9be2867781c",
+    "name": "openclaw-concentrate",
+    "version": "1.0.1",
+    "status": "finalized",
+    "publicationStatus": "published",
+    "terminal": true,
+    "checks": {
+      "clawscan": {
+        "status": "clean",
+        "summary": "This is a coherent OpenClaw provider plugin that routes selected model requests to Concentrate AI with disclosed API-key setup and cost-estimate warnings."
+      },
+      "trufflehog": {
+        "status": "clean",
+        "summary": "TruffleHog found no verified secrets in the staged publish artifact."
+      }
+    }
+  },
+  "verification": {
+    "hasProvenance": false,
+    "scanStatus": "clean",
+    "scope": "artifact-only",
+    "sourceCommit": "fa1c50ab1ce7687702c24f368154b5b468225e88",
+    "sourceRepo": "arcacomputer/openclaw-concentrate",
+    "sourceTag": "fa1c50ab1ce7687702c24f368154b5b468225e88",
+    "summary": "Validated package structure and linked the release to source metadata.",
+    "tier": "source-linked"
+  },
+  "runtime": {
+    "openclaw": "2026.9.4",
+    "node": "v24.16.0",
+    "platform": "Linux",
+    "paidInferenceRequestsInPublicationPhase": 0
+  },
+  "checks": {
+    "packageTests": {
+      "tests": 39,
+      "pass": 39,
+      "fail": 0
+    },
+    "transportTests": {
+      "tests": 8,
+      "pass": 8,
+      "fail": 0
+    },
+    "clawhubValidation": {
+      "breakageCount": 0,
+      "warningCount": 0,
+      "deprecationWarningCount": 0,
+      "issueCount": 0
+    },
+    "registryInstallPassed": true,
+    "configuredModel": {
+      "key": "concentrate/gpt-4.1-mini",
+      "name": "GPT 4.1 Mini [user cost estimate]",
+      "input": "text+image",
+      "contextWindow": 1047576,
+      "local": false,
+      "available": true,
+      "tags": [
+        "default",
+        "configured"
+      ]
+    },
+    "packagedFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4",
+        "matched": true
+      },
+      {
+        "path": "openclaw.plugin.json",
+        "sha256": "99fc5320176774c5e30e89b4c88732e34537ad043acea8036e04bab2bc9f5c01",
+        "matched": true
+      },
+      {
+        "path": "package.json",
+        "sha256": "e1042fbc1123b5301dc4feef26ee4d15d777b6657cc978dca02e423ad29b6c40",
+        "matched": true
+      },
+      {
+        "path": "src/seed.json",
+        "sha256": "02ff332030edcd371b2ab4187256953e7b26f7f26284e1085f3ac299d885ea8c",
+        "matched": true
+      },
+      {
+        "path": "README.md",
+        "sha256": "17a02bb17312e53d74a3f3a27932bb6a4f3293f0fb7bc6198300b2af773fb509",
+        "matched": true
+      },
+      {
+        "path": "src/catalog.mjs",
+        "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+        "matched": true
+      },
+      {
+        "path": "index.mjs",
+        "sha256": "53bdf57cb20ee2a7844259ba49daf5caecbe327449c618e3798f76508149b93f",
+        "matched": true
+      },
+      {
+        "path": "src/provider.mjs",
+        "sha256": "2467300cd0375660f21210a5fee2d57c43b23371e6c6dcdf5e06c35b3f3fc83f",
+        "matched": true
+      }
+    ]
+  },
+  "nativeInstall": {
+    "startedAt": "2026-09-13T16:13:46.056Z",
+    "finishedAt": "2026-09-13T16:13:54.404Z",
+    "commands": [
+      {
+        "label": "registry-install",
+        "args": [
+          "plugins",
+          "install",
+          "clawhub:openclaw-concentrate",
+          "--accept-capabilities"
+        ],
+        "startedAt": "2026-09-13T16:13:46.056Z",
+        "finishedAt": "2026-09-13T16:13:54.404Z",
+        "exitCode": 0
+      },
+      {
+        "label": "plugins",
+        "args": [
+          "plugins",
+          "list",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T16:13:54.404Z",
+        "finishedAt": "2026-09-13T16:13:55.168Z",
+        "exitCode": 0
+      },
+      {
+        "label": "cost-config",
+        "args": [
+          "config",
+          "set",
+          "plugins.entries.concentrate.config",
+          "{\"acknowledgeEstimatedCosts\":true,\"costOverrides\":{\"gpt-4.1-mini\":{\"input\":0.4,\"output\":1.6,\"cacheRead\":0.1,\"cacheWrite\":0.4}}}"
+        ],
+        "startedAt": "2026-09-13T16:13:55.171Z",
+        "finishedAt": "2026-09-13T16:13:56.607Z",
+        "exitCode": 0
+      },
+      {
+        "label": "config-valid",
+        "args": [
+          "config",
+          "validate"
+        ],
+        "startedAt": "2026-09-13T16:13:56.608Z",
+        "finishedAt": "2026-09-13T16:13:57.467Z",
+        "exitCode": 0
+      },
+      {
+        "label": "model-select",
+        "args": [
+          "models",
+          "set",
+          "concentrate/gpt-4.1-mini"
+        ],
+        "startedAt": "2026-09-13T16:13:57.467Z",
+        "finishedAt": "2026-09-13T16:14:00.028Z",
+        "exitCode": 0
+      },
+      {
+        "label": "model-refresh",
+        "args": [
+          "models",
+          "list",
+          "--all",
+          "--provider",
+          "concentrate",
+          "--refresh",
+          "--json"
+        ],
+        "startedAt": "2026-09-13T16:14:00.028Z",
+        "finishedAt": "2026-09-13T16:14:04.219Z",
+        "exitCode": 0
+      }
+    ],
+    "provider": {
+      "id": "concentrate",
+      "enabled": true,
+      "status": "loaded",
+      "providerIds": [
+        "concentrate"
+      ]
+    },
+    "trustReason": "provenance-invalid",
+    "installSource": "clawhub",
+    "forceFlagUsed": false,
+    "realModelCredentialsPresent": false,
+    "publisherCredentialsPresent": false
+  },
+  "evidenceBoundary": {
+    "runtimeCodeUnchangedFrom": "d9b023750f6f2ed1ecb6ad3005eeb77395d0d29e",
+    "initialLiveEvidence": "release-1.0.0.json",
+    "filesChangedFromRegistry100": [
+      "openclaw.plugin.json",
+      "package.json",
+      "README.md"
+    ],
+    "metadataChanges": "README links/install wording; package version; manifest description only",
+    "allModelsCertified": false,
+    "cryptographicProvenanceVerified": false
+  },
+  "cleanup": {
+    "allOwnedPublicationWorkersAbsent": true,
+    "unrelatedInventoryNotPublishedOrModified": true,
+    "finalProofStartedAt": "2026-09-13T16:13:11.904644+00:00",
+    "finalProofFinishedAt": "2026-09-13T16:14:17.226312+00:00",
+    "originalFinalProofArchiveSha256": "4409db81865ff4a493fbda40d5e5bdb20adad32424d04b8f8ade96c258d80727"
+  },
+  "historicalRegistry100": {
+    "artifactSha256": "d06eaf88ee0470f5b69fc4266b6fc4bf54026a8be50500622e2f4c1858c38fa7",
+    "registryInstallVerified": true
+  },
+  "retainedEvidenceGap": "The metadata-patch worker reached its TTL while ClawHub scans were pending. Package/transport TAP, validation, archive, identity and RED evidence were already local, but several supplemental logs were not retrieved. A fresh final worker reran the same source and downloaded its complete proof before verified cleanup."
+}

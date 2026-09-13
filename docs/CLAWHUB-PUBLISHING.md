@@ -11,7 +11,7 @@ This repository is a **code plugin**, not a skill. Use `clawhub package` command
 
 1. Finish the release gates and bind the exact reviewed source commit and package artifact. Do not label incomplete compatibility as stable certification.
 2. Check current required package metadata. Official docs require `openclaw.compat.pluginApi` and `openclaw.build.openclawVersion`. The package now records build compatibility with OpenClaw 2026.9.4; retain truthful provenance and validate the resulting candidate before upload. Do not invent a build timestamp or claim prior tests ran against changed source.
-3. Confirm the intended package name and publisher with the authorized account. The candidate package is `openclaw-concentrate@1.0.0`; this name passed a dry run but is not yet a verified ClawHub registry identity. Do not assume the GitHub organization automatically grants ClawHub publisher access.
+3. Confirm the intended package name and publisher with the authorized account. The verified registry identity is `openclaw-concentrate`, currently published as 1.0.1 by `felirami`; bind any subsequent publication to its own reviewed version and source. Do not assume the GitHub organization automatically grants ClawHub publisher access.
 4. Install/use the ClawHub CLI in the bounded execution environment, record its version, and run:
 
 ```sh
@@ -43,10 +43,20 @@ Trusted GitHub Actions publishing is optional follow-up, not automatic: initial 
 
 ## Status
 
-The 1.0.0 candidate passed zero-issue validation and an exact-source publish dry run. Publisher authentication is unavailable; upload, security scan and registry installation have not occurred. See [current release evidence](RELEASE-1.0.0.md).
+**Version 1.0.1 is published and install-verified.** ClawScan and TruffleHog are clean. Fresh unauthenticated native installation passed without `--force`, and all eight files matched the tested artifact. See [current release evidence](RELEASE-1.0.0.md) and [machine-readable publication/installation records](CLAWHUB-RELEASE.json). This is a community/source-linked release, not cryptographically attested provenance; the native trust diagnostic is preserved in those records.
 
-## Executed preflight
+## Historical preflight
 
 ClawHub CLI 0.23.3 static validation passed with no issues after adding build metadata. The first dry run stopped because code plugins require explicit `--source-repo` and `--source-commit`; the example above includes those flags. This result is not an uploaded release.
 
 The corrected exact-commit dry run **passed**, along with 32 package tests and zero-issue static validation. See [machine-readable preflight evidence](CLAWHUB-PREFLIGHT.json). This proves a publish plan for the preview package, not registry upload, full compatibility, or final publisher identity.
+
+## Observed publication details
+
+For ClawHub CLI 0.23.3, the successful publication explicitly selected owner, family, name, version, source repository/commit and `latest` tag. Optional topics were explicitly empty. `openclaw` is a reserved topic: a server-side rejection caught it even after a successful dry run. Verify the previous attempt's state before correcting and resubmitting; never repeat an accepted/ambiguous upload blindly.
+
+A successful upload can return `pending-publication`. Preserve its exact attempt and release IDs. The CLI uses `GET /api/v1/publish/attempts/<attemptId>` for authenticated status; require a terminal published state and inspect each check. Public `GET /api/v1/packages/<name>` exposes `package.latestVersion`, `package.artifact.sha256` and `package.scanStatus`. Read the actual schema rather than assuming a top-level `latestRelease` object.
+
+Do not hold a paid sandbox idle while remote registry checks are queued. Checkpoint its evidence and clean it up, then use a fresh bounded install worker only after publication and scans are ready. The final worker should download its complete evidence and perform verified cleanup automatically, without waiting for another conversational turn.
+
+Keep README links absolute so evidence opens from the ClawHub renderer. Keep package and manifest descriptions synchronized. Documentation/metadata changes to an already-published archive require a new version; 1.0.1 preserves unchanged provider code and model data rather than overwriting 1.0.0.

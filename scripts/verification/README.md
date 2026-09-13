@@ -1,4 +1,4 @@
-# Reproduce the 1.0.0 release proof
+# Reproduce release proof
 
 These are the exact executed harness sources, not an implementation sketch. They are excluded from the installable package. Run only in an authorized, disposable Linux sandbox; never against a production gateway or an unbounded billing account.
 
@@ -43,3 +43,13 @@ Copy both PNGs to `/tmp/fixtures`, use `vision-controls.mjs`, and select one obj
 The host subprocess receives only a dummy loopback credential. `credential-audit.mjs` asserts that no model or Blaxel key reaches it. The owning proxy forwards only to the fixed Concentrate HTTPS origin, records dispatches, validates terminal usage before continuation, enforces body/output/time/cost bounds and drains the stream before unlocking the next request.
 
 Use one bounded Blaxel sandbox, explicit TTL and process-group deadlines. Save exact source/package/harness hashes and UTC times. Download evidence **before** scoped deletion and independently verify provider inventory afterward. No raw account logs or personal conversation state belong in the public repo.
+
+## 1.0.1 native registry proof: no paid inference
+
+`clawhub-registry-1.0.1.mjs` is the exact executed registry-install verifier. `clawhub-1.0.1-expected-files.json` contains the eight expected file hashes. Neither is part of the installed package. Run only in an approved, credential-free disposable Linux sandbox with Node 24.16.0 and OpenClaw 2026.9.4 in the fixed runtime layout above. Reuse only the Node/OpenClaw installation paths; do not run the old local-plugin installation or paid-proxy steps for this registry proof.
+
+Copy the verifier to `/tmp/registry-proof.mjs` and the expected-file JSON to `/tmp/expected-files.json`, then run `node /tmp/registry-proof.mjs`. The script creates separate disposable state, installs from the public registry without a publisher token or `--force`, checks version and all file hashes, verifies provider loading, applies the explicit cost example, selects the model and refreshes its catalog. Real model and infrastructure credentials are rejected. The dummy key proves configuration/catalog registration only, not account entitlement or a paid inference result.
+
+The archived command uses the unversioned registry target, which resolved to 1.0.1 in this execution; the version/hash assertions fail closed after incompatible registry changes. Preserve the archived bytes. A later reproduction targeting another release is a new proof, not a retroactive change to this one.
+
+The complete final run also repeated the package tests, syntax check, synthetic transport suite, native verifier and ClawHub static validation. See `../../docs/CLAWHUB-RELEASE.json` and `../../evidence/2026-09-13/clawhub-1.0.1/`. Automated evidence download and cleanup completed before the final worker expired. The native `provenance-invalid` trust classification is retained, not treated as signed provenance.

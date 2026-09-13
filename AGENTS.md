@@ -16,7 +16,7 @@ Community feedback shared by the maintainer motivates this direction:
 
 This is a community comment supplied by the project owner, not a verified formal foundation policy or approval. No author, permalink or foundation confirmation has been supplied here. Preserve that qualification when describing it.
 
-Target a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. ClawHub publication is still pending; source installation and package tests do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
+Maintain a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. The registry identity is `openclaw-concentrate`, published by `felirami`; read the release report for the verified version and scan/install evidence. Source installation and package tests alone do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
 
 Official ClawHub reference: <https://docs.openclaw.ai/clawhub>. Follow [the repository publishing checklist](docs/CLAWHUB-PUBLISHING.md), including actual package validation, publish dry run, publisher authentication and registry-install verification.
 
@@ -31,7 +31,7 @@ Read these before changing code or making compatibility claims:
 - `test/` and `scripts/`: existing tests and verification tools; reuse them before inventing a new framework.
 - `docs/COMPATIBILITY.md` and `docs/compatibility.json`: dated basic-response results for all catalog rows.
 - `docs/FEATURE-TESTING.md`: actual feature results, failures and qualifications.
-- `docs/RELEASE-GATES.md`: current candidate/distribution gates; `docs/RELEASE-1.0.0.md` and JSON contain the latest executed evidence.
+- `docs/RELEASE-GATES.md`: current release/distribution gates; `docs/RELEASE-1.0.0.md` summarizes the 1.0.x release, `docs/CLAWHUB-RELEASE.json` records registry evidence, and `docs/release-1.0.0.json` retains the original live qualification.
 - `docs/PACKAGE-VERIFICATION.md`: clean source installation proof.
 - `docs/PROVENANCE.md`, `docs/COMMIT-HISTORY.md`: source/evidence chronology.
 
@@ -39,7 +39,7 @@ Check Git status and HEAD first. Preserve other agents' uncommitted changes. Use
 
 ## Current product boundary
 
-The 1.0.0 candidate has verified package installation, native model registration and representative live tools/context, vision, reasoning and schema evidence. ClawHub publication remains blocked on publisher authentication. It is not universal model or all-platform certification. Consult the latest release report and dated histories; preserve all historical error/inconclusive/quarantine states.
+The 1.0.x release has verified ClawHub publication, clean registry scans, fresh registry installation, native model registration and representative live tools/context, vision, reasoning and schema evidence. Version 1.0.1 is a documentation/metadata patch with unchanged provider code. This is not universal model or all-platform certification, nor a cryptographically attested release. Consult the latest release report and dated histories; preserve all historical error/inconclusive/quarantine states.
 
 Known remaining boundaries include inconsistent upstream image/output behavior, broad per-model feature coverage and reconciliation of ambiguous earlier charges. Real parallel tools and fresh-user context now have installed-package evidence; standalone or simulated gate tests still cannot substitute for live proof. The package remains private to npm to prevent accidental publication. No npm or ClawHub release is implied by public MIT source.
 

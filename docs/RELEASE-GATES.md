@@ -1,24 +1,22 @@
 # Release gates
 
-Current evidence: [1.0.0 release report](RELEASE-1.0.0.md) and [machine-readable results](release-1.0.0.json).
+Current release: **1.0.1**, published on [ClawHub](https://clawhub.ai/plugins/openclaw-concentrate). See the [release report](RELEASE-1.0.0.md), [registry evidence](CLAWHUB-RELEASE.json) and [original live qualification](release-1.0.0.json).
 
-## Verified candidate
+## Verified release
 
-- **Code: passed.** Metadata fallback and the 256-model estimate boundary have RED/GREEN regressions; 38 package tests pass.
-- **Synthetic transport: passed.** Eight focused client checks pass, with their host/provider limitations stated.
-- **Package: passed.** Exact eight-file MIT tarball, byte comparison to source, real SDK import, fresh installation and enabled/loaded provider readback.
-- **Native catalog: passed.** Config and model selection accepted; explicit refresh returned the configured model as available.
-- **Representative live integration: passed within stated boundaries.** Parallel reads, paired results and durable new-user recall; 256×256 tool-image control; strict-schema wire/output checks; bounded reasoning. These are actual host/provider calls, not simulated dispatcher callbacks.
-- **Evidence and resource containment: passed.** Exact source/artifact hashes, UTC times and receipts preserved. Both owned sandboxes were removed and independently checked. Earlier uncertain reservations remain held.
+- **Code: passed.** Runtime fallback and the 256-model estimate boundary have RED/GREEN regressions. Final package tests: 39 passed, zero failed. Registry-ready metadata/README regression passed after reproducing the stale description.
+- **Synthetic transport: passed.** Eight focused checks, zero failed. Host/provider limitations remain explicit.
+- **Package: passed.** Exact eight-file MIT tarball, byte comparison to source, real SDK import and zero-issue/zero-warning static validation.
+- **Registry installation: passed.** Fresh unauthenticated `openclaw plugins install clawhub:openclaw-concentrate --accept-capabilities` installed 1.0.1. Provider enabled/loaded, all eight files matched, no `--force` or signature bypass.
+- **Native catalog: passed.** Configuration and model selection accepted; explicit refresh returned the configured GPT-4.1 Mini as available. This is not an account-entitlement test.
+- **Representative live integration: passed within stated boundaries.** Parallel reads, paired results and durable new-user recall; 256×256 tool-image control; strict-schema wire/output checks; bounded reasoning. These are actual earlier host/provider calls. The 1.0.1 provider code is byte-identical; no new paid inference was used for the metadata patch.
+- **Distribution: passed.** Authorized publisher `felirami`; exact returned attempt/release readback, public latest version 1.0.1, clean ClawScan and TruffleHog, matching artifact digest and independent registry installation.
+- **Containment: passed.** All owned publication/proof workers are absent. Final evidence was downloaded automatically before verified cleanup. One earlier worker lost supplemental logs at TTL; retained evidence and the complete fresh rerun are distinguished in the release report. Unknown earlier billing reservations remain held.
 
-## Distribution gate: blocked
+## Trust and coverage limits
 
-ClawHub validation and the exact-source publish dry run passed with zero issues. There is no authenticated publisher available. Actual upload, scan acceptance, public readback and a clean registry installation remain required before saying **ClawHub release complete**. GitHub/source installation is not a substitute.
+This is a community/source-linked, artifact-scanned release, **not signed build provenance**. ClawHub reports `hasProvenance: false`; native OpenClaw readback reports `trust.reason: provenance-invalid`. The cause of that native classification is not established. Successful installation and matching bytes do not erase it.
 
-## Broader campaign, not a universal claim
+The original 185-model smoke histories and 2,590 feature rows remain research, not universal certification. Untested, inconclusive and quarantined rows are not promoted by representative checks. See [historical criteria](HISTORICAL-RELEASE-GATES.md) and [feature history](FEATURE-TESTING.md).
 
-The original all-model/all-feature campaign remains incomplete. Its 185-model smoke histories and 2,590 feature rows are retained; untested, inconclusive and quarantined rows are not promoted to passes by these representative checks. See [historical criteria](HISTORICAL-RELEASE-GATES.md) and [feature history](FEATURE-TESTING.md).
-
-The bounded plugin release exposes the host's native Responses path and documents upstream limitations. It does not certify every catalog route, guarantee image accuracy, add host-side JSON validation, claim exact billing, or promise compatibility with untested operating systems/runtime versions.
-
-Arca maintains an independent ClawHub plugin. Built-in OpenClaw inclusion is not a prerequisite. Continue directly without delegation unless the user changes that instruction.
+No guarantee covers every upstream route, image accuracy, host-side schema enforcement, exact billing, hard spend limits or untested operating systems/runtime versions. Arca maintains an independent plugin; built-in OpenClaw inclusion is not required.
