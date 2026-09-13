@@ -159,3 +159,19 @@ The replacement gate verifies exact-byte SHA-256, independently pinned source/ru
 211 local evidence checks verified preservation of 200 prior evidence files including 70 checkpoints. Ledger, matrix and quarantine unchanged. No model calls or model-key extraction. Checkpoints, archive and executed source were verified before cleanup; provider readback at `2026-09-13T08:15:23.887649+00:00` confirmed worker absence.
 
 **Scope limitation:** standalone gate qualification only. Integration into the private dispatcher remains unverified, and no production integration or live model authorization resulted from this batch. Integrated negative tests and fresh source-bound synthetic host proof must precede any new bounded live regression.
+
+## Direct regression: published transport fixture repair
+
+Publication author/committer timestamp: `2026-09-13T09:34:38+00:00`. Actual run recorded at `2026-09-13T09:34:09.245288+00:00`.
+
+The public synthetic transport test contained a truncated, invalid OpenAI client constructor and was outside the default `*.test.mjs` test glob. Repaired the constructor with loopback-only base URL, dummy credential, explicit retry zero and timeout. Added `npm run test:transport` and included this file in `npm run check` so syntax failure cannot remain hidden.
+
+Direct Blaxel execution: package checks and 32 package tests passed; all eight synthetic transport cases passed: ordered SSE/usage, tool ID/result roundtrip, HTTP402 without retry, cancellation, absent usage, and HTTP400/429/500 each with exactly one request. These exercise the OpenAI client supplied by OpenClaw, **not actual OpenClaw host routing or paid Concentrate compatibility**. Zero paid inference; sandbox cleanup verified.
+
+Run in a sandbox after installing the pinned OpenClaw package:
+
+```sh
+OPENCLAW_PACKAGE_JSON=/absolute/path/to/openclaw/package.json npm run test:transport
+```
+
+Historical vision, live parallel-tool/new-user and quarantined routes remain unresolved. This run does not claim all prior failures were retested.

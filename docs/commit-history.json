@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T09:20:31+00:00",
-  "historyThrough": "4361487161cdfe2dd0118ba68c07e324b7675589",
+  "generatedAt": "2026-09-13T09:34:38+00:00",
+  "historyThrough": "6964fad293826e4d2d16e323514ceb8fa77618c2",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "6964fad293826e4d2d16e323514ceb8fa77618c2",
+      "authorTime": "2026-09-13T09:20:31+00:00",
+      "committerTime": "2026-09-13T09:20:31+00:00",
+      "subject": "Record successful exact-commit ClawHub publish preflight"
+    },
     {
       "sha": "4361487161cdfe2dd0118ba68c07e324b7675589",
       "authorTime": "2026-09-13T09:19:26+00:00",

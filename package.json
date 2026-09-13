@@ -14,8 +14,9 @@
   ],
   "scripts": {
     "test": "node --test --test-concurrency=1 test/*.test.mjs",
-    "check": "node --check index.mjs && node --check src/catalog.mjs && node --check src/provider.mjs",
-    "manifest": "node scripts/generate-manifest.mjs"
+    "check": "node --check index.mjs && node --check src/catalog.mjs && node --check src/provider.mjs && node --check test/transport.synthetic.mjs",
+    "manifest": "node scripts/generate-manifest.mjs",
+    "test:transport": "node --test --test-concurrency=1 test/transport.synthetic.mjs"
   },
   "engines": {
     "node": ">=24.16.0 <25 || >=26.1.0"

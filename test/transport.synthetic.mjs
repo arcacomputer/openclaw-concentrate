@@ -44,3 +44,10 @@ test('synthetic missing usage stays absent, never inferred as free',{timeout:500
  const f=await fixture((req,res)=>sse(res,[{type:'response.completed',response:{id:'synthetic',status:'completed',output:[]}}]));
  try{let last;for await(const e of await f.client.responses.create({model:'synthetic',input:'hi',stream:true,max_output_tokens:32}))last=e; assert.equal(Object.hasOwn(last.response,'usage'),false);}finally{await f.close();}
 });
+
+for (const status of [400,429,500]) {
+ test(`synthetic HTTP ${status} is propagated with one request`,{timeout:5000},async()=>{
+  const f=await fixture((req,res)=>{res.writeHead(status,{'Content-Type':'application/json'});res.end(JSON.stringify({error:{message:'synthetic failure'}}));});
+  try {await assert.rejects(f.client.responses.create({model:'synthetic',input:'hi',max_output_tokens:32}),e=>e.status===status);assert.equal(f.requests.length,1);} finally {await f.close();}
+ });
+}
