@@ -6,6 +6,18 @@ Build a finished, evidence-backed Concentrate.ai provider integration for OpenCl
 
 Work directly by default. Do not spawn subagents or delegate work unless the human explicitly authorizes it. Different agents may work on this repository in separate sessions; that is not permission to create autonomous agent chains. Keep coordination asynchronous and concise, with evidence and handoff notes rather than repeated progress messages.
 
+## Plugin-first distribution and maintenance
+
+The intended release is an independently maintained **ClawHub plugin**, not a built-in OpenClaw provider. Arca Computer maintains this integration, its compatibility evidence, documentation and ongoing fixes. Core inclusion is not a release requirement or promised next step.
+
+Community feedback shared by the maintainer motivates this direction:
+
+> Patrick or someone else from the foundation can correct me but I believe that all new providers and channels are requested to maintain their own code and be a ClawHub plugin. [The foundation] can't add support for every provider/channel/etc on the market, it is a lot easier to externalize what we can.
+
+This is a community comment supplied by the project owner, not a verified formal foundation policy or approval. No author, permalink or foundation confirmation has been supplied here. Preserve that qualification when describing it.
+
+Target a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. ClawHub publication is still pending; source installation and package tests do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
+
 ## Start here
 
 Read these before changing code or making compatibility claims:

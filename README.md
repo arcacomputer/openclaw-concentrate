@@ -4,6 +4,18 @@ An experimental, MIT-licensed provider plugin maintained by [Arca Computer](http
 
 **Real OpenClaw inference has been exercised. This is not a production-certified release.** See [the compatibility snapshot](docs/COMPATIBILITY.md) and [all model rows](docs/compatibility.json). Source is public; no npm release or upstream PR has been published. The npm `private` flag prevents accidental registry publication, not source access.
 
+## Plugin-first distribution and maintenance
+
+The intended release is an independently maintained **ClawHub plugin**, not a built-in OpenClaw provider. Arca Computer maintains this integration, its compatibility evidence, documentation and ongoing fixes. Core inclusion is not a release requirement or promised next step.
+
+Community feedback shared by the maintainer motivates this direction:
+
+> Patrick or someone else from the foundation can correct me but I believe that all new providers and channels are requested to maintain their own code and be a ClawHub plugin. [The foundation] can't add support for every provider/channel/etc on the market, it is a lot easier to externalize what we can.
+
+This is a community comment supplied by the project owner, not a verified formal foundation policy or approval. No author, permalink or foundation confirmation has been supplied here. Preserve that qualification when describing it.
+
+Target a reviewed, validated ClawHub package with clear ownership and a reproducible installation/update path. ClawHub publication is still pending; source installation and package tests do not establish registry acceptance. Consult current official OpenClaw/ClawHub publishing requirements before submission. Upstream contributions should address shared SDK/runtime defects where appropriate, rather than assume this provider must be merged into core. Human authorization is required for registry publication or upstream submissions.
+
 ## Commit and evidence timestamps
 
 See [provenance](docs/PROVENANCE.md), [exact commit history](docs/COMMIT-HISTORY.md), and [machine-readable metadata](docs/provenance.json). Publication time and testing time are tracked separately.

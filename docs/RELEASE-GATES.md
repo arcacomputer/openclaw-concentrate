@@ -4,6 +4,10 @@ Publication author/committer timestamp: `2026-09-13T08:59:21+00:00`.
 
 Requested deliverable is a finished full-compatibility release, not an installable preview. Release remains BLOCKED. Package installation and harness tests do not satisfy feature gates.
 
+## Distribution target
+
+Release as an independently maintained **ClawHub plugin**. Built-in OpenClaw inclusion is not an acceptance criterion. Community guidance motivating this choice is quoted and qualified in [AGENTS.md](../AGENTS.md). Registry validation, packaging, installation/update documentation and an authorized ClawHub submission are release work; acceptance must be verified, not assumed.
+
 ## Required acceptance
 
 - Every catalog model has an explicit outcome for each applicable documented feature, tied to exact runtime/source and actual execution evidence. Unsupported must be justified by provider documentation, not inferred from an unexecuted test.

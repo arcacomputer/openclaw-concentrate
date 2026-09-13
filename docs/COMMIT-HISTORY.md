@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T09:11:44+00:00**.
+Exported at **2026-09-13T09:15:34+00:00**.
 
-History through `f6414cdeea4384b4a4d28a6bb9f5500692ad66f6`.
+History through `01fd997de4a252b7542862ca6eb224b4e64f4072`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -113,3 +113,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`f6414cdeea4384b4a4d28a6bb9f5500692ad66f6`](https://github.com/arcacomputer/openclaw-concentrate/commit/f6414cdeea4384b4a4d28a6bb9f5500692ad66f6)
 - Author timestamp: `2026-09-13T08:59:21+00:00`
 - Committer timestamp: `2026-09-13T08:59:21+00:00`
+
+## Add comprehensive agent guide for safe provider development and verification
+
+- Commit: [`01fd997de4a252b7542862ca6eb224b4e64f4072`](https://github.com/arcacomputer/openclaw-concentrate/commit/01fd997de4a252b7542862ca6eb224b4e64f4072)
+- Author timestamp: `2026-09-13T09:11:44+00:00`
+- Committer timestamp: `2026-09-13T09:11:44+00:00`
