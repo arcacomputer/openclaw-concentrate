@@ -1,0 +1,73 @@
+{
+  "scope": "Catalog and generated model-directory source tests, not release or live model proof",
+  "baseCommit": "6c12ccfad81b879f156a3b3432068b50e5578d7d",
+  "snapshot": {
+    "source": "https://api.concentrate.ai/v1/models",
+    "fetchedAt": "2026-09-13T23:38:55.699Z",
+    "snapshotSha256": "12b1d0e61dade53585effc0ef5544fa36454c901e5654ab7598680ef88d0720f",
+    "sourceCount": 185,
+    "eligibleCount": 184,
+    "exclusions": [
+      {
+        "id": "redact-v1",
+        "reason": "redaction utility, not a chat model"
+      }
+    ],
+    "qualification": "Dated upstream metadata, not measured feature support, entitlement or prices. Live discovery takes precedence; fallback can be stale."
+  },
+  "tests": {
+    "catalog-red.tap": {
+      "sha256": "383430704e3e8d6fd8e23e38c1eeccb787ae5febb3f04a0a82e88102f1d53aa9",
+      "counts": {
+        "tests": 1,
+        "pass": 0,
+        "fail": 1
+      }
+    },
+    "catalog-green.tap": {
+      "sha256": "f76d3c15234ff7c2067215a0d79ed50b9ae53cfa0f5d6aba11c425f764d2dd5e",
+      "counts": {
+        "tests": 1,
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    "catalog-maintenance-red.tap": {
+      "sha256": "506415fd23c71bad643da0feb61ff63b8b3e64fa27810bafdfec4d2656f3266d",
+      "counts": {
+        "tests": 1,
+        "pass": 0,
+        "fail": 1
+      }
+    },
+    "catalog-maintenance-green.tap": {
+      "sha256": "0f1208c50c8f63c33e89a13e721393d2ffa1a57fb9dc009678b015b40800a9cc",
+      "counts": {
+        "tests": 1,
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    "catalog-test-suite.tap": {
+      "sha256": "4440ee59834ceb71e7be20e7cca8ad82f70455efd625560fd54bcbdf2f432129",
+      "counts": {
+        "tests": 43,
+        "pass": 43,
+        "fail": 0
+      }
+    }
+  },
+  "runtime": "Node 24.16.0 / Linux / Blaxel",
+  "redArchiveSha256": "7b1c96923400adbacd163cb1cceeee9545ee4eeb67f8ac85864de597263b1f74",
+  "changedPayloads": {
+    "catalog-step2": "53d1bef6fdde8fdd9a4cea73ad501c1cf9153929ee4431c95bc0060544477c34",
+    "catalog-step3": "d99f49abe49b5c64efa1e7b107e816d57ca1a4dc4ec29794b5b38150cf5444d1",
+    "catalog-step4": "94753907d42e52d7305732f25698155a7c7dfa7865e4cbf3e06411f891b0b089"
+  },
+  "cleanupVerified": true,
+  "finishedAt": "2026-09-13T23:46:07.381743+00:00",
+  "notes": [
+    "Historical compatibility statuses preserved exactly.",
+    "An initial regression incorrectly assumed a historical gpt-4.1-mini pass; corrected to compare the immutable historical record rather than promoting it."
+  ]
+}

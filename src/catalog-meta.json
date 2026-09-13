@@ -1,0 +1,14 @@
+{
+  "source": "https://api.concentrate.ai/v1/models",
+  "fetchedAt": "2026-09-13T23:38:55.699Z",
+  "snapshotSha256": "12b1d0e61dade53585effc0ef5544fa36454c901e5654ab7598680ef88d0720f",
+  "sourceCount": 185,
+  "eligibleCount": 184,
+  "exclusions": [
+    {
+      "id": "redact-v1",
+      "reason": "redaction utility, not a chat model"
+    }
+  ],
+  "qualification": "Dated upstream metadata, not measured feature support, entitlement or prices. Live discovery takes precedence; fallback can be stale."
+}

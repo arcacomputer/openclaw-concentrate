@@ -53,7 +53,7 @@ export function createConcentrateProvider(sdk, warn = () => {}, config = {}) {
         if (!ctx.resolveProviderApiKey('concentrate').apiKey) return null;
         if (!Object.keys(overrides).length) { warn(PRICING_BLOCKER); return null; }
         const snapshot = fallbackModels();
-        if (Object.keys(overrides).every(id => snapshot.some(m => m.id === id))) return runtime(snapshot);
+        // A full fallback must never hide changed limits or removed live IDs.
         try {
           const rows = await sdk.getCachedLiveProviderModelRows({
             providerId: 'concentrate', endpoint: `${BASE_URL}/models`, requireHttps: true,
