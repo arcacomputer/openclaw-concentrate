@@ -23,3 +23,12 @@ test('all entry SDK subpaths exist in the verified published package export map'
   assert.equal(imports.length, 3);
   for (const [, subpath] of imports) assert.ok(pkg.exports[`.${subpath}`]);
 });
+
+test('ClawHub build provenance matches the tested OpenClaw peer', async () => {
+  const pkg = await readJson('../package.json');
+  assert.equal(pkg.license, 'MIT');
+  assert.equal(pkg.openclaw.build.openclawVersion, pkg.peerDependencies.openclaw);
+  assert.ok(pkg.openclaw.compat.pluginApi);
+  assert.equal(pkg.openclaw.compat.minGatewayVersion, pkg.peerDependencies.openclaw);
+  assert.ok(pkg.files.includes('LICENSE'));
+});

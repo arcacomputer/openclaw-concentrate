@@ -10,13 +10,13 @@ This repository is a **code plugin**, not a skill. Use `clawhub package` command
 ## Required preparation
 
 1. Finish the release gates and bind the exact reviewed source commit and package artifact. Do not label incomplete compatibility as stable certification.
-2. Check current required package metadata. Official docs require `openclaw.compat.pluginApi` and `openclaw.build.openclawVersion`. The current package has compatibility metadata but is missing build provenance; add a truthful build/runtime version and validate the resulting candidate before upload. Do not invent a build timestamp or claim prior tests ran against changed source.
+2. Check current required package metadata. Official docs require `openclaw.compat.pluginApi` and `openclaw.build.openclawVersion`. The package now records build compatibility with OpenClaw 2026.9.4; retain truthful provenance and validate the resulting candidate before upload. Do not invent a build timestamp or claim prior tests ran against changed source.
 3. Confirm the intended package name and publisher with the authorized account. The current `openclaw-concentrate-local` name is preview metadata, not a verified ClawHub registry identity. Do not assume the GitHub organization automatically grants ClawHub publisher access.
 4. Install/use the ClawHub CLI in the bounded execution environment, record its version, and run:
 
 ```sh
 clawhub package validate /absolute/path/to/candidate --json
-clawhub package publish /absolute/path/to/candidate --dry-run --json
+clawhub package publish /absolute/path/to/candidate --source-repo arcacomputer/openclaw-concentrate --source-commit <exact-source-commit> --dry-run --json
 ```
 
 Static validation does not prove runtime behavior. Warnings can still exit zero; inspect the report, not just the exit code. Runtime validation imports code and belongs in the isolated sandbox.
@@ -44,3 +44,7 @@ Trusted GitHub Actions publishing is optional follow-up, not automatic: initial 
 ## Status
 
 Documentation reviewed and publication requirements recorded. This document is not evidence that validation, dry-run publication, authentication or an upload has occurred. ClawHub release is still pending.
+
+## Executed preflight
+
+ClawHub CLI 0.23.3 static validation passed with no issues after adding build metadata. The first dry run stopped because code plugins require explicit `--source-repo` and `--source-commit`; the example above includes those flags. This result is not an uploaded release.

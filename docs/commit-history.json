@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T09:17:19+00:00",
-  "historyThrough": "7b5698f22dd7bd132c95dd1e2cad424bd9c4ac9f",
+  "generatedAt": "2026-09-13T09:19:26+00:00",
+  "historyThrough": "36844d83f727607dae178d9a6771e8c437b05bba",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "36844d83f727607dae178d9a6771e8c437b05bba",
+      "authorTime": "2026-09-13T09:17:19+00:00",
+      "committerTime": "2026-09-13T09:17:19+00:00",
+      "subject": "Add official ClawHub publishing requirements and release checklist"
+    },
     {
       "sha": "7b5698f22dd7bd132c95dd1e2cad424bd9c4ac9f",
       "authorTime": "2026-09-13T09:15:34+00:00",
