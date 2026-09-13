@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T00:44:35+00:00**.
+Exported at **2026-09-13T06:26:15+00:00**.
 
-History through `f984c1e9f10a7a111e136f446261de36fa98ea60`.
+History through `1db61816540ab1150ca56f914f4acd16cf18dd55`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -29,3 +29,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`f984c1e9f10a7a111e136f446261de36fa98ea60`](https://github.com/arcacomputer/openclaw-concentrate/commit/f984c1e9f10a7a111e136f446261de36fa98ea60)
 - Author timestamp: `2026-09-13T00:38:48+00:00`
 - Committer timestamp: `2026-09-13T00:38:48+00:00`
+
+## Publish final Qwen smoke results and exact snapshot provenance
+
+- Commit: [`1db61816540ab1150ca56f914f4acd16cf18dd55`](https://github.com/arcacomputer/openclaw-concentrate/commit/1db61816540ab1150ca56f914f4acd16cf18dd55)
+- Author timestamp: `2026-09-13T00:44:35+00:00`
+- Committer timestamp: `2026-09-13T00:44:35+00:00`

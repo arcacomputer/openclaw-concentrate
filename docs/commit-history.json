@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T00:44:35+00:00",
-  "historyThrough": "f984c1e9f10a7a111e136f446261de36fa98ea60",
+  "generatedAt": "2026-09-13T06:26:15+00:00",
+  "historyThrough": "1db61816540ab1150ca56f914f4acd16cf18dd55",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "1db61816540ab1150ca56f914f4acd16cf18dd55",
+      "authorTime": "2026-09-13T00:44:35+00:00",
+      "committerTime": "2026-09-13T00:44:35+00:00",
+      "subject": "Publish final Qwen smoke results and exact snapshot provenance"
+    },
     {
       "sha": "f984c1e9f10a7a111e136f446261de36fa98ea60",
       "authorTime": "2026-09-13T00:38:48+00:00",

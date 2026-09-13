@@ -55,3 +55,7 @@ clawhub package validate . --openclaw-version 2026.9.4 --json
 Provider packages use **`clawhub package validate`**, not the tool/feature-only `openclaw plugins validate` lane. Real SDK imports, isolated plugin installation, host config validation, and host model-list read-back are separate integration gates. ClawHub validation is nonpublishing; runtime inspector capture additionally requires its explicit execution flags. Do not fabricate tool metadata to satisfy the wrong lane.
 
 Proof target: OpenClaw 2026.9.4, Node 24.16.0, Linux. Live basic-response smoke results are recorded separately from synthetic and registration checks. Remaining gates include broad live tool/vision/schema/cancellation coverage, credentialed onboarding UX, routing and billing reconciliation, and release readiness. No macOS or Windows claim.
+
+## Full-feature campaign
+
+[Feature execution results and acceptance definitions](docs/FEATURE-TESTING.md). Basic smoke passes are not full-feature certification.
