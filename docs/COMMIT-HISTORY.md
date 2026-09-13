@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T07:12:28+00:00**.
+Exported at **2026-09-13T07:21:40+00:00**.
 
-History through `78155f4289dcc86df12c746a7cf069e9e78af805`.
+History through `a87e6bef00d81c725eb801f0b19adba810163b48`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -59,3 +59,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`78155f4289dcc86df12c746a7cf069e9e78af805`](https://github.com/arcacomputer/openclaw-concentrate/commit/78155f4289dcc86df12c746a7cf069e9e78af805)
 - Author timestamp: `2026-09-13T07:05:45+00:00`
 - Committer timestamp: `2026-09-13T07:05:45+00:00`
+
+## Publish strict schema request proof and output validation caveat
+
+- Commit: [`a87e6bef00d81c725eb801f0b19adba810163b48`](https://github.com/arcacomputer/openclaw-concentrate/commit/a87e6bef00d81c725eb801f0b19adba810163b48)
+- Author timestamp: `2026-09-13T07:12:28+00:00`
+- Committer timestamp: `2026-09-13T07:12:28+00:00`

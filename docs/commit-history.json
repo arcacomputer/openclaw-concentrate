@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T07:12:28+00:00",
-  "historyThrough": "78155f4289dcc86df12c746a7cf069e9e78af805",
+  "generatedAt": "2026-09-13T07:21:40+00:00",
+  "historyThrough": "a87e6bef00d81c725eb801f0b19adba810163b48",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "a87e6bef00d81c725eb801f0b19adba810163b48",
+      "authorTime": "2026-09-13T07:12:28+00:00",
+      "committerTime": "2026-09-13T07:12:28+00:00",
+      "subject": "Publish strict schema request proof and output validation caveat"
+    },
     {
       "sha": "78155f4289dcc86df12c746a7cf069e9e78af805",
       "authorTime": "2026-09-13T07:05:45+00:00",

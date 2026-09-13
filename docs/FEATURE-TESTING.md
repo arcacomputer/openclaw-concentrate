@@ -93,3 +93,15 @@ Six credential-free real-host synthetic cases passed the test criteria: five adv
 One paid forward through `azure/gpt-4.1-mini` returned `{"ok":true}`, HTTP 200 completed, 1,631 input and 6 output tokens under a 512-token cap. No paid retries or vision retests. This is a bounded representative strict-schema pass, not a guarantee across the catalog or every schema.
 
 53 checkpoint files verified against the archive. Archive SHA-256: `2e5acd2d761caf82a47bafc2d8cebf689fc652c43468528c875405d6af28a2a5`; downloaded at `2026-09-13T07:09:10.412402+00:00` before cleanup. Parallel tools were not attempted in this batch. Vision remains unresolved; full certification incomplete.
+
+## Batch 08: partial synthetic proof; live inconclusive
+
+Publication author/committer timestamp: `2026-09-13T07:21:40+00:00`. Evidence verified at `2026-09-13T07:20:20.464384+00:00`.
+
+Actual synthetic OpenClaw preserved two distinct tool calls, correctly paired fixture outputs and context on a new user turn. Reversed outputs and three invalid-ID cases were tested only by the harness validator. **Actual-host reordered replay and host-side negative validation were not proved.** The live prerequisite gate incorrectly accepted this narrower evidence.
+
+The live attempt stopped after one forward because the harness's absolute-only path guard rejected harmless relative `a.txt`. No terminal receipt was captured; billing is unknown, not zero. All three authorized-forward reservations remain retained. No retry occurred. This is not a live parallel-tool pass or a model failure.
+
+The next stage is zero-paid only: canonical fixture-path safety tests, actual-host reordered replay, and a gate that rejects validator-only evidence. Basic smoke and previous strict-schema results remain unchanged.
+
+48 checkpoint files verified against archive `0a266f910a9f819501b3b76f5be6eb78cee0f5ebf0f72d30ae715d58eb62cbce`, downloaded at `2026-09-13T07:17:30.422281+00:00` before scoped cleanup.
