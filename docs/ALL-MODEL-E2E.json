@@ -1,6 +1,6 @@
 {
-  "updatedAtUtc": "2026-09-14T05:12:18.434046+00:00",
-  "snapshotThroughUtc": "2026-09-14T05:09:43.312096+00:00",
+  "updatedAtUtc": "2026-09-14T13:21:24.212004+00:00",
+  "snapshotThroughUtc": "2026-09-14T05:32:19.881056+00:00",
   "status": "incomplete; reviewed continuation authorized",
   "pluginVersion": "1.2.0",
   "testedPluginSourceCommit": "0043409b4273a37e12e80f526a5b94e47df27906",
@@ -11,20 +11,20 @@
     "platform": "Linux on Blaxel"
   },
   "plannedCases": 717,
-  "recordedCases": 92,
+  "recordedCases": 137,
   "recordedCaseStatuses": {
-    "passed": 84,
+    "passed": 128,
     "failed-acceptance": 4,
-    "inconclusive": 3,
+    "inconclusive": 4,
     "inconclusive-interrupted": 1
   },
   "catalogStatusCounts": {
-    "passed": 84,
+    "passed": 128,
     "failed-acceptance": 4,
     "blocked-safety-quarantine": 8,
-    "inconclusive": 3,
+    "inconclusive": 4,
     "inconclusive-interrupted": 1,
-    "not-yet-tested": 84,
+    "not-yet-tested": 39,
     "excluded-non-chat": 1
   },
   "scope": "Fresh installed-plugin basic-response and applicable feature campaign; no universal model compatibility certification. Historical results remain separate.",
@@ -913,228 +913,408 @@
     },
     {
       "id": "qwen3-32b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:14:57.724536+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "1a2950f1fdf6d53ff58cf570829a98b1c5f660515f5ee63a282720ccaa3fd4b8"
     },
     {
       "id": "qwen3-coder-plus",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:15:16.184356+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "c6985b514450acf7ff038da39fbb92ad3c431b12607cdc271b173a668f21f7ee"
     },
     {
       "id": "qwen3-coder-flash",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:15:34.540059+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "81dd5fada8febe50c5d29f93870ef24f36f002069e87890c5a796b469d59684c"
     },
     {
       "id": "qwen3-coder-next",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:15:53.021175+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "94d0e4b72a6ca822b346f75870052d75dbcf195bdc6e4ae497fa4ad62c2e0656"
     },
     {
       "id": "qwen3-coder-30b-a3b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:16:11.673078+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "7f4e98d8fb9fafac783bc75db974d3913116ae4808aaea1476dc8049be0b6a6d"
     },
     {
       "id": "qwen3-next-80b-a3b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:16:30.015877+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "ee64bb9632b0984b4e4c8002fd21536d4ff7c672ac4608f60c8b93a05ea1d6d0"
     },
     {
       "id": "qwen3-vl-plus",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:16:48.380906+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "761e5ce3339d7f3d7116053f9105c5d4bafd1b49f31c4c3f9b9a794131f866a3"
     },
     {
       "id": "qwen3-vl-flash",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:17:05.912400+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "374c22f7e2531e22fc793288b12bff0520c0e958190119544ae19d0af17ac4cd"
     },
     {
       "id": "qwen3-vl-235b-a22b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:17:24.318370+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "c2f4274002a70860c01da7e0f86534f93473c9182108bf6dae914abfa60641c9"
     },
     {
       "id": "qwen-plus",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:17:42.611106+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "619ee0bd9a615a7b0e4023a73bb5a74c28351adadc1246d43e53f904c4c81b4d"
     },
     {
       "id": "qwen-flash",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:18:01.430277+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "d753f303b14520fe9f67bd1244f9b90d9f75ceb891694f2ad3682303ff6269eb"
     },
     {
       "id": "qwq-32b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:18:32.594381+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "47e00035644662ab77274ec9703fc5d2e5ae534f4b0db787b8cd05d2cb4acee3"
     },
     {
       "id": "kimi-k3",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:18:54.535243+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "dc0753c4726a326b2160010038faa9dbb8c50606ad1754afb6584186424390f9"
     },
     {
       "id": "kimi-k2-7-code",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:19:12.877794+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "50446815b0f42e965f6aed52b3247ce42eba995d2a27d42bcdf8b6092822ab8c"
     },
     {
       "id": "kimi-k2-6",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:19:31.351050+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "4ab3bcbb9cd0f5dea7461bec0a8f8675794fc5dbbd52c616255c8be48293b77c"
     },
     {
       "id": "kimi-k2-5",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:20:37.077076+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "34b40245577aaa91198d522fa6071281085871ff045bb81c191536e66ad32a0f"
     },
     {
       "id": "kimi-k2-thinking",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:20:58.189696+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a94a6142da536f84e166bf4a64314662e519f740228ab7934127da1e21208070"
     },
     {
       "id": "minimax-m3",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:21:16.608537+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "3261fd5a3179644e20d5157305ddbafac526d9de38c81139981097744c1515c9"
     },
     {
       "id": "minimax-m2-7-highspeed",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:21:36.226563+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "33193c33792a65ebf6942db042ad973d8bfa29691e0f19d6d0d94b7a3ee36f5d"
     },
     {
       "id": "minimax-m2-7",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:21:55.797699+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "5025daf5bbf4efe5e42d6b0a305b23dca2718346486cb8a28313fd868b59ca67"
     },
     {
       "id": "minimax-m2-5-highspeed",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:22:14.077994+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "5bd097c717b8176a1078e306655e1550816511a3783ba4e3adc134aca66f659c"
     },
     {
       "id": "minimax-m2-5",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:22:32.341077+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "9a9783eea3c270fe9f1c7d97b1cac00ba8ac6d4ea98b42e48f38dac7e0e0febf"
     },
     {
       "id": "minimax-m2-1-highspeed",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:22:50.648269+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a8db9e745d53db68229c1e5a9153021f86698c3a3c08e9145dd10586003f6255"
     },
     {
       "id": "minimax-m2-1",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:23:08.986902+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "e1d3ef03627219c197d438a0ddc9b827290442643b763a2a576a6af3a235a4a8"
     },
     {
       "id": "minimax-m2",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:23:27.218309+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "e14ec4427b674b36359f6e86f8a74353c41b0b0ca849d2f5da8bd65fe3e545de"
     },
     {
       "id": "mimo-v2.5",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:23:50.128630+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a48f419a9f189fb273f48c69a186ebd401e6dedcdf94c858f656fe04a11d47a3"
     },
     {
       "id": "mimo-v2.5-pro",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:24:10.654357+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "b5b5ba92314f488a7eb70a389544c23cfffeacf8fcd1a242c73b563e392f6697"
     },
     {
       "id": "nemotron-3-nano-30b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:24:29.187867+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "86767ba953e016d6302c270509428150ff5535a297c6274a5347a1ca19cea698"
     },
     {
       "id": "nemotron-3-120b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:24:47.589580+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "377a60b97fab30c1d6033deecdcf6f3d1aa851e91521d66ae98fe7e30f33e9ef"
     },
     {
       "id": "nemotron-3-nano-omni",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:25:06.281926+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "352837a9e41ac3a2df3744681476b3f9ba0be97d0d82b057f0ccce0f0764c169"
     },
     {
       "id": "nemotron-3-ultra-nvfp4",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:26:11.312457+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "2ce515c9fd375b41d31298d4ad6370f8b4e376b72661bbf9ac603e9edeb82e48"
     },
     {
       "id": "nemotron-lightning-3.5-30b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:26:29.838342+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "58d135806607d67ce5d60e284eef27ea3b83bd8320aabc16d517ebf8dc69f1f5"
     },
     {
       "id": "step-3-7-flash",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:26:50.496174+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "796a4287120c6f31b5ace39e67070b1ad0013d072bbb50914b88921321e173db"
     },
     {
       "id": "glm-5.3-flash",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:27:09.994678+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "247d87c54a6206572baefc26b3bd4d7adb56aab1e4c89d2503ea3edfc7a91207"
     },
     {
       "id": "glm-5.3",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:27:28.316773+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a7b26f6690418978990ba842b5ef8191e05e92e3d97240a7dbb43cd3822b0829"
     },
     {
       "id": "glm-5.2",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:27:47.678687+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "b6a29bb476ead0adb6fe7c99fa199b47c01ff9c8ab89b59cbc0f51fb045a16df"
     },
     {
       "id": "glm-5.1",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:28:07.022367+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "be1f7f6f576ed86c7e963df268ba30e7900c989dfb970746239ea80b7b189d0d"
     },
     {
       "id": "glm-5",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:28:26.728727+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "cb384903e52255ea777601ba6fb858e677dc96e4696a712db68f251d05cef9a0"
     },
     {
       "id": "glm-4.7",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:29:02.631013+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "cb425c279ab2095d59593d24299703fab682218145612524558d90fd85e3b991"
     },
     {
       "id": "glm-4.7-flash",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:29:22.102932+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "360af2838e9257e85fe9677378d341828aef99efb2021f17194de9cbefa6329f"
     },
     {
       "id": "glm-4.6",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:29:40.413372+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "d07b8c6ec8368262bf33fb48887cd2d0abd2f4ac0002cca323959f387ffc33e3"
     },
     {
       "id": "glm-4.6v",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:30:00.131917+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "c830337f73a7ab9b7863ae80b395722b44d0dd0d60d3c193bbc3242eed62bc69"
     },
     {
       "id": "glm-4.5",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:30:21.311481+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "6a3411b538ae1134a0674558363d56e0a5c98cf039f2c33358edbd5c25d1ccea"
     },
     {
       "id": "glm-4.5v",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:30:42.089376+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "5324747e04d15fec23f4878094b1636a25f9f4d3548bdc7725c280526338a8cc"
     },
     {
       "id": "muse-glimmer-30b",
-      "baselineStatus": "not-yet-tested",
-      "featureCases": "not-yet-tested-in-this-campaign"
+      "baselineStatus": "inconclusive",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:32:11.974366+00:00",
+      "billingReceiptValidated": false,
+      "note": "Live timeout at the 25-second upstream deadline without validated receipt; reservation retained; no retry.",
+      "hostEvidenceSha256": "dea15adc14311caa64f72ee4cfba7d3573e3ed159c10dfe320aa439df3cb2a37"
     },
     {
       "id": "muse-spark-1.3",
