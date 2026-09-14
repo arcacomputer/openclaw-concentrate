@@ -1,6 +1,6 @@
 {
   "name": "concentrate-provider",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "type": "module",
   "description": "Concentrate.ai provider for OpenClaw: Responses, tools, reasoning, structured output and image input.",
@@ -14,9 +14,12 @@
   ],
   "scripts": {
     "test": "node --test --test-concurrency=1 test/*.test.mjs",
-    "check": "node --check index.mjs && node --check src/catalog.mjs && node --check src/provider.mjs && node --check test/transport.synthetic.mjs",
+    "check": "node --check index.mjs && node --check src/catalog.mjs && node --check src/provider.mjs && node --check src/catalog-maintenance.mjs && node --check src/pricing.mjs && node --check src/setup.mjs && node --check src/cli.mjs && node --check scripts/update-catalog.mjs && node --check test/transport.synthetic.mjs",
     "manifest": "node scripts/generate-manifest.mjs",
-    "test:transport": "node --test --test-concurrency=1 test/transport.synthetic.mjs"
+    "test:transport": "node --test --test-concurrency=1 test/transport.synthetic.mjs",
+    "catalog:check": "node scripts/update-catalog.mjs --check",
+    "catalog:refresh": "node scripts/update-catalog.mjs --write",
+    "catalog:verify": "node scripts/update-catalog.mjs --verify"
   },
   "engines": {
     "node": ">=24.16.0 <25 || >=26.1.0"

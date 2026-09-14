@@ -2,7 +2,7 @@
 
 An MIT-licensed provider plugin maintained by [Arca Computer](https://arca.computer). Connect OpenClaw to Concentrate's Responses API with streaming, tools, reasoning, structured output and image input, where the selected upstream model supports them.
 
-**Version 1.1.0.** See the [release report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.1.0.md) for verified distribution status, installation evidence and limitations. No npm release is claimed; `private: true` prevents accidental npm publication.
+**Version 1.2.0.** This README describes this source version; check [release status](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-GATES.md) for verified publication and installation evidence. No npm release is claimed; `private: true` prevents accidental npm publication.
 
 AI-assisted development, human stewardship by Luis Felipe Abarca. This is an independent integration, not an endorsement by Concentrate or the OpenClaw Foundation.
 
@@ -24,6 +24,29 @@ This is a new package, not an automatic rename or update of `openclaw-concentrat
 ## Configure
 
 Provide `CONCENTRATE_API_KEY` through OpenClaw's supported environment, secret or provider-auth configuration. Never put a key in this repository or in the plugin's cost configuration. API-key onboarding preserves an existing primary model.
+
+### Guided setup
+
+```sh
+openclaw concentrate models --filter claude
+openclaw concentrate setup
+```
+
+The wizard lets you filter/select models, inspect route pricing, review all four estimates and explicitly confirm saving. It preserves your primary model, credentials, unselected model estimates and existing model parameters. It does not restart the gateway or send inference. Select up to 16 models per invocation, within the 256-model configuration limit.
+
+Headless preview and apply, without editing JSON:
+
+```sh
+openclaw concentrate setup --model claude-haiku-4-5 --dry-run --json
+# Review the rates and copy the returned plan.reviewToken:
+openclaw concentrate setup --model claude-haiku-4-5 --apply --acknowledge-estimates --review <review-token> --json
+```
+
+Suggestions use the highest published **base** route/TTL rates, not tier ceilings or guaranteed bills. If a rate is missing, supply your estimate with `--input`, `--output`, `--cache-read` or `--cache-write`; use the same flags in preview and apply. Unknown rates never become zero automatically. An outdated review token or changed configuration is refused. Preview reads public metadata only. Nothing is saved on cancellation.
+
+Existing explicit model allowlists gain only the selected missing entries; an unrestricted model catalog stays unrestricted. Existing manual `models.providers.concentrate.models` cost fields for selected models are updated consistently. Other manual model fields are preserved; custom endpoint overrides require review instead of being silently changed.
+
+### Manual configuration (still supported)
 
 In `plugins.entries["concentrate-provider"].config`, acknowledge and provide your own complete cost estimates:
 
@@ -47,7 +70,9 @@ After configuring credentials and estimates, select `concentrate/gpt-4.1-mini` w
 
 Up to **256 exact, unprefixed Concentrate model IDs** can be configured. Every model needs all four finite, nonnegative rates: `input`, `output`, `cacheRead`, `cacheWrite`. Missing prices are never silently turned into zero. Explicit zero is accepted only as your acknowledged estimate. Configured model names display `[user cost estimate]`.
 
-Only configured models become runnable. The bundled snapshot supports `gpt-4.1-mini` without a live metadata lookup. Other IDs use the public aggregate catalog, with the host's five-second timeout and sixty-second cache. Credentials are not sent to that public metadata endpoint. Empty, malformed or unavailable metadata falls back to configured bundled models; a valid live catalog does not invent missing models. Catalog visibility is not account entitlement.
+Only configured models become runnable. The dated fallback bundles metadata for **all 184 eligible models** in the 185-ID snapshot, not just GPT-4.1 Mini. `redact-v1` is excluded as a redaction utility. Runtime discovery prefers current public metadata, with the host's five-second timeout and sixty-second cache, even when a model is in the fallback. Credentials are not sent to public metadata endpoints. Empty, malformed or unavailable metadata falls back to configured bundled models; a valid live catalog never resurrects missing models. Catalog visibility is not account entitlement.
+
+Browse the [complete model directory](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/MODELS.md) for current limits, advertised capabilities and preserved historical test outcomes. `openclaw concentrate models --refresh --json` labels live versus bundled data; it never rewrites the installed package.
 
 ## Supported behavior and limits
 
@@ -79,13 +104,18 @@ Run installation and OpenClaw verification in a bounded disposable host, not a p
 npm test
 npm run check
 npm run test:transport
+npm run catalog:verify
+npm run catalog:check
+# To update metadata and regenerate the directory deliberately:
+# npm run catalog:refresh
 node scripts/verify.mjs /tmp/concentrate-evidence
 clawhub package validate . --openclaw-version 2026.9.4 --json
 ```
 
 Read [AGENTS.md](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/AGENTS.md) before changing the provider. It documents the isolated Blaxel lane, credentials, inference budgets, retained failures, privacy and publication gates. No delegation is required to use Blaxel.
 
-- [Release and installation evidence](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.1.0.md)
+- [Version 1.2 catalog, setup and feature evidence](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.2.0.md)
+- [Previous release and identity migration](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.1.0.md)
 - [Original per-model smoke report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/COMPATIBILITY.md)
 - [Feature campaign and historical failures](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/FEATURE-TESTING.md)
 - [ClawHub publication procedure](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/CLAWHUB-PUBLISHING.md)

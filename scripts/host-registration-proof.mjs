@@ -4,7 +4,7 @@ import plugin from '../index.mjs';
 const costs = { input: 11, output: 22, cacheRead: 3, cacheWrite: 4 };
 const pluginConfig = { acknowledgeEstimatedCosts: true, costOverrides: { 'gpt-4.1-mini': costs } };
 let provider;
-plugin.register({pluginConfig, registerProvider: p => provider=p, registerModelCatalogProvider:()=>{}, logger:{warn:()=>{}}});
+plugin.register({pluginConfig, registerCli:()=>{}, registerProvider: p => provider=p, registerModelCatalogProvider:()=>{}, logger:{warn:()=>{}}});
 const runtime=await provider.catalog.run({resolveProviderApiKey:()=>({apiKey:'synthetic-registration-only'})});
 assert.equal(runtime.provider.models[0].id,'gpt-4.1-mini');
 assert.deepEqual(runtime.provider.models[0].cost,costs);

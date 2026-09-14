@@ -4,8 +4,8 @@ import { projectRows } from './catalog.mjs';
 export const BASE_URL = 'https://api.concentrate.ai/v1';
 export const PRICING_BLOCKER = 'Concentrate pricing is unknown until configured: enable acknowledgeEstimatedCosts and supply complete per-model costOverrides (USD per million tokens). These are user estimates, not vendor prices, actual charges, or a spending cap. Catalog visibility is not account entitlement.';
 export const ESTIMATE_WARNING = 'Concentrate runtime uses explicit user cost estimates, not vendor prices. Routing, cache TTLs, tiers, tools and BYOK can change actual charges; this is not a spending cap.';
-const COST_KEYS = ['input', 'output', 'cacheRead', 'cacheWrite'];
-function validateOverrides(config) {
+export const COST_KEYS = ['input', 'output', 'cacheRead', 'cacheWrite'];
+export function validateOverrides(config) {
   const overrides = config.costOverrides ?? {};
   if (!overrides || typeof overrides !== 'object' || Array.isArray(overrides) || Object.keys(overrides).length > 256) throw new Error('Concentrate costOverrides must contain at most 256 models');
   if (Object.keys(overrides).length && config.acknowledgeEstimatedCosts !== true) throw new Error('Concentrate requires acknowledgeEstimatedCosts=true for user cost estimates');
