@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-13T17:35:59+00:00**.
+Exported at **2026-09-14T15:53:50+00:00**.
 
-History through `f8a1923eb428a62d42b4d445f94861a31cbe6b4a`.
+History through `b89fa4f8f9c24c389ba0e53e147ae1cf4927dba6`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -197,3 +197,33 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`f8a1923eb428a62d42b4d445f94861a31cbe6b4a`](https://github.com/arcacomputer/openclaw-concentrateai/commit/f8a1923eb428a62d42b4d445f94861a31cbe6b4a)
 - Author timestamp: `2026-09-13T17:19:45+00:00`
 - Committer timestamp: `2026-09-13T17:19:45+00:00`
+
+## Publish verified registry migration, rollback evidence and release chronology
+
+- Commit: [`6c12ccfad81b879f156a3b3432068b50e5578d7d`](https://github.com/arcacomputer/openclaw-concentrateai/commit/6c12ccfad81b879f156a3b3432068b50e5578d7d)
+- Author timestamp: `2026-09-13T17:35:59+00:00`
+- Committer timestamp: `2026-09-13T17:35:59+00:00`
+
+## Bundle the full eligible catalog with live-first metadata and generated model directory
+
+- Commit: [`2f28501187ccd72c849a05de37c875d2e6173d8b`](https://github.com/arcacomputer/openclaw-concentrateai/commit/2f28501187ccd72c849a05de37c875d2e6173d8b)
+- Author timestamp: `2026-09-13T23:54:28+00:00`
+- Committer timestamp: `2026-09-13T23:54:28+00:00`
+
+## Add guided model setup with reviewed estimates and native cancellation proof
+
+- Commit: [`0043409b4273a37e12e80f526a5b94e47df27906`](https://github.com/arcacomputer/openclaw-concentrateai/commit/0043409b4273a37e12e80f526a5b94e47df27906)
+- Author timestamp: `2026-09-14T01:00:15+00:00`
+- Committer timestamp: `2026-09-14T01:00:15+00:00`
+
+## docs: publish audited all-model E2E progress and receipt guard
+
+- Commit: [`05b865e039bb8b1e8ccd35855d3a01f9c0d63275`](https://github.com/arcacomputer/openclaw-concentrateai/commit/05b865e039bb8b1e8ccd35855d3a01f9c0d63275)
+- Author timestamp: `2026-09-14T05:13:04+00:00`
+- Committer timestamp: `2026-09-14T05:13:04+00:00`
+
+## docs: advance audited installed-plugin results to 137 models
+
+- Commit: [`b89fa4f8f9c24c389ba0e53e147ae1cf4927dba6`](https://github.com/arcacomputer/openclaw-concentrateai/commit/b89fa4f8f9c24c389ba0e53e147ae1cf4927dba6)
+- Author timestamp: `2026-09-14T13:21:34+00:00`
+- Committer timestamp: `2026-09-14T13:21:34+00:00`

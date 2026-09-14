@@ -1,9 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T17:35:59+00:00",
-  "historyThrough": "f8a1923eb428a62d42b4d445f94861a31cbe6b4a",
+  "generatedAt": "2026-09-14T15:53:50+00:00",
+  "historyThrough": "b89fa4f8f9c24c389ba0e53e147ae1cf4927dba6",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "b89fa4f8f9c24c389ba0e53e147ae1cf4927dba6",
+      "authorTime": "2026-09-14T13:21:34+00:00",
+      "committerTime": "2026-09-14T13:21:34+00:00",
+      "subject": "docs: advance audited installed-plugin results to 137 models"
+    },
+    {
+      "sha": "05b865e039bb8b1e8ccd35855d3a01f9c0d63275",
+      "authorTime": "2026-09-14T05:13:04+00:00",
+      "committerTime": "2026-09-14T05:13:04+00:00",
+      "subject": "docs: publish audited all-model E2E progress and receipt guard"
+    },
+    {
+      "sha": "0043409b4273a37e12e80f526a5b94e47df27906",
+      "authorTime": "2026-09-14T01:00:15+00:00",
+      "committerTime": "2026-09-14T01:00:15+00:00",
+      "subject": "Add guided model setup with reviewed estimates and native cancellation proof"
+    },
+    {
+      "sha": "2f28501187ccd72c849a05de37c875d2e6173d8b",
+      "authorTime": "2026-09-13T23:54:28+00:00",
+      "committerTime": "2026-09-13T23:54:28+00:00",
+      "subject": "Bundle the full eligible catalog with live-first metadata and generated model directory"
+    },
+    {
+      "sha": "6c12ccfad81b879f156a3b3432068b50e5578d7d",
+      "authorTime": "2026-09-13T17:35:59+00:00",
+      "committerTime": "2026-09-13T17:35:59+00:00",
+      "subject": "Publish verified registry migration, rollback evidence and release chronology"
+    },
     {
       "sha": "f8a1923eb428a62d42b4d445f94861a31cbe6b4a",
       "authorTime": "2026-09-13T17:19:45+00:00",
