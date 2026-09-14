@@ -1,0 +1,1341 @@
+{
+  "updatedAtUtc": "2026-09-14T05:12:18.434046+00:00",
+  "snapshotThroughUtc": "2026-09-14T05:09:43.312096+00:00",
+  "status": "incomplete; reviewed continuation authorized",
+  "pluginVersion": "1.2.0",
+  "testedPluginSourceCommit": "0043409b4273a37e12e80f526a5b94e47df27906",
+  "artifactSha256": "6b6b13a9e17de626f9c09c199c03d398c8998824ae6dd47a396101d1827b5220",
+  "runtime": {
+    "openclaw": "2026.9.4",
+    "node": "24.16.0",
+    "platform": "Linux on Blaxel"
+  },
+  "plannedCases": 717,
+  "recordedCases": 92,
+  "recordedCaseStatuses": {
+    "passed": 84,
+    "failed-acceptance": 4,
+    "inconclusive": 3,
+    "inconclusive-interrupted": 1
+  },
+  "catalogStatusCounts": {
+    "passed": 84,
+    "failed-acceptance": 4,
+    "blocked-safety-quarantine": 8,
+    "inconclusive": 3,
+    "inconclusive-interrupted": 1,
+    "not-yet-tested": 84,
+    "excluded-non-chat": 1
+  },
+  "scope": "Fresh installed-plugin basic-response and applicable feature campaign; no universal model compatibility certification. Historical results remain separate.",
+  "repair": "Controller now matches non-synthetic receipts to exact live terminal events, request model/turn and runtime counts before settling a reservation. Unknown charges remain reserved.",
+  "limitations": [
+    "No new tool/schema/reasoning/vision cases reached yet in this campaign.",
+    "Eight Grok models remain quarantined for unresolved output-cap safety assumptions.",
+    "Previously stopped or ambiguous paid calls are not automatically retried.",
+    "Recorded passes verify this bounded response task, not all features or account entitlement."
+  ],
+  "models": [
+    {
+      "id": "claude-fable-5-1",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:16:46.810009+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "65337d97ded938a9bc962b977a9edec72da486b3205f9d77fe2574ae819f5a19"
+    },
+    {
+      "id": "claude-fable-5",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:17:07.601018+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "832dfed76086a637c6df244c7a9bab26db34169eec4fc5ee2ecfd797ea43863f"
+    },
+    {
+      "id": "claude-opus-5",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:17:26.153742+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "d4275a9d3aba698dc1b3f09288dd447578476a6986cba14a718c89dd55a669f9"
+    },
+    {
+      "id": "claude-opus-4-8",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:17:44.784262+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a7118307ff70cf475522be44d22b15833fbc223950034776f18760e685d7c8a4"
+    },
+    {
+      "id": "claude-opus-4-7",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:18:03.473319+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "0ca41ac0a50b1cc243dd9e96626f3b09e71ab46ab5f4dcd1cc57a68f2f306b3e"
+    },
+    {
+      "id": "claude-opus-4-6",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:18:21.811589+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "56f2b55f33e45ad1c719f8badc23fd9077c1f2b8226c1819b054252b8e824d51"
+    },
+    {
+      "id": "claude-opus-4-5",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:18:41.304107+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "8ba3f86dddaf86d1da8b85f0f915646e084043c80c1d965819bda5219f0d0fbb"
+    },
+    {
+      "id": "claude-sonnet-5",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:19:00.796100+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "5f982523e515ace7224f13ab5477c45dd8153b4686e867558129a97310bec456"
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:19:19.151588+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "e059f4292a70bda5343616dd3060efa20335b288700a5994f8590b72aa158bf1"
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:19:37.473125+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "dcd5c84a7e7264c4cbaac1035c8b5fd1dcbbb4851a9461a4386a0804d6f24c11"
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "baselineStatus": "failed-acceptance",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:19:55.732864+00:00",
+      "billingReceiptValidated": true,
+      "note": "Correct JSON returned with Markdown fences; strict schema was not requested.",
+      "hostEvidenceSha256": "0adfbced3a6b3187b1491c87056e1136f25a678cb7628f376f610e2d7d53a11b"
+    },
+    {
+      "id": "claude-opus-4-1",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:20:17.978332+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "41675738d8f9889f13fd83ceb52578305cc6691cacac886fb5e56827420d3d51"
+    },
+    {
+      "id": "claude-sonnet-4",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:20:37.583599+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "7b601abc5e64b7b6d994270118aff10164bb3f69e48b696efd9b39651de127da"
+    },
+    {
+      "id": "gpt-6-astra",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:20:57.072057+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "95fe91ca242d542c017047dd4f421e601883f4f260fdac5ffec90f524dc82ef3"
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:21:16.621461+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "fdcfe85deacf9f69bd15128bac26621ab8b111d2acb329958393f6958947798e"
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:22:19.600468+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "26d7d054cf4e6d5d6f9aa8a5daa412b05d4bdb61bb58cc19af8f03c9f39589a4"
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:22:39.040466+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "f981e0d4df91f5f0bdfb4948d61cbe26d842d3ac8b3b5f3ef0ab3cb8bb74c730"
+    },
+    {
+      "id": "gpt-5.5",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:22:57.385646+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a7b11609d308177cbe83aab75e1de73f2787ef26e941b33ce1cd0eb050aeab2d"
+    },
+    {
+      "id": "gpt-5.4-pro",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:23:21.560209+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "7c314132c920a14345d76d423f9e70bb759fda51f300be797916c6081b10f493"
+    },
+    {
+      "id": "gpt-5.4",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:23:41.087580+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "7ec2d4e9ed818312bfd8ad83f2c36b369f4c51213d530c5e564c8250a92c80a7"
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:23:59.386421+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "1c96ba4830866b5d1623bb0b40542a78f96ba8cc8217864a6547a58599e7dafe"
+    },
+    {
+      "id": "gpt-5.4-nano",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:24:18.906261+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "ed90a3f35e0e41b9b4f92e24d774e2184d868bb308fe290732347bd0683f6d85"
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:24:44.806272+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "c99324c35b9c07c5f5496630528e5608e7056a79c407021fe1d07b5acaa5194b"
+    },
+    {
+      "id": "gpt-5.2",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:25:10.641601+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "49e2a253743ce31af281fc8582d3c82fdd822cdaadc78364edea6c85ded0aafb"
+    },
+    {
+      "id": "gpt-5.1",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:25:32.206813+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "cfda99b088228ca82002584382da7783406083b5bf66f5caac2f1b2381b261a3"
+    },
+    {
+      "id": "gpt-5",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:25:51.788564+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "e957c42613548f4831762d0b266f8e0fa6060ee7bcb1681098afaa6a497c4b1a"
+    },
+    {
+      "id": "gpt-5-mini",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:26:12.803719+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "53997421f24599191e5216ad643f1ec65a5c23e6f7e940d2afc73c16b6bf1788"
+    },
+    {
+      "id": "gpt-5-nano",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:26:33.748335+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "4078c5055720a0196c4147eff0dde9318faa1c25f672a7d6ffce761fce623e1b"
+    },
+    {
+      "id": "o1",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:30:42.375549+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "3faaf6b712505c1e6b3516d402956de1d4fda3ec723e13e69027fa3c22a913e4"
+    },
+    {
+      "id": "o3",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:31:02.031031+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "ea733e086f20b6a0e8a645bf1dd2e37c5cc2390c64377951eae4fe15c4a1cb75"
+    },
+    {
+      "id": "o3-mini",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:31:20.456231+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "d44c86648a711579367b39380e31cfaef98ee426e993735a284e390d28b74104"
+    },
+    {
+      "id": "o4-mini",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:31:39.929239+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "78461d40a63d35cdc21b45282b25d54fc832e13691de8a1de1733e8e5f8fc01d"
+    },
+    {
+      "id": "gpt-4.1",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:31:58.687733+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "90fb99ce4ac2cfa389c433f4e09120bdd71b50006c880e32f50fdbbe321c55ad"
+    },
+    {
+      "id": "gpt-4.1-mini",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:32:18.165614+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "057258b0287de99657b97e8e95177f6324bd0c754a09dbad3e0843a9d6b21978"
+    },
+    {
+      "id": "gpt-4o",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:32:36.514016+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "54dbf072fb5c341c36817b9a681a811501aa09ccaf7a6a27641961cb68c03197"
+    },
+    {
+      "id": "gpt-4o-mini",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:32:55.052068+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a35a466c87f0e2b61c20e2d4b7bd605fe375de8c62fc22e9dd9263462a1c8d9c"
+    },
+    {
+      "id": "gpt-oss-120b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:33:15.999069+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "2fbd9ba030393cf14fafa1ca6d73e891bf8e72e2343a72a5b88972b113a39e7c"
+    },
+    {
+      "id": "gpt-oss-20b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:33:34.582290+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "de8e0a2e6ee2462c5f11080bd29da469253679cbd1672675c1d72f9b713ee87b"
+    },
+    {
+      "id": "gpt-oss-safeguard-120b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:33:54.186609+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "be89dc57bbf45a063156e74c6cd5d43c8a3313b50a68c8ccc708cd4e0a72aec4"
+    },
+    {
+      "id": "gpt-oss-safeguard-20b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:34:12.791224+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "5564604d9c92f329eb4da1617c13caa366bf2076ecb62b59a51d76ca651ca179"
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:34:32.598093+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "f19a62a2c729fc50f07705c5635a7b2bb5462d235ee2516ac68e2f161c057d63"
+    },
+    {
+      "id": "gemini-3.7-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:34:52.257733+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "9fae8e4bb423188386c36d2f7bf2b7ee18ebc3a96e19c5ed75aa941d635aafe3"
+    },
+    {
+      "id": "gemini-3.6-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:35:12.218629+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "170d3aff5440c5a270ea70d118a686b7aa9135ad1784c7082e94396394c12168"
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:36:23.239829+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "09c1996d0c6fa5b2dd09fc56541ff3fc53b83474eca14f015313f7f5ef16670e"
+    },
+    {
+      "id": "gemini-3.5-flash-lite",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:36:41.668719+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "3a06d27a2d8bb2fff62d1add6888b228227ff0ad73e2f936455fa0119e9d0103"
+    },
+    {
+      "id": "gemini-3.1-pro-preview",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:37:02.381460+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "94166299f9b3b1280d4f03f9321044c2629e45083d841bfcbaf7b4298c2192e1"
+    },
+    {
+      "id": "gemini-3.1-flash-lite-preview",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:37:20.904533+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "b41848ed63f7fc3c57f3a9db09a29741d9a0274618e05043ba037f0c945da159"
+    },
+    {
+      "id": "gemini-3-flash-preview",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:37:39.543072+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "65f0289cb81afde74955c61e5fe637f96760856b70e837a60e78dec5ba64da06"
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:37:59.064287+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "d8470dc01328902efcc1e1385a68ef4a0f226b10fce481740935f7fc4d6e3464"
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:38:17.455027+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "97be85b7d1a37fc5e9d4071e789993b50fd391b6a627a725057588630c51764c"
+    },
+    {
+      "id": "gemini-2.5-flash-lite",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:38:35.889190+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "dde49fa0982f61790524f2dafddd97b71cb6a5eebcf2ed13ae7fa642789e88f2"
+    },
+    {
+      "id": "gemma-3-12b",
+      "baselineStatus": "failed-acceptance",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:38:54.419086+00:00",
+      "billingReceiptValidated": true,
+      "note": "Correct JSON returned with Markdown fences; strict schema was not requested.",
+      "hostEvidenceSha256": "3ebdd4fc7143e0acbacd1d2f60e6e20d435db2579ae4a384b37e91a2089a794b"
+    },
+    {
+      "id": "gemma-3-4b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:39:15.006406+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "6afd7fab10ff9f2f38d1bb03706715c83d20a9b28cf56401b53f4255ce9c2025"
+    },
+    {
+      "id": "gemma-3-27b",
+      "baselineStatus": "failed-acceptance",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:39:33.366389+00:00",
+      "billingReceiptValidated": true,
+      "note": "Correct JSON returned with Markdown fences; strict schema was not requested.",
+      "hostEvidenceSha256": "a93920a2b04f02240e8ba72aa53a3cf22f648658801d442bc94b4b29824baabb"
+    },
+    {
+      "id": "gemma-4-26b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:39:51.779897+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "415dd7aba6657e101268c0ad97476d590a510a0145c8e914d1d5177fda28bce3"
+    },
+    {
+      "id": "gemma-4-e4b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:40:10.821840+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "62d956db0866a217d96a77fdbea6b8b940fc38c9bd98b2b8f707e5203e15c846"
+    },
+    {
+      "id": "gemma-4-31b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:40:30.028237+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "2b04467655224f85802b9fbf701176b27e946e23de0b2bc59e77ce4f8ac172ca"
+    },
+    {
+      "id": "grok-build-0.1",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "grok-4.6",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "grok-4.5",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "grok-4.3",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "grok-4.20-multi-agent-0309",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "grok-4.20-0309-reasoning",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "grok-4.20-non-reasoning",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "grok-3-mini",
+      "baselineStatus": "blocked-safety-quarantine",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Pending cap-contract resolution: observed Grok output cap violations; unresolved same xAI/Grok family quarantined"
+    },
+    {
+      "id": "deepseek-r1",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:40:49.852393+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "60455a0c35f5a17b6b3d8b122f000ff8736a59228d01d252857911b038ffff95"
+    },
+    {
+      "id": "deepseek-r1-0528",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:42:01.503912+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "51182fe9aa30be2dce5aaaf88ef0dabe5d971eff855f14be173dd557df10fa4d"
+    },
+    {
+      "id": "deepseek-r1-distill-32b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:42:34.275172+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "13dc2b5b225e17b9ffe032ad1adb09a348a98d4f4e90091f280dfca567f146e8"
+    },
+    {
+      "id": "deepseek-v3-0324",
+      "baselineStatus": "failed-acceptance",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:42:53.731652+00:00",
+      "billingReceiptValidated": true,
+      "note": "Correct JSON returned with Markdown fences; strict schema was not requested.",
+      "hostEvidenceSha256": "2bd4139f2269f8aeb1d95524d15c44b6edae3546b718a251801f6cc99374ac01"
+    },
+    {
+      "id": "deepseek-v3-1",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:43:13.259752+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "409628a190fc9746258b198206e654928608d3b5cc8117d3e8251fac7f3d0c16"
+    },
+    {
+      "id": "deepseek-v3-2",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:43:32.733797+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "5901136b9d040385c54cc5f909b198e4cdf5e984c3f28e07d5fb161484e56b2c"
+    },
+    {
+      "id": "deepseek-v4-flash-0423",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:43:52.230891+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "7d39c21f8f8baf23657ca9b3651d6a389430794994c013acacae9b9daf5e596e"
+    },
+    {
+      "id": "deepseek-v4-flash-0731",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:44:11.774740+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "03a63a0e0c1565e0f25bea53477df681d12d4fea3e55e8d9743552c0e63d9dc4"
+    },
+    {
+      "id": "deepseek-v4-flash-vision-exp",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:44:34.863162+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "4f0b70a89fa3f558c8f159e6f40f17ddae28bdbf8534a2afb1b441fabf4fa8e1"
+    },
+    {
+      "id": "deepseek-v4-1-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:44:53.116227+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "8e26852f01b521f3ec42cbbda473418d289b1e50cf6e56f377075951aba75faa"
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:45:11.512052+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "b995d8334e2ef543dba4d65625bbd6a3fad660866adb7845c04c32c29385f36b"
+    },
+    {
+      "id": "deepseek-v4-pro-0813",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:45:31.159307+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "52c54ba362e0a2f20aac71fe75aa8d2959ab25719809e43706202de0c7a92a95"
+    },
+    {
+      "id": "qwen3-235b-a22b-instruct",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:45:55.166957+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "ce0a36ad50a1700a8a40b8d32ac93f1d6e6ac72af5ecf2fd890d0ea3e982482a"
+    },
+    {
+      "id": "qwen3-max-thinking",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:46:15.768451+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "8ea713745c2872a47af2aec2667511e35c09683cf52e4a86aba652bcd826a141"
+    },
+    {
+      "id": "qwen3-coder-480b-a35b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:46:34.210831+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "7ae100a471120661a28bb60e0ba4a52c306de8dedcc238928a851ac9f06ab265"
+    },
+    {
+      "id": "qwen3-vl-30b-a3b",
+      "baselineStatus": "inconclusive",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:48:06.604951+00:00",
+      "billingReceiptValidated": false,
+      "note": "Live timeout; stale synthetic receipt rejected during audit; billing unknown.",
+      "hostEvidenceSha256": "9f6699091bdc503f36f7cea47f032a1f680f9cc5c683e5376367dda4b892d12d"
+    },
+    {
+      "id": "qwen3.5-27b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:48:25.081706+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "233cc19d7ff3881f6f0f25a0cca24f16883a591b03ac6989558904c62439d46e"
+    },
+    {
+      "id": "qwen3.5-9b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:48:51.723689+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "04b3b0463cfafdfdfc2a68ba0d352ece8fe10fc0a26afa998e32d614db01e50f"
+    },
+    {
+      "id": "qwen3.6-27b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:49:13.539988+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "cab65b09583b3cf2e953e73446faa191009f89ebbc3bf2deecb8f1656fa2ae61"
+    },
+    {
+      "id": "qwen3-14b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:49:33.397026+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "2abf58bf00274ad238e7b3cedf6a86066f837a8f212694d466b16b042d481d18"
+    },
+    {
+      "id": "qwen3-30b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:49:54.234470+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "01754067be6d81f0babc2000d1b9e11b46ed2d93a90a3a4293663c14db65fed4"
+    },
+    {
+      "id": "qwen3.8-max",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:50:13.885134+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "23b20398af41b0389620bf25ea18bac5c9d0a380d5be146597325044f56ce289"
+    },
+    {
+      "id": "qwen3.8-27b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:50:33.884123+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "653c2bc72753decbbae4dbe2d944b3d209739e37163beba0645d200d3bfe61ac"
+    },
+    {
+      "id": "qwen3.7-max",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:50:53.425234+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "a05912c9b300f087e21732f99df5f9b124f30b99b009cb1d7b88d03b73d3c023"
+    },
+    {
+      "id": "qwen3.7-plus",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:51:12.984720+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "b74e807909ec2f7cf3659d4d2370a2a27f9b2aed75ad5c8b9c9892eee82f3401"
+    },
+    {
+      "id": "qwen3.7-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:51:32.622038+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "eb7be84e6ad52639c652a1f32eafad7c12d7daf276017a0429e31bf5512bbb5c"
+    },
+    {
+      "id": "qwen3.6-plus",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:51:52.105956+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "e4361bfcce70784fb52a4db0eb654fb74fbf84fb423a44b120d862c414b7f2da"
+    },
+    {
+      "id": "qwen3.6-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:52:11.642789+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "021cbec1f170631b1cb3c57c975f82f31094510d9db0ba0fa877178deb1dd314"
+    },
+    {
+      "id": "qwen3.6-35b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:53:17.694898+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "d4a7d04560877dbea1a727deb3011278a10a58dd554f87babbb841759789302d"
+    },
+    {
+      "id": "qwen3.5-122b-a10b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:53:37.486603+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "fe472c74c0edd4b36ea57e663c5425f2766d2751036ca3a1e94c48fe98b109a6"
+    },
+    {
+      "id": "qwen3.5-plus",
+      "baselineStatus": "inconclusive",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:54:16.743733+00:00",
+      "billingReceiptValidated": false,
+      "note": "Reported 1170 output tokens against requested 512; billing unresolved; no retry.",
+      "hostEvidenceSha256": "670d1f543fe2c90765c3d4100041e37bb76209f5d385e82b1175417b25bec3bd"
+    },
+    {
+      "id": "qwen3.5-flash",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T03:54:36.351650+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "e466ae3290178dfea3433c174f041e2a5cedd20972d63ae2b0697a5353044908"
+    },
+    {
+      "id": "qwen3.5-397b-a17b",
+      "baselineStatus": "inconclusive-interrupted",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": null,
+      "billingReceiptValidated": false,
+      "note": "Interrupted during safety shutdown; dispatch/charge unresolved; no retry."
+    },
+    {
+      "id": "qwen3.5-35b-a3b",
+      "baselineStatus": "passed",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:08:52.410256+00:00",
+      "billingReceiptValidated": true,
+      "note": "Installed-host response satisfied the requested JSON-only output.",
+      "hostEvidenceSha256": "25556854cac18c7ed8b5968607b66c4063c42e6bb8124185eff360d494b272aa"
+    },
+    {
+      "id": "qwen3-max",
+      "baselineStatus": "inconclusive",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "testedAtUtc": "2026-09-14T05:09:35.451551+00:00",
+      "billingReceiptValidated": false,
+      "note": "Live timeout at 25-second upstream deadline without validated receipt; no retry.",
+      "hostEvidenceSha256": "38efcdb4cf78297c14d3b9e60cc08305164d8dcaf2e2c4c931f21a79cd49fb4c"
+    },
+    {
+      "id": "qwen3-32b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-coder-plus",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-coder-flash",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-coder-next",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-coder-30b-a3b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-next-80b-a3b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-vl-plus",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-vl-flash",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen3-vl-235b-a22b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen-plus",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwen-flash",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "qwq-32b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "kimi-k3",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "kimi-k2-6",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "kimi-k2-5",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m3",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m2-7-highspeed",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m2-7",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m2-5-highspeed",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m2-5",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m2-1-highspeed",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m2-1",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "minimax-m2",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mimo-v2.5",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mimo-v2.5-pro",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nemotron-3-nano-30b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nemotron-3-120b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nemotron-3-nano-omni",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nemotron-3-ultra-nvfp4",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nemotron-lightning-3.5-30b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "step-3-7-flash",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-5.3-flash",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-5.3",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-5.2",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-5.1",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-5",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-4.7",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-4.7-flash",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-4.6",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-4.6v",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-4.5",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "glm-4.5v",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "muse-glimmer-30b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "muse-spark-1.3",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "muse-spark-1.3-contributor",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "muse-spark-1.2",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "muse-spark-1.2-contributor",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "muse-spark-1.1",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-4-maverick",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-4-scout",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-3-70b-instruct",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-3.3-70b-instruct",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-3.2-3b-instruct",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-3.2-1b-instruct",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-3.1-70b-instruct",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-3-8b-instruct",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "llama-3.1-8b-instruct",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mistral-large-3",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mistral-medium-3",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mistral-medium-3.1",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "magistral-small-1.2",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mistral-small-3.1",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mistral-small-3.2",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "devstral-2",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "codestral",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "mistral-nemo",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "ministral-3-3b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "ministral-3-8b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "ministral-3-14b",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "palmyra-x5",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "palmyra-x4",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "jamba-1-5-large",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "jamba-1-5-mini",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "command-a",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "command-a-vision",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "ibm-granite-micro",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nova-2-lite",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nova-premier",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nova-pro",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nova-lite",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "nova-micro",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    },
+    {
+      "id": "redact-v1",
+      "baselineStatus": "excluded-non-chat",
+      "featureCases": "not-yet-tested-in-this-campaign",
+      "note": "Non-chat utility excluded from chat-model testing."
+    },
+    {
+      "id": "hy3",
+      "baselineStatus": "not-yet-tested",
+      "featureCases": "not-yet-tested-in-this-campaign"
+    }
+  ]
+}
